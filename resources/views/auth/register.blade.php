@@ -611,25 +611,9 @@ $("#originlga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
 
 </head>
 <body>
- <button id="btn" class="btn btn-primary">
-                                   click
-                                </button>
-
-<form>
-
-                                <select id="sel" name="sel">
-                                    <option value="a">AAAA</option>
-                                    <option value="b">bbbb</option>
-                                    <option value="c">cccc</option>
-                                </select>
-
-                                <select id="sel2" name="sel">
+ 
 
 
-                                    
-                                </select>
-                                <div id="check"><p>uuuuu</p></div>
-</form>
                                
 <div id="app">
 
