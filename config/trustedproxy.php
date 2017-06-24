@@ -38,7 +38,7 @@ return [
      * Or, to trust ALL proxies, including those that
      * are in a chain of forwarding, uncomment this:
     */
-    # 'proxies' => '**',
+     'proxies' => '**',
 
     /*
      * Default Header Names
