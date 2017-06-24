@@ -11,9 +11,7 @@
 <title>iVoteiCheck - login</title>
     <!-- Styles -->
     
-    <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+    
 
 <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -183,13 +181,7 @@ a img{
       bottom: 16px;
     }
 
-.android-be-together-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background-color: lightgreen;
-  background-size: cover;
-}
+
 
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -198,146 +190,8 @@ a img{
   font-weight: 500;
 }
 
-.android-slogan {
-  font-size: 60px;
-  padding-top: 160px;
-}
-
-.android-sub-slogan {
-  font-size: 21px;
-  padding-top: 24px;
-}
-
-.android-create-character {
-  font-size: 21px;
-  padding-top: 400px;
-}
-
-  .android-create-character a {
-    text-decoration: none;
-    color: #767777;
-    font-weight: 300;
-  }
-
-.android-screen-section {
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-
-.android-screens {
-  text-align: right;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
-.android-screen {
-  text-align: center;
-}
-
-.android-screen .android-link {
-  margin-top: 16px;
-  display: block;
-  z-index: 2;
-}
-
-.android-image-link {
-  text-decoration: none;
-}
-
-.android-wear {
-  display: inline-block;
-  width: 160px;
-  margin-right: 32px;
-}
-
-  .android-wear .android-screen-image {
-    width: 40%;
-    z-index: 1;
-  }
 
 
-.android-phone {
-  display: inline-block;
-  width: 64px;
-  margin-right: 48px;
-}
-
-  .android-phone .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-
-.android-tablet {
-  display: inline-block;
-  width: 110px;
-  margin-right: 64px;
-}
-
-  .android-tablet .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-  .android-tablet .android-link {
-    display: block;
-    z-index: 2;
-  }
-
-
-.android-tv {
-  display: inline-block;
-  width: 300px;
-  margin-right: 80px;
-}
-
-  .android-tv .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-
-.android-auto {
-  display: inline-block;
-  width: 300px;
-  overflow: hidden;
-}
-
-  .android-auto .android-screen-image {
-    display: block;
-    height: 300px;
-    z-index: 1;
-  }
-
-
-.android-wear-section {
-  position: relative;
-  background: url('images/wear.png') center top no-repeat;
-  background-size: cover;
-  height: 800px;
-}
-
-.android-wear-band {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #37474f;
-}
-
-.android-wear-band-text {
-  max-width: 800px;
-  margin-left: 25%;
-  padding: 24px;
-  text-align: left;
-  color: white;
-}
-
-  .android-wear-band-text p {
-    padding-top: 8px;
-  }
 
 .android-link {
   text-decoration: none;
@@ -367,77 +221,6 @@ a img{
   .android-alt-link .material-icons {
     position: relative;
     top: 6px;
-  }
-
-.android-customized-section {
-  text-align: center;
-}
-
-.android-customized-section-text {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 16px 0 16px;
-}
-
-  .android-customized-section-text p {
-    padding-top: 16px;
-  }
-
-.android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
-}
-
-.android-more-section {
-  padding: 80px 0;
-  max-width: 1044px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-  .android-more-section .android-section-title {
-    margin-left: 12px;
-    padding-bottom: 24px;
-  }
-
-.android-card-container {
-}
-
-  .android-card-container .mdl-card__media {
-    overflow: hidden;
-    background: transparent;
-  }
-
-    .android-card-container .mdl-card__media img {
-      width: 100%;
-    }
-
-  .android-card-container .mdl-card__title {
-    background: transparent;
-    height: auto;
-  }
-
-  .android-card-container .mdl-card__title-text {
-    color: black;
-    height: auto;
-  }
-
-  .android-card-container .mdl-card__supporting-text {
-    height: auto;
-    color: black;
-    padding-bottom: 56px;
-  }
-
-  .android-card-container .mdl-card__actions {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .android-card-container .mdl-card__actions a {
-    border-top: none;
-    font-size: 16px;
   }
 
 .android-footer {
@@ -563,7 +346,8 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="img/android-logo.png">
+           <!-- <img class="android-logo-image" src="img/android-logo.png"> -->
+           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -578,16 +362,16 @@ a img{
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
                
           @if (Route::has('login'))
                 
                     @if (Auth::check())
-                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/home') }}"Dashboard</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/home') }}">Dashboard</a>
                     @else
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/register') }}">Register</a>
@@ -597,16 +381,16 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="img/android-logo.png">
+           <!-- <img class="android-logo-image" src="img/android-logo.png">-->
+           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            
  
           </ul>
         </div>
@@ -615,35 +399,40 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="img/android-logo-white.png">
+         <!-- <img class="android-logo-image" src="img/android-logo-white.png"> -->
+         <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+         
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
+          <a class="mdl-navigation__link" href="">Support this Project</a>
+          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
+          
+         
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
+          
         </nav>
       </div>
-
 
       <div class="android-content mdl-layout__content">
 
@@ -711,6 +500,39 @@ a img{
         </div>
     </div>
 </div>
+
+
+<footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            
+            <a class="android-link mdl-typography--font-light" href="">SiteMap</a>
+            <a class="android-link mdl-typography--font-light" href="">Disclaimer</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
+        </footer>
+
 
 
       </div>
