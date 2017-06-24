@@ -164,7 +164,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
-        Fideloper\Proxy\TrustedProxyServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -230,7 +229,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
-        
 
     ],
 
