@@ -740,7 +740,7 @@ a img{
                <div>  {!! $partyPie->getFrontPresidentPie()->render() !!} </div> 
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Captures all the Politician Parties</h4>
+                 <h4 class="mdl-card__title-text">Captures all the Politicial Parties</h4>
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">The Platform also mocks Nigerian Voting System.</span>
