@@ -19,8 +19,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="/css/mdl/material.min.css"/>
-<script src="/css/mdl/material.min.js"></script>
+        //<link rel="stylesheet" href="/css/mdl/material.min.css"/>
+//<script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
 	
 	<style>
@@ -667,7 +667,7 @@ a img{
           <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
-          @if (Route::has('frontpage'))
+          @if (Route::has('login'))
                 
                     @if (Auth::check())
                         <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
