@@ -12,15 +12,15 @@
     <!-- Styles -->
     
     <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+    <!--<script src="{{ asset('css/mdl/material.min.js') }}"></script>-->
+    <!--<script src="{{ asset('css/mdl/material.min.css') }}"></script>-->
 
 
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <!--<link rel="stylesheet" href="/css/mdl/material.min.css"/>-->
-<!--<script src="/css/mdl/material.min.js"></script>-->
+        <link rel="stylesheet" href="/css/mdl/material.min.css"/>
+<script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
 	
 	<style>
