@@ -184,13 +184,6 @@ a img{
       bottom: 16px;
     }
 
-.android-be-together-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background-color: lightgreen;
-  background-size: cover;
-}
 
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -202,59 +195,6 @@ a img{
 
 
 
-
-.android-phone {
-  display: inline-block;
-  width: 64px;
-  margin-right: 48px;
-}
-
-  .android-phone .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-
-.android-tablet {
-  display: inline-block;
-  width: 110px;
-  margin-right: 64px;
-}
-
-  .android-tablet .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-  .android-tablet .android-link {
-    display: block;
-    z-index: 2;
-  }
-
-
-.android-tv {
-  display: inline-block;
-  width: 300px;
-  margin-right: 80px;
-}
-
-  .android-tv .android-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-
-.android-auto {
-  display: inline-block;
-  width: 300px;
-  overflow: hidden;
-}
-
-  .android-auto .android-screen-image {
-    display: block;
-    height: 300px;
-    z-index: 1;
-  }
 
 
 
@@ -483,10 +423,11 @@ a img{
 
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
+           
            
                
           @if (Route::has('home'))
@@ -512,15 +453,15 @@ a img{
           </div>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="img/android-logo.png">
+          <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            
  
           </ul>
         </div>
@@ -529,32 +470,36 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="img/android-logo-white.png">
+          <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+           <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+         
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
+          <a class="mdl-navigation__link" href="">Support this Project</a>
+          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
+          
+         
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
         </nav>
       </div>
             
@@ -563,25 +508,25 @@ a img{
 <!-- upper pane -->
 <div style="margin-top: 50px;" >
     <div class="android-card-container mdl-grid">
-       <div style="background: lightgreen; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
-      <p> <h4> Name: {{ Auth::user()->name }}</h4></p><br>
-      <p> <h4> Age: {{ Auth::user()->getAge() }}</h4> </p><br>
-     <p> <h4> Favourite Party: {{ Auth::user()->favparty }}</h4> </p><br>
-      <p> <h4> State of Residence: {{ Auth::user()->resident }}</h4> </p>
-      <p> <h4> State of Origin: {{ Auth::user()->origin }}</h4> </p>
+       <div style="background: white; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
+      <div class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
+   <div class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
+     <div class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
+     <div class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
+      <div class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
       
        </div>
        <div class="mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone" >
            
 <div style="width: 100%;" class="mdl-typography--text-uppercase mdl-typography--font-bold mdl-color--light-green">
-  <h4>Voting Details/Options</h4>
+  <div class="mdl-typography--headline mdl-typography--font-thin">Voting Details/Options</div>
 </div>
            <div>
           <div>
-              <p>Presidential: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }} </b></p>
-              <p>Governorship: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }}</b></p>
-              <p>Senate: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
-              <p>State House: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
+              <div class="mdl-typography--font-regular">Presidential: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }} </div>
+              <div class="mdl-typography--font-regular">Governorship: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }}</div>
+              <div class="mdl-typography--font-regular">Senate: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
+              <div class="mdl-typography--font-regular">State House: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
           </div>
          
        </div>
@@ -594,78 +539,71 @@ a img{
 <div class="android-more-section">
 
     <div class="android-card-container mdl-grid">
-         <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-          <div class="mdl-card__media">
-          <img src="/img/flag-600x600.jpg" >
-          </div>
+      
 
-           <div class="mdl-card__title mdl-color--lime">
-            <h4 class="mdl-card__title-text">Presidential Vote</h4>
-        </div>
- 
- <div class="mdl-card__supporting-text mdl-color--lime">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Choose party and Location</span>
-             
-                <a href="{{URL::to('user/update')}}">Presidential Voting boot</a>
+
+ <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                
+               <img src="/img/flag-600x600.jpg" >
               </div>
-
-        <div class="mdl-card__actions mdl-color--lime">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="register.php">
-                   Read More...
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Gubernatorial Voting Boot</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Choose State and Political Party, then vote. You can only choose 
+                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{URL::to('user/update')}}">
+                  Enter to vote
                    <i class="material-icons">chevron_right</i>
                  </a>
               </div>
+            </div>
 
-           
-        </div>
-
-
-
-          <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-          <div class="mdl-card__media">
-          <img src="/img/frnt-img.png" >
-          </div>
-
-           <div class="mdl-card__title mdl-color--lime">
-            <h4 class="mdl-card__title-text">#######</h4>
-        </div>
- 
- <div class="mdl-card__supporting-text mdl-color--lime">
-                <span class="mdl-typography--font-light mdl-typography--subhead">######################</span>
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                
+                <img src="/img/flag-600x600.jpg" >
               </div>
-
-        <div class="mdl-card__actions mdl-color--lime">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="register.php">
-                   Read More...
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Gubernatorial Voting Boot</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Choose State,LGA and Political Party, then vote. You can only choose 
+                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                  Enter to vote
                    <i class="material-icons">chevron_right</i>
                  </a>
               </div>
+            </div>
 
-           
-        </div>
 
-         <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-          <div class="mdl-card__media">
-          <img src="/img/flag-600x600.jpg" >
-          </div>
-
-           <div class="mdl-card__title mdl-color--lime">
-            <h4 class="mdl-card__title-text">#######</h4>
-        </div>
- 
- <div class="mdl-card__supporting-text mdl-color--lime">
-                <span class="mdl-typography--font-light mdl-typography--subhead">######################</span>
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                
+                <img src="/img/flag-600x600.jpg" >
               </div>
-
-        <div class="mdl-card__actions mdl-color--lime">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="register.php">
-                   Read More...
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Senatorial Voting Boot</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Choose State,LGA and Political Party, then vote. You can only choose 
+                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                  Enter to vote
                    <i class="material-icons">chevron_right</i>
                  </a>
               </div>
+            </div>
 
-           
-        </div>
+
 
         </div>
     </div>
@@ -678,11 +616,36 @@ a img{
 
 
 
+<footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
 
-         <footer class="mdl-mega-footer">
-             <h6 align="left">Copyright Â© SIMU-VOTER 2017 All Rights Reserved</h6> 
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            
+            <a class="android-link mdl-typography--font-light" href="">SiteMap</a>
+            <a class="android-link mdl-typography--font-light" href="">Disclaimer</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
         </footer>
-
 
 
 </div>
