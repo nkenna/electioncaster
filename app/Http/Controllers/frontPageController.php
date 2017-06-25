@@ -120,6 +120,9 @@ class frontPageController extends Controller
      $imo = DB::select('select * from users where prestate = ?', ['Imo']);
      $imo =+ count($imo);
 
+     $fct = DB::select('select * from users where prestate = ?', ['FCT']);
+     $fct =+ count($fct);
+
 
     	//pie chart- votes by party
              $statePie = Charts::create('donut', 'highcharts')
@@ -131,12 +134,15 @@ class frontPageController extends Controller
             // This defines a preset of colors already done:)
             
             // You could always set them manually
-            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#458333', '#F50011', '#F30000', '#F39110', '#F3C444'])
+            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#458333',
+             '#F50011', '#F30000', '#F39110', '#F3C444', '#010444'])
             // Setup the diferent datasets (this is a multi chart)
-            ->values([$abia, $adamawa, $akwaibom, $enugu, $imo, $lagos, $taraba, $yobe, $zamfara])
+            ->values([$abia, $adamawa, $akwaibom, $enugu, $imo, $lagos,
+             $taraba, $yobe, $zamfara, $fct])
             
             // Setup what the values mean
-            ->labels(['Abia', 'Adamawa', 'Akwa Ibom', 'Enugu', 'Imo', 'Lagos', 'Taraba', 'Yobe', 'Zamfara']);
+            ->labels(['Abia', 'Adamawa', 'Akwa Ibom', 'Enugu', 'Imo', 'Lagos',
+             'Taraba', 'Yobe', 'Zamfara', 'FCT']);
 
            // $pie = collect(['partyPie' => 'partyPie']);
 
