@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>iVoteiCheck - Create Profile</title>
+    <title>VoteStats - Create Profile</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -631,7 +631,7 @@ $("#originlga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'VoteStats') }}
                     </a>
                 </div>
 

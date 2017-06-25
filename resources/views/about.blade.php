@@ -8,12 +8,11 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteiCheck- About</title>
+<title>VoteStats- About</title>
     <!-- Styles -->
     
     <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+    
 
 
 
@@ -365,15 +364,7 @@ a img{
   padding: 80px 16px 0 16px;
 }
 
-  .android-customized-section-text p {
-    padding-top: 16px;
-  }
 
-.android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
-}
 
 .android-more-section {
   padding: 80px 0;
@@ -598,7 +589,7 @@ a img{
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
            <!-- <img class="android-logo-image" src="img/android-logo.png"> -->
-           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+           <h4 style="color: blue;"><b>VoteStats</b></h4>
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -633,7 +624,7 @@ a img{
           </div>
           <span class="android-mobile-title mdl-layout-title">
            <!-- <img class="android-logo-image" src="img/android-logo.png">-->
-           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+           <h4 style="color: blue;"><b>VoteStats</b></h4>
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -651,7 +642,7 @@ a img{
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
          <!-- <img class="android-logo-image" src="img/android-logo-white.png"> -->
-         <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+         <h4 style="color: blue;"><b>VoteStats</b></h4>
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Home</a>
@@ -713,7 +704,7 @@ a img{
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
             <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
           </div>
 

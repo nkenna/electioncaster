@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteiCheck - Voting Board</title>
+<title>VoteStats - Voting Board</title>
     <!-- Styles -->
     
     <!-- Scripts -->
@@ -445,7 +445,7 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+           <h4 style="color: blue;"><b>VoteStats</b></h4>
             
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
@@ -492,7 +492,7 @@ a img{
           </div>
           <span class="android-mobile-title mdl-layout-title">
            
-          <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+          <h4 style="color: blue;"><b>VoteStats</b></h4>
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -509,7 +509,7 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+          <h4 style="color: blue;"><b>VoteStats</b></h4>
         </span>
         <nav class="mdl-navigation">
            <a class="mdl-navigation__link" href="">Home</a>
@@ -594,7 +594,7 @@ a img{
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
             <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
           </div>
 
