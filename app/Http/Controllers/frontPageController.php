@@ -125,7 +125,8 @@ class frontPageController extends Controller
     $apga = DB::select('select * from users where favparty = ?', ['APGA']);
      $apga =+ count($apga);
 
-     $favPartyLine = Charts::create('area', 'highcharts')->x_axis_title('Party')->y_axis_title('population')
+     $favPartyLine = Charts::create('area', 'highcharts')
+     ->->elementLabel('population')
      ->title("Favourity Party")
     ->colors(['#ff0000', '#00ff00', '#0000ff', '#045fff'])
     ->labels(['APC', 'APGA', 'LP', 'PDP'])

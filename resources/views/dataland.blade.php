@@ -690,28 +690,28 @@ a img{
          
       
 
-      <div>
+      <div style="margin-top: 10px;">
         <div style="width: 100%; height: 200px; background: purple; color: black;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center> <a class="mdl-navigation__link" href="{{ url('/dataview') }}">Data for Presidential Votes</a></center></div>
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center> <a  href="{{ url('/user/dataview') }}">Data for Presidential Votes</a></center></div>
         </div>
 
 
 <div class="mdl-layout-spacer"></div>
 
         <div style="width: 100%; height: 200px; background: purple; color: black;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><a class="mdl-navigation__link" href=""> Data for Gubernatorial Votes</a></div>
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"><a  href=""> Data for Gubernatorial Votes</a></div>
         </div>
 
 <div class="mdl-layout-spacer"></div>
 
         <div style="width: 100%; height: 200px; background: purple; color: black;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><a class="mdl-navigation__link" href=""> Data for Senatorial Votes</a></div>
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for Senatorial Votes</a></center></div>
         </div>
 
 <div class="mdl-layout-spacer"></div>
 
         <div style="width: 100%; height: 200px; background: purple; color: black;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><a class="mdl-navigation__link" href=""> Data for State House of Assembly Votes</a></div>
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for State House of Assembly Votes</a></center></div>
         </div>
 
       </div>
