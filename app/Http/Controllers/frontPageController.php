@@ -31,6 +31,8 @@ class frontPageController extends Controller
      $apga =+ count($apga);
 
 
+
+
     	//pie chart- votes by party
              $partyPie = Charts::create('donut', 'highcharts')
 
@@ -125,12 +127,43 @@ class frontPageController extends Controller
     $apga = DB::select('select * from users where favparty = ?', ['APGA']);
      $apga =+ count($apga);
 
+     $acpn = DB::select('select * from users where favparty = ?', ['ACPN']);
+     $acpn =+ count($acpn);
+
+     $aa = DB::select('select * from users where favparty = ?', ['AA']);
+     $aa =+ count($apga);
+
+     $ad = DB::select('select * from users where favparty = ?', ['AD']);
+     $ad =+ count($apga);
+
+     $kp = DB::select('select * from users where favparty = ?', ['KP']);
+     $kp =+ count($kp);
+
+     $adc = DB::select('select * from users where favparty = ?', ['ADC']);
+     $adc =+ count($apga);
+
+     $ncp = DB::select('select * from users where favparty = ?', ['NCP']);
+     $ncp =+ count($ncp);
+
+     $udp = DB::select('select * from users where favparty = ?', ['UDP']);
+     $udp =+ count($udp);
+
+     $upp = DB::select('select * from users where favparty = ?', ['UPP']);
+     $upp =+ count($upp);
+
+     $hdp = DB::select('select * from users where favparty = ?', ['HDP']);
+     $hdp =+ count($hdp);
+
+     $ppa = DB::select('select * from users where favparty = ?', ['PPA']);
+     $ppa =+ count($ppa);
+
      $favPartyLine = Charts::create('area', 'highcharts')
      ->elementLabel('population')
      ->title("Favourity Party")
     ->colors(['#ff0000', '#00ff00', '#0000ff', '#045fff'])
-    ->labels(['APC', 'APGA', 'LP', 'PDP'])
-    ->values([$apc,$apga,$lp,$pdp]);
+    ->labels(['APC', 'APGA', 'LP', 'PDP', 'HDP', 'UPP', 'ACPN', 'UDP',
+     'NCP', 'ADC', 'KP', 'AD', 'AA', 'PPA'])
+    ->values([$apc,$apga,$lp,$pdp,$hdp,$upp,$acpn,$udp,$ncp,$adc,$kp,$ad,$aa,'$ppa']);
 
  return $favPartyLine;
  }
