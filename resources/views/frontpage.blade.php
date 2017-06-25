@@ -764,7 +764,7 @@ a img{
                 <span class="mdl-typography--font-light mdl-typography--subhead">The Platform also collates and Correlates the mocked votes.</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/login') }}">
+                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/user/dataview') }}">
                    Start Voting
                    <i class="material-icons">chevron_right</i>
                  </a>

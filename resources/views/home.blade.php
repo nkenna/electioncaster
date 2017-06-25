@@ -407,7 +407,8 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="img/android-logo.png">
+           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+            
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -452,7 +453,7 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="img/android-logo.png">
+           
           <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
@@ -509,11 +510,11 @@ a img{
 <div style="margin-top: 50px;" >
     <div class="android-card-container mdl-grid">
        <div style="background: white; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
-      <div class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
-   <div class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
-     <div class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
-     <div class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
-      <div class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
+      <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
+   <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
+     <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
+     <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
+      <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
       
        </div>
        <div class="mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone" >
@@ -548,7 +549,7 @@ a img{
                <img src="/img/flag-600x600.jpg" >
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Gubernatorial Voting Boot</h4>
+                 <h4 class="mdl-card__title-text">Presidential Voting Boot</h4>
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">Choose State and Political Party, then vote. You can only choose 

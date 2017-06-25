@@ -126,7 +126,7 @@ class frontPageController extends Controller
      $apga =+ count($apga);
 
      $favPartyLine = Charts::create('area', 'highcharts')
-     ->->elementLabel('population')
+     ->elementLabel('population')
      ->title("Favourity Party")
     ->colors(['#ff0000', '#00ff00', '#0000ff', '#045fff'])
     ->labels(['APC', 'APGA', 'LP', 'PDP'])
