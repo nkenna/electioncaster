@@ -691,27 +691,27 @@ a img{
       
 
       <div style="margin-top: 10px;">
-        <div class="mdl-color--pink-400" style="width: 100%; height: 200px; color: white;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center> <a  href="{{ url('/user/dataview') }}">Data for Presidential Votes</a></center></div>
+        <div class="mdl-color--pink-400" style="margin-top: 10px; width: 100%; height: 200px; color: black; ">
+          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center> <a  href="{{ url('/user/dataview') }}">Data for Presidential Votes</a></center></div>
         </div>
 
 
 <div class="mdl-layout-spacer"></div>
 
-        <div class="mdl-color--pink-400" style="width: 100%; height: 200px; color: white;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href="">Data for Gubernatorial Votes</a></center></div>
+        <div class="mdl-color--pink-400" style="margin-top: 10px; width: 100%; height: 200px; color: black;">
+          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href="">Data for Gubernatorial Votes</a></center></div>
         </div>
 
 <div class="mdl-layout-spacer"></div>
 
-        <div class="mdl-color--pink-400" style="width: 100%; height: 200px; color: white;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for Senatorial Votes</a></center></div>
+        <div class="mdl-color--pink-400" style="margin-top: 10px; width: 100%; height: 200px; color: black;">
+          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for Senatorial Votes</a></center></div>
         </div>
 
 <div class="mdl-layout-spacer"></div>
 
-        <div class="mdl-color--pink-400" style="width: 100%; height: 200px; color: white;">
-          <div class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for State House of Assembly Votes</a></center></div>
+        <div class="mdl-color--pink-400" style="margin-top: 10px; width: 100%; height: 200px; color: black;">
+          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center><a  href=""> Data for State House of Assembly Votes</a></center></div>
         </div>
 
       </div>
