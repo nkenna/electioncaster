@@ -8,12 +8,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteiCheck - dataLand</title>
+<title>iVoteiCheck</title>
     <!-- Styles -->
-    
-    <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+   
 
 
 
@@ -22,8 +19,8 @@
         <link rel="stylesheet" href="/css/mdl/material.min.css"/>
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
-	
-	<style>
+  
+  <style>
 
 
 body {
@@ -588,7 +585,7 @@ a img{
   
 }
 
-	</style>
+  </style>
 
   {!! Charts::assets() !!}
 </head>
@@ -615,10 +612,10 @@ a img{
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
-           	   
+               
           @if (Route::has('login'))
                 
                     @if (Auth::check())
@@ -639,8 +636,8 @@ a img{
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Support this Project</li>
-            <li class="mdl-menu__item">Resolve an Issue</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
           </ul>
@@ -656,33 +653,61 @@ a img{
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="">Data-Land</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
           <a class="mdl-navigation__link" href="">Support this Project</a>
           <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
           
-          <a class="mdl-navigation__link" href="">Login</a>
-          <a class="mdl-navigation__link" href="">Register</a>
-          <a class="mdl-navigation__link" href="">Dashboard</a>
-          <a class="mdl-navigation__link" href="">Usernme</a>
+         
+          
           <div class="android-drawer-separator"></div>
           
         </nav>
       </div>
 
 
+
       <div class="android-content mdl-layout__content">
       
 
          
+      
 
+      <div>
+        <div style="width: 100%; height: 200px; background: purple; color: black;">
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"> Data for Presidential Votes</div>
+        </div>
 
+        <div style="width: 100%; height: 200px; background: purple; color: black;">
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"> Data for Gubernatorial Votes</div>
+        </div>
 
+        <div style="width: 100%; height: 200px; background: purple; color: black;">
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"> Data for Senatorial Votes</div>
+        </div>
+
+        <div style="width: 100%; height: 200px; background: purple; color: black;">
+          <div class="mdl-typography--display-2 mdl-typography--font-thin"> Data for State House of Assembly Votes</div>
+        </div>
+
+      </div>
 
 
 
