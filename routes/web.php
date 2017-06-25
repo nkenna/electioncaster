@@ -42,19 +42,19 @@ Route::get('/supportus', function () {
 
 
 Route::get('user/update', function () {
-    return view('update');
+    return view('update')->middleware('auth');
 });
 
 Route::get('user/dataview', function () {
     return view('dataview');
-});
+})->middleware('auth');
 
 Route::get('user/govdataview', function () {
-    return view('govdataview');
+    return view('govdataview')->middleware('auth');
 });
 
 Route::get('user/updateGov', function () {
-    return view('updateGov');
+    return view('updateGov')->middleware('auth');
 });
 
 //Route::get('user/dataview', function () {
