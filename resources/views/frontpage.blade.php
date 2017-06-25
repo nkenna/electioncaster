@@ -670,8 +670,8 @@ a img{
       <div class="android-content mdl-layout__content">
       <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
-          <div style="color: white;" class="logo-font android-slogan">Be Predictive, Follow your online Vote. </div>
-          <div style="color: white;" class="logo-font android-sub-slogan">welcome to iVoteiCheck... Simulate and Predict Nigerian's Voting System.</div>
+          <div style="color: white;" class="logo-font android-slogan">Be Predictive </div>
+          <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats... Simulate, Model and Predict Nigerian's Voting System.</div>
          
 
                        <div class="logo-font android-create-character">
@@ -698,7 +698,7 @@ a img{
             <div class="android-wear-band-text">
               <div class="mdl-typography--display-2 mdl-typography--font-thin">The Platform that suits everyone</div>
               <p class="mdl-typography--headline mdl-typography--font-thin">
-               iVoteiCheck can provide you with data to follow the Election trend.
+               VoteStats can provide you with data to follow the Election trend.
               </p>
               <p>
                 <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="{{ url('/about') }}">
