@@ -43,23 +43,23 @@ Route::get('/supportus', function () {
 
 Route::get('user/update', function () {
     return view('update');
-});
+})->middleware('auth');
 
 Route::get('/success', function () {
     return view('success');
-});
+})->middleware('auth');
 
 Route::get('user/dataview', function () {
     return view('dataview');
 })->middleware('auth');
 
 Route::get('user/govdataview', function () {
-    return view('govdataview')->middleware('auth');
-});
+    return view('govdataview');
+})->middleware('auth');
 
 Route::get('user/updateGov', function () {
     return view('updateGov');
-});
+})->middleware('auth');
 
 //Route::get('user/dataview', function () {
   //  return view('dataview');

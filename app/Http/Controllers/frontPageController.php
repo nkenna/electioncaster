@@ -194,14 +194,105 @@ class frontPageController extends Controller
      $ppa = DB::select('select * from users where favparty = ?', ['PPA']);
      $ppa =+ count($ppa);
 
+     $ypp = DB::select('select * from users where favparty = ?', ['YPP']);
+     $ypp =+ count($ypp);
+
+     $prp = DB::select('select * from users where favparty = ?', ['PRP']);
+     $prp =+ count($prp);
+
+     $ydp = DB::select('select * from users where favparty = ?', ['YDP']);
+     $ydp =+ count($ydp);
+
+     $nup = DB::select('select * from users where favparty = ?', ['NUP']);
+     $nup =+ count($nup);
+
+     $ngp = DB::select('select * from users where favparty = ?', ['NGP']);
+     $ngp =+ count($ngp);
+
+     $ppp = DB::select('select * from users where favparty = ?', ['PPP']);
+     $ppp =+ count($ppp);
+
+     $nepp = DB::select('select * from users where favparty = ?', ['NEPP']);
+     $nepp =+ count($nepp);
+
+     $ndlp = DB::select('select * from users where favparty = ?', ['NDLP']);
+     $ndlp =+ count($ndlp);
+
+     $nac = DB::select('select * from users where favparty = ?', ['NAC']);
+     $nac =+ count($nac);
+
+     $mmn = DB::select('select * from users where favparty = ?', ['MMN']);
+     $mmn =+ count($mmn);
+
+     $idp = DB::select('select * from users where favparty = ?', ['ID']);
+     $idp =+ count($idp);
+
+     $gpn = DB::select('select * from users where favparty = ?', ['GPN']);
+     $gpn =+ count($gpn);
+
+     $bnpp = DB::select('select * from users where favparty = ?', ['bnpp']);
+     $bnpp =+ count($bnpp);
+
+     $apda = DB::select('select * from users where favparty = ?', ['APDA']);
+     $apda =+ count($apda);
+
+     $apa = DB::select('select * from users where favparty = ?', ['APA']);
+     $apa =+ count($apa);
+
+
+     $adpm = DB::select('select * from users where favparty = ?', ['ADPM']);
+     $adpm =+ count($adpm);
+
+     $acd = DB::select('select * from users where favparty = ?', ['ACD']);
+     $acd =+ count($acd);
+
+     $a = DB::select('select * from users where favparty = ?', ['A']);
+     $a =+ count($a);
+
+     $cpp = DB::select('select * from users where favparty = ?', ['CPP']);
+     $cpp =+ count($cpp);
+
+     $dpp = DB::select('select * from users where favparty = ?', ['DPP']);
+     $dpp =+ count($dpp);
+
+     $dpc = DB::select('select * from users where favparty = ?', ['DPC']);
+     $dpc =+ count($dpc);
+
+     $upn = DB::select('select * from users where favparty = ?', ['UPN']);
+     $upn =+ count($aupn);
+
+     $mppp = DB::select('select * from users where favparty = ?', ['MPPP']);
+     $mppp =+ count($mppp);
+
+     $nnpp = DB::select('select * from users where favparty = ?', ['NNPP']);
+     $nnpp =+ count($nnpp);
+
+     $pdm = DB::select('select * from users where favparty = ?', ['PDM']);
+     $pdm =+ count($pdm);
+
+     $fresh = DB::select('select * from users where favparty = ?', ['FRESH']);
+     $fresh =+ count($fresh);
+
+     $pdc = DB::select('select * from users where favparty = ?', ['PDC']);
+     $pdc =+ count($pdc);
+
+     $sdp = DB::select('select * from users where favparty = ?', ['SDP']);
+     $sdp =+ count($sdp);
+
      $favPartyLine = Charts::create('area', 'highcharts')
      ->elementLabel('population')
      ->title("Favourity Party")
     ->colors(['#ff0000', '#00ff00', '#0000ff', '#045fff', '#ff0000', '#00ff00', '#0000ff', '#045fff',
-    	'#ff0000', '#00ff00', '#0000ff', '#045fff', '#0000ff', '#045fff'])
+    	'#ff0000', '#00ff00', '#0000ff', '#045fff', '#0000ff', '#045fff', '#234567', '#123456', '#1234ff', '#110987', '#045f34',
+    	'#234567', '#345678', '#456789', '#567890', '#098765', '#234ff5', '#090909', '#999fff', '#876543', '#432109',
+    	'#234012', '#345011', '#456010', '#567009', '#098008', '#234007', '#090006', '#999005', '#876004', '#432003', , '#432002', , '#432001'])
     ->labels(['APC', 'APGA', 'LP', 'PDP', 'HDP', 'UPP', 'ACPN', 'UDP',
-     'NCP', 'ADC', 'KP', 'AD', 'AA', 'PPA'])
-    ->values([$apc,$apga,$lp,$pdp,$hdp,$upp,$acpn,$udp,$ncp,$adc,$kp,$ad,$aa,$ppa]);
+     'NCP', 'ADC', 'KP', 'AD', 'AA', 'PPA','YPP', 'PRP', 'YDP', 'NUP', 'NGP', 'PPP', 'NEPP',
+     'NDLP', 'NAC', 'MMN', 'ID', 'GPN', 'BNPP', 'APDA','APA', 'ADPM', 'ACD', 'A', 'CPP', 'DPP',
+     'DPC', 'UPN', 'MPPP', 'NNPP', 'PDM', 'FRESH', 'PDC', 'SDP'])
+    ->values([$apc,$apga,$lp,$pdp,$hdp,$upp,$acpn,$udp,$ncp,$adc,$kp,$ad,$aa,$ppa,$ypp,
+    	$prp,$ydp,$nup,$ngp,$ppp,$nepp,$ndlp,$nac,$mmn,$idp,$gpn,$bnpp,$apda,$apa,
+    	$adpm,$acd,$a,$cpp,$dpp,$dpc,$upn,$mppp,$nnpp]);
 
  return $favPartyLine;
  }
