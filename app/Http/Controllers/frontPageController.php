@@ -124,6 +124,89 @@ class frontPageController extends Controller
      $fct =+ count($fct);
 
 
+     $abia = DB::select('select * from users where prestate = ?', ['Abia']);
+    $abia =+ count($abia);
+
+    $lagos = DB::select('select * from users where prestate = ?', ['Lagos']);
+     $lagos =+count($lagos);
+
+    $adamawa = DB::select('select * from users where prestate = ?', ['Adamawa']);
+     $adamawa =+ count($adamawa);
+
+    $akwaibom = DB::select('select * from users where prestate = ?', ['Akwa Ibom']);
+     $akwaibom =+ count($akwaibom);
+
+     $enugu = DB::select('select * from users where prestate = ?', ['Enugu']);
+     $enugu =+ count($enugu);
+
+     $zamfara = DB::select('select * from users where prestate = ?', ['Zamfara']);
+     $zamfara =+ count($zamfara);
+
+     $yobe = DB::select('select * from users where prestate = ?', ['Yobe']);
+     $yobe =+ count($yobe);
+
+     $taraba = DB::select('select * from users where prestate = ?', ['Taraba']);
+     $taraba =+ count($taraba);
+
+     $imo = DB::select('select * from users where prestate = ?', ['Imo']);
+     $imo =+ count($imo);
+
+     $fct = DB::select('select * from users where prestate = ?', ['FCT']);
+     $fct =+ count($fct);
+
+
+     $abia = DB::select('select * from users where prestate = ?', ['Abia']);
+    $abia =+ count($abia);
+
+    $lagos = DB::select('select * from users where prestate = ?', ['Lagos']);
+     $lagos =+count($lagos);
+
+    $adamawa = DB::select('select * from users where prestate = ?', ['Adamawa']);
+     $adamawa =+ count($adamawa);
+
+    $akwaibom = DB::select('select * from users where prestate = ?', ['Akwa Ibom']);
+     $akwaibom =+ count($akwaibom);
+
+     $enugu = DB::select('select * from users where prestate = ?', ['Enugu']);
+     $enugu =+ count($enugu);
+
+     $zamfara = DB::select('select * from users where prestate = ?', ['Zamfara']);
+     $zamfara =+ count($zamfara);
+
+     $yobe = DB::select('select * from users where prestate = ?', ['Yobe']);
+     $yobe =+ count($yobe);
+
+     $taraba = DB::select('select * from users where prestate = ?', ['Taraba']);
+     $taraba =+ count($taraba);
+
+     $imo = DB::select('select * from users where prestate = ?', ['Imo']);
+     $imo =+ count($imo);
+
+     $fct = DB::select('select * from users where prestate = ?', ['FCT']);
+     $fct =+ count($fct);
+
+     $ogun = DB::select('select * from users where prestate = ?', ['Ogun']);
+     $ogun =+ count($ogun);
+
+     $ondo = DB::select('select * from users where prestate = ?', ['Ondo']);
+     $ondo =+ count($ondo);
+
+     $osun = DB::select('select * from users where prestate = ?', ['Osun']);
+     $osun =+ count($osun);
+
+     $oyo = DB::select('select * from users where prestate = ?', ['Oyo']);
+     $oyo =+ count($oyo);
+
+     $plateau = DB::select('select * from users where prestate = ?', ['Plateau']);
+     $plateau =+ count($plateau);
+
+     $sokoto = DB::select('select * from users where prestate = ?', ['Sokoto']);
+     $sokoto =+ count($sokoto);
+
+
+
+
+
     	//pie chart- votes by party
              $statePie = Charts::create('donut', 'highcharts')
 
@@ -259,7 +342,7 @@ class frontPageController extends Controller
      $dpc =+ count($dpc);
 
      $upn = DB::select('select * from users where favparty = ?', ['UPN']);
-     $upn =+ count($aupn);
+     $upn =+ count($upn);
 
      $mppp = DB::select('select * from users where favparty = ?', ['MPPP']);
      $mppp =+ count($mppp);
