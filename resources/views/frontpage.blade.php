@@ -211,7 +211,7 @@ a img{
 
 .android-create-character {
   font-size: 21px;
-  padding-top: 400px;
+  padding-top: 300px;
 }
 
   .android-create-character a {

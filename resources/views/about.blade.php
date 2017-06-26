@@ -670,7 +670,7 @@ a img{
       <div class="android-content mdl-layout__content">
       
 
-        <section style="margin: 1.5px; padding: 3px;">
+        <section style="margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
         <div class="mdl-typography--display-2 mdl-typography--font-thin">ABOUT</div>
           <div style="color: black;">
           <p>Votestats is an online platform that models Nigerian Voting System. it provides leads and insights for all politiclal/election stakeholders in Nigeria.</p>
@@ -729,6 +729,14 @@ a img{
           <p style="color: black;">Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
           </div>
         </section> 
+
+        <div style="width: 100%;">
+        <center>
+          
+          <div style="width: 100%;"><a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/register') }}">Create your Profile now.</a></div>
+          
+        </center>
+      </div>
 
 
 
