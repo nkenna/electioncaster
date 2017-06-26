@@ -670,7 +670,65 @@ a img{
       <div class="android-content mdl-layout__content">
       
 
-         
+        <section style="margin: 1.5px; padding: 1.4px;">
+        <div class="mdl-typography--display-2 mdl-typography--font-thin">ABOUT</div>
+          <div style="color: black;">
+          <p>Votestats is an online platform that models Nigerian Voting System. it provides leads and insights for all politiclal/election stakeholders in Nigeria.</p>
+
+          <p>Votestat motive is to involve all in the election process in Nigeria. The Data is collated, corellated and aggregated according to political parties, States, age, gender, occupation, etc. Although, the data and catergories are being updated rapidly to serve its purpose. 
+          </p>
+
+          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">Benefits to Political Parties</p>
+          <p>VoteStats provides many benefits to political parties in Nigeria:
+          <ul>
+            <li>Plan and replan Campaign strageties.</li>
+            <li>Study the performance of their deployed Strageties.</li>
+            <li>Study the performance of their members (Aspirants and elected).</li>
+             <li>Forecast, follow and predict elections and outcomes.</li>
+            <li>Follow and study opposition parties' performance during the campaign trail.</li>
+          </ul>
+          </p>
+
+          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">Benefits to Political Aspirants and Elected Leaders</p>
+          <p>VoteStats provides many benefits to Political Aspirants and Elected Leaders in Nigeria:
+          <ul>
+            <li>Forecast, follow and predict elections and outcomes.</li>
+            <li>Plan and replan Campaign strageties.</li>
+            <li>Model and follow their performance during election and while in office.</li>
+            <li>Follow and study their opponents performance during the campaign trail.</li>
+            <li>Forecast/Predict the election outcomes.</li>
+            
+          </ul>
+          </p>
+
+          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">Benefits to Journalists/Statisticains/Political/Election writers/Analysts/Election Followers:</p>
+          <p>VoteStats provides many benefits to these categories of people in Nigeria:
+          <ul>
+            <li>Forecast, follow and predict elections and outcomes.</li>
+            <li>Correlate data from VoteStats mocked votes and the outcome from the real vote.</li>
+            <li>Model and follow their performance during election and while in office.</li>
+            <li>Follow and study their opponents performance during the campaign trail.</li>
+           
+            
+          </ul>
+          </p>
+
+          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">Benefits to Voters/Populace:</p>
+          <p>VoteStats provides many benefits to these categories of people in Nigeria:
+          <ul>
+            <li>VoteStats provides a platform to show elected leaders in office their performance and draw their attention to it. A Voter can change or review his/her vote after 7days.</li>
+            <li>VoteStats also provides a platform to show Political aspirants how their Campaign is performing and an insight into what the electionoutcome will look like.</li>
+            <li>Forecast, follow and predict elections and outcomes.</li>
+            
+          </ul>
+          </p>
+
+          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
+          <p style="color: black;">VoteStats provides modeled election voting data from mocked election voting process done by its online users. It is only meant for Nigerians and should not be used in place of any official voting process except otherwise.</p>
+          <p style="color: black;">Election in Nigeria is still conducted and controlled by <b>INEC</b>.</p>
+          <p style="color: black;">Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+          </div>
+        </section> 
 
 
 
