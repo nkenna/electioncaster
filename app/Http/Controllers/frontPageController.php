@@ -130,60 +130,63 @@ class frontPageController extends Controller
     $lagos = DB::select('select * from users where prestate = ?', ['Lagos']);
      $lagos =+count($lagos);
 
-    $adamawa = DB::select('select * from users where prestate = ?', ['Adamawa']);
-     $adamawa =+ count($adamawa);
+    $anambra = DB::select('select * from users where prestate = ?', ['Anambra']);
+     $anambra =+ count($anambra);
 
-    $akwaibom = DB::select('select * from users where prestate = ?', ['Akwa Ibom']);
-     $akwaibom =+ count($akwaibom);
+    $bauchi = DB::select('select * from users where prestate = ?', ['Bauchi']);
+     $bauchi =+ count($bauchi);
 
-     $enugu = DB::select('select * from users where prestate = ?', ['Enugu']);
-     $enugu =+ count($enugu);
+     $bayelsa = DB::select('select * from users where prestate = ?', ['Bayelsa']);
+     $bayelsa =+ count($enugu);
 
-     $zamfara = DB::select('select * from users where prestate = ?', ['Zamfara']);
-     $zamfara =+ count($zamfara);
+     $benue = DB::select('select * from users where prestate = ?', ['Benue']);
+     $benue =+ count($benue);
 
-     $yobe = DB::select('select * from users where prestate = ?', ['Yobe']);
-     $yobe =+ count($yobe);
+     $borno = DB::select('select * from users where prestate = ?', ['Borno']);
+     $borno =+ count($borno);
 
-     $taraba = DB::select('select * from users where prestate = ?', ['Taraba']);
-     $taraba =+ count($taraba);
+     $crossRivers = DB::select('select * from users where prestate = ?', ['Cross Rivers']);
+     $crossRivers =+ count($crossRivers);
 
-     $imo = DB::select('select * from users where prestate = ?', ['Imo']);
-     $imo =+ count($imo);
+     $delta = DB::select('select * from users where prestate = ?', ['Delta']);
+     $delta =+ count($delta);
 
-     $fct = DB::select('select * from users where prestate = ?', ['FCT']);
-     $fct =+ count($fct);
+     $ebonyi = DB::select('select * from users where prestate = ?', ['Ebonyi']);
+     $ebonyi =+ count($ebonyi);
 
 
-     $abia = DB::select('select * from users where prestate = ?', ['Abia']);
-    $abia =+ count($abia);
+     $edo = DB::select('select * from users where prestate = ?', ['Edo']);
+    $edo =+ count($edo);
 
-    $lagos = DB::select('select * from users where prestate = ?', ['Lagos']);
-     $lagos =+count($lagos);
+    $ekiti = DB::select('select * from users where prestate = ?', ['Ekiti']);
+     $ekiti =+count($ekiti);
 
-    $adamawa = DB::select('select * from users where prestate = ?', ['Adamawa']);
-     $adamawa =+ count($adamawa);
+    $gombe = DB::select('select * from users where prestate = ?', ['Gombe']);
+     $gombe =+ count($gombe);
 
-    $akwaibom = DB::select('select * from users where prestate = ?', ['Akwa Ibom']);
-     $akwaibom =+ count($akwaibom);
+    $jigawa = DB::select('select * from users where prestate = ?', ['Jigawa']);
+     $jigawa =+ count($jigawa);
 
-     $enugu = DB::select('select * from users where prestate = ?', ['Enugu']);
-     $enugu =+ count($enugu);
+     $kaduna = DB::select('select * from users where prestate = ?', ['Kaduna']);
+     $kaduna =+ count($kaduna);
 
-     $zamfara = DB::select('select * from users where prestate = ?', ['Zamfara']);
-     $zamfara =+ count($zamfara);
+     $kano = DB::select('select * from users where prestate = ?', ['Kano']);
+     $kano =+ count($kano);
 
-     $yobe = DB::select('select * from users where prestate = ?', ['Yobe']);
-     $yobe =+ count($yobe);
+     $katsina = DB::select('select * from users where prestate = ?', ['Katsina']);
+     $katsina =+ count($katsina);
 
-     $taraba = DB::select('select * from users where prestate = ?', ['Taraba']);
-     $taraba =+ count($taraba);
+     $kebbi = DB::select('select * from users where prestate = ?', ['Kebbi']);
+     $kebbi =+ count($kebbi);
 
-     $imo = DB::select('select * from users where prestate = ?', ['Imo']);
-     $imo =+ count($imo);
+     $kwara = DB::select('select * from users where prestate = ?', ['Kwara']);
+     $kwara =+ count($kwara);
 
-     $fct = DB::select('select * from users where prestate = ?', ['FCT']);
-     $fct =+ count($fct);
+     $nasarawa = DB::select('select * from users where prestate = ?', ['Nasarawa']);
+     $nasarawa =+ count($nasarawa);
+
+     $niger = DB::select('select * from users where prestate = ?', ['Niger']);
+     $niger =+ count($niger);
 
      $ogun = DB::select('select * from users where prestate = ?', ['Ogun']);
      $ogun =+ count($ogun);
@@ -218,14 +221,29 @@ class frontPageController extends Controller
             
             // You could always set them manually
             ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#458333',
-             '#F50011', '#F30000', '#F39110', '#F3C444', '#010444'])
+             '#F50011', '#F30000', '#F39110', '#F3C444', '#010444',
+             '#1196F3', '#110336', '#001107', '#011111', '#010333',
+             '#F50F01', '#F30F78', '#F39F56', '#F3CF34', '#010F12',
+             '#219109', '#F44432', '#4FC765', '#F3C098', '#459012',
+             '#F55678', '#F31234', '#210987', '#876543', '#432109',
+             '#098765', '#567890', '#901234', '#345678', '#789012', '#123456'])
             // Setup the diferent datasets (this is a multi chart)
-            ->values([$abia, $adamawa, $akwaibom, $enugu, $imo, $lagos,
-             $taraba, $yobe, $zamfara, $fct])
+            ->values([$abia, $adamawa, $akwaibom, $enugu, $imo,
+            	$lagos, $taraba, $yobe, $zamfara, $fct,
+            	$anambra, $bauchi, $bayelsa, $benue, $borno,
+            	$crossRivers, $delta, $ebonyi, $edo, $ekiti,
+            	$gombe, $jigawa, $kaduna, $kano, $katsina, 
+            	$kebbi, $kwara, $nasarawa, $niger, $ogun,
+            	$ondo, $osun, $oyo, $plateau, $sokoto, $rivers])
             
             // Setup what the values mean
-            ->labels(['Abia', 'Adamawa', 'Akwa Ibom', 'Enugu', 'Imo', 'Lagos',
-             'Taraba', 'Yobe', 'Zamfara', 'FCT']);
+            ->labels(['Abia', 'Adamawa', 'Akwa Ibom', 'Enugu', 'Imo', 
+            	'Lagos', 'Taraba', 'Yobe', 'Zamfara', 'FCT',
+            	'Anambra', 'Bauchi', 'Bayelsa', 'Benue', 'Borno',
+            	'Cross Rivers', 'Delta', 'Ebonyi', 'Edo', 'Ekiti',
+            	'Gombe', 'Jigawa', 'Kaduna', 'Kano', 'Katsina',
+            	'Kebbi', 'Kwara', 'Nasarawa', 'Niger', 'Ogun',
+            	'Ondo', 'Osun', 'Oyo', 'Plateau', 'Sokoto', 'Rivers']);
 
            // $pie = collect(['partyPie' => 'partyPie']);
 
@@ -313,7 +331,7 @@ class frontPageController extends Controller
      $gpn = DB::select('select * from users where favparty = ?', ['GPN']);
      $gpn =+ count($gpn);
 
-     $bnpp = DB::select('select * from users where favparty = ?', ['bnpp']);
+     $bnpp = DB::select('select * from users where favparty = ?', ['BNPP']);
      $bnpp =+ count($bnpp);
 
      $apda = DB::select('select * from users where favparty = ?', ['APDA']);
