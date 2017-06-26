@@ -670,7 +670,7 @@ a img{
       <div class="android-content mdl-layout__content">
       
 
-        <section style="margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+        <div style="margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
         <div class="mdl-typography--display-2 mdl-typography--font-thin">ABOUT</div>
           <div style="color: black;">
           <p>Votestats is an online platform that models Nigerian Voting System. it provides leads and insights for all politiclal/election stakeholders in Nigeria.</p>
@@ -728,7 +728,7 @@ a img{
           <p style="color: black;">Election in Nigeria is still conducted and controlled by <b>INEC</b>.</p>
           <p style="color: black;">Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
           </div>
-        </section> 
+        </div> 
 
         <div style="width: 100%;">
         <center>
@@ -739,20 +739,7 @@ a img{
       </div>
 
 
-
-
-
-
-
- 
-
-            
-
-            
-          </div>
-        </div>
-
-        <footer class="android-footer mdl-mega-footer">
+ <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
               <button class="mdl-mega-footer--social-btn"></button>
@@ -782,6 +769,19 @@ a img{
           </div>
 
         </footer>
+
+
+
+
+ 
+
+            
+
+            
+          </div>
+        </div>
+
+       
 
 
 

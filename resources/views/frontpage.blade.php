@@ -299,9 +299,9 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('img/p3.jpg') center top no-repeat;
+  
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 .android-wear-band {
@@ -713,7 +713,7 @@ a img{
 
  <div class="android-more-section">
  <a name="more"></a>
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from iVoteiCheck</div>
+          <div class="android-section-title mdl-typography--display-1-color-contrast">More from VoteStats</div>
           <div class="android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
@@ -774,9 +774,12 @@ a img{
           </div>
         </div>
 
-        <div class="mdl-cell" style="width: 100px; padding: 3px;">
-          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
-          <p style="color: black;">VoteStats provides modeled election voting data from mocked election voting process done by its online users. It is only meant for Nigerians and should not be used in place of any official voting process except otherwise.</p>
+        <div style="width: 100px; padding: 0.1px;">
+
+         <div> <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p></div>
+          <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
+          voting process done by its online users. It is only meant for Nigerians and 
+          should not be used in place of any official voting process except otherwise.</p>
           <p style="color: black;">Election in Nigeria is still conducted and controlled by <b>INEC</b>.</p>
           <p style="color: black;">Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
         </div>
