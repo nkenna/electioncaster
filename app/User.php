@@ -261,6 +261,17 @@ public function getAllPresidentVotes(){
     $lp = User::where('president', '=', 'LP')->count();
     $apga = User::where('president', '=', 'APGA')->count();
 
+    $hdp = User::where('president', '=', 'HDP')->count();
+    $upp = User::where('president', '=', 'UPP')->count();
+    $acpn = User::where('president', '=', 'ACPN')->count();
+    $udp = User::where('president', '=', 'UDP')->count();
+    $ncp = User::where('president', '=', 'NCP')->count();
+    $adc = User::where('president', '=', 'ADC')->count();
+    $kp = User::where('president', '=', 'KP')->count();
+    $ad = User::where('president', '=', 'AD')->count();
+    $aa = User::where('president', '=', 'AA')->count();
+    $ppa = User::where('president', '=', 'PPA')->count();
+
 //retrieve age data
  $age18_30 = User::whereYear('dod','<', '1999')
  ->whereYear('dod', '>', '1987')->count();
@@ -292,12 +303,15 @@ public function getAllPresidentVotes(){
             // This defines a preset of colors already done:)
             ->template("material")
             // You could always set them manually
-            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111'])
+            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#4FC333', '#FF55111',
+                '#219FFF', '#F44777', '#098765', '#123111',
+                '#4FC11100', '#F3C100'])
             // Setup the diferent datasets (this is a multi chart)
-            ->values([$apc,$apga,$lp,$pdp])
+            ->values([$apc,$apga,$lp,$pdp,$hdp,$upp,$acpn,$udp,$ncp,$adc,$kp,$ad,$aa,$ppa])
             
             // Setup what the values mean
-            ->labels(['APC', 'APGA', 'LP', 'PDP']);
+            ->labels(['APC', 'APGA', 'LP', 'PDP', 'HDP', 'UPP', 'ACPN', 'UDP', 'NCP',
+                'ADC', 'KP', 'AD', 'AA', 'PPA']);
 
 
 //pie chart- votes by party

@@ -471,7 +471,7 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <h4 style="color: blue;"><b>iVoteiCheck</b></h4>
+          <h4 style="color: blue;"><b>VoteStats</b></h4>
         </span>
         <nav class="mdl-navigation">
            <a class="mdl-navigation__link" href="">Home</a>
@@ -490,7 +490,15 @@ a img{
           @if (Route::has('login'))
                 
                     @if (Auth::check())
-                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                     @else
                         <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>

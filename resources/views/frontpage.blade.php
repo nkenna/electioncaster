@@ -670,9 +670,9 @@ a img{
       <div class="android-content mdl-layout__content">
       <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
-          <div style="color: white;" class="logo-font android-slogan">Be Predictive </div>
-          <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats... Simulate, Model and Predict Nigerian's Voting System.</div>
-         
+          <div style="color: white;" class="logo-font android-slogan">Get Involved </div>
+          <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
+          <div style="color: white;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
 
                        <div class="logo-font android-create-character">
             <a style="color: white;" href="{{ url('/register') }}"><img src="img/not.png"> Create your Profile and Vote</a>
@@ -774,14 +774,14 @@ a img{
           </div>
         </div>
 
-        <div style="width: 100px; padding: 0.1px;">
+        <div style=" padding: 2px; color: black;">
 
-         <div> <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p></div>
+         <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
           voting process done by its online users. It is only meant for Nigerians and 
-          should not be used in place of any official voting process except otherwise.</p>
-          <p style="color: black;">Election in Nigeria is still conducted and controlled by <b>INEC</b>.</p>
-          <p style="color: black;">Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+          should not be used in place of any official voting process except otherwise. 
+          Election in Nigeria is still conducted and controlled by <b>INEC</b>. Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+        
         </div>
 
         <footer class="android-footer mdl-mega-footer">
