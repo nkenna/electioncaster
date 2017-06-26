@@ -206,6 +206,9 @@ class frontPageController extends Controller
      $sokoto = DB::select('select * from users where prestate = ?', ['Sokoto']);
      $sokoto =+ count($sokoto);
 
+       $rivers = DB::select('select * from users where prestate = ?', ['Rivers']);
+     $rivers =+ count($rivers);
+
 
 
 
