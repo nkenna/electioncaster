@@ -591,6 +591,7 @@ a img{
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
           </div>
+          
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
