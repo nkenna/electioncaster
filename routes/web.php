@@ -45,6 +45,10 @@ Route::get('user/update', function () {
     return view('update');
 });
 
+Route::get('/success', function () {
+    return view('success');
+});
+
 Route::get('user/dataview', function () {
     return view('dataview');
 })->middleware('auth');
