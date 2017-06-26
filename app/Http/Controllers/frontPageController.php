@@ -381,12 +381,12 @@ class frontPageController extends Controller
      $sdp =+ count($sdp);
 
      $favPartyLine = Charts::create('area', 'highcharts')
-     ->elementLabel('population')
+     ->elementLabel(' ')
      ->title("Favourity Party")
     ->colors(['#ff0000', '#00ff00', '#0000ff', '#045fff', '#ff0000', '#00ff00', '#0000ff', '#045fff',
     	'#ff0000', '#00ff00', '#0000ff', '#045fff', '#0000ff', '#045fff', '#234567', '#123456', '#1234ff', '#110987', '#045f34',
     	'#234567', '#345678', '#456789', '#567890', '#098765', '#234ff5', '#090909', '#999fff', '#876543', '#432109',
-    	'#234012', '#345011', '#456010', '#567009', '#098008', '#234007', '#090006', '#999005', '#876004', '#432003', , '#432002', , '#432001'])
+    	'#234012', '#345011', '#456010', '#567009', '#098008', '#234007', '#090006', '#999005', '#876004', '#432003', '#432002','#432001'])
     ->labels(['APC', 'APGA', 'LP', 'PDP', 'HDP', 'UPP', 'ACPN', 'UDP',
      'NCP', 'ADC', 'KP', 'AD', 'AA', 'PPA','YPP', 'PRP', 'YDP', 'NUP', 'NGP', 'PPP', 'NEPP',
      'NDLP', 'NAC', 'MMN', 'ID', 'GPN', 'BNPP', 'APDA','APA', 'ADPM', 'ACD', 'A', 'CPP', 'DPP',
