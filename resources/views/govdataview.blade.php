@@ -2116,7 +2116,7 @@ if($("#state").val() == 'Sokoto'){
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="img/android-logo.png">
+           <img class="android-logo-image" src="img/logo.png"> 
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -2168,7 +2168,7 @@ if($("#state").val() == 'Sokoto'){
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="img/android-logo-white.png">
+         <img class="android-logo-image" src="img/logo.png"> 
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Phones</a>
