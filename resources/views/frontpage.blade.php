@@ -640,7 +640,7 @@ a img{
           <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
           <a class="mdl-navigation__link" href="">Support this Project</a>
