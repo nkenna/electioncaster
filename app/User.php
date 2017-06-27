@@ -365,7 +365,7 @@ public function getAllPresidentVotes(){
             // A dimension of 0 means it will take 100% of the space
             ->dimensions(0, 400) // Width x Height
             // This defines a preset of colors already done:)
-            
+
             ->template("material")
             // You could always set them manually
             ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#F3C444', '#333111'])
@@ -414,11 +414,9 @@ public function getAllPresidentVotes(){
   $voteAbia1 = User::where(
         'govstate', '=', 'Abia')->count();
 
-$voteAbia2 = User::where(
-        'govorigin', '=', 'Abia')->count();
-         
 
-        return $voteAbia1 + $voteAbia2; 
+
+        return $voteAbia1 ; 
  
 
 }
@@ -431,37 +429,37 @@ $voteAbia2 = User::where(
         
 //var Abia = ['Select item...', 'Aba North', 'Aba South', 'Arochukwu', 'Bende', 'Ikwuano', 'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obi Ngwa', 'Ohafia', 'Osisioma', 'Ugwunagbo', 'Ukwa East', 'Ukwa West', 'Umuahia North', 'Umuahia South', 'Umu Nneochi'];   
   //retrieving Abia State lga vote data
-  $abiaAbaNorthApc =  User::where('governor', '=', 'APC')->where('govorigin', '=', 'Abia North')->count();
-  $abiaAbaNorthApga =  User::where('governor', '=', 'APGA')->where('govorigin', '=', 'Abia North')->count();
-  $abiaAbaNorthpdp =  User::where('governor', '=', 'PDP')->where('govorigin', '=', 'Abia North')->count();
-  $abiaAbaNorthlp =  User::where('governor', '=', 'LP')->where('govorigin', '=', 'Abia North')->count();     
+  $abiaAbaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Abia North')->count();
+  $abiaAbaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Abia North')->count();
+  $abiaAbaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Abia North')->count();
+  $abiaAbaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Abia North')->count();     
     
-  $abiaAbaSouthApc =  User::where('governor', '=', 'APC')->where('govorigin', '=', 'Abia South')->count();
-  $abiaAbaSouthApga =  User::where('governor', '=', 'APGA')->where('govorigin', '=', 'Abia South')->count();
-  $abiaAbaSouthpdp =  User::where('governor', '=', 'PDP')->where('govorigin', '=', 'Abia South')->count();
-  $abiaAbaSouthlp =  User::where('governor', '=', 'LP')->where('govorigin', '=', 'Abia South')->count(); 
+  $abiaAbaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Abia South')->count();
+  $abiaAbaSouthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Abia South')->count();
+  $abiaAbaSouthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Abia South')->count();
+  $abiaAbaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Abia South')->count(); 
 
-    $abiaArochukwuApc =  User::where('governor', '=', 'APC')->where('govorigin', '=', 'Arochukwu')->count();
-  $abiaArochukwuApga =  User::where('governor', '=', 'APGA')->where('govorigin', '=', 'Arochukwu')->count();
-  $abiaArochukwupdp =  User::where('governor', '=', 'PDP')->where('govorigin', '=', 'Arochukwu')->count();
-  $abiaArochukwulp =  User::where('governor', '=', 'LP')->where('govorigin', '=', 'Arochukwu')->count(); 
+    $abiaArochukwuApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Arochukwu')->count();
+  $abiaArochukwuApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Arochukwu')->count();
+  $abiaArochukwupdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Arochukwu')->count();
+  $abiaArochukwulp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Arochukwu')->count(); 
 
-    $abiaBendeApc =  User::where('governor', '=', 'APC')->where('govorigin', '=', 'Bende')->count();
-  $abiaAbaBendeApga =  User::where('governor', '=', 'APGA')->where('govorigin', '=', 'Bende')->count();
-  $abiaAbaBendepdp =  User::where('governor', '=', 'PDP')->where('govorigin', '=', 'Bende')->count();
-  $abiaAbaBendelp =  User::where('governor', '=', 'LP')->where('govorigin', '=', 'Bende')->count(); 
+    $abiaBendeApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Bende')->count();
+  $abiaAbaBendeApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Bende')->count();
+  $abiaAbaBendepdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Bende')->count();
+  $abiaAbaBendelp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Bende')->count(); 
 
-    $abiaIkwuanoApc =  User::where('governor', '=', 'APC')->where('originlga', '=', 'Ikwuano')->count();
-  $abiaIkwuanoApga =  User::where('governor', '=', 'APGA')->where('originlga', '=', 'Ikwuano')->count();
-  $abiaIkwuanopdp =  User::where('governor', '=', 'PDP')->where('originlga', '=', 'Ikwuano')->count();
-  $abiaIkwuanolp =  User::where('governor', '=', 'LP')->where('originlga', '=', 'Ikwuano')->count(); 
+    $abiaIkwuanoApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ikwuano')->count();
+  $abiaIkwuanoApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ikwuano')->count();
+  $abiaIkwuanopdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ikwuano')->count();
+  $abiaIkwuanolp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ikwuano')->count(); 
 
-    $abiaIsialaNgwaNorthApc =  User::where('governor', '=', 'APC')->where('originlga', '=', 'Isiala Ngwa North')->count();
-  $abiaIsialaNgwaNorthApga =  User::where('governor', '=', 'APGA')->where('originlga', '=', 'Isiala Ngwa North')->count();
-  $abiaIsialaNgwaNorthpdp =  User::where('governor', '=', 'PDP')->where('originlga', '=', 'Isiala Ngwa North')->count();
-  $abiaIsialaNgwaNorthlp =  User::where('governor', '=', 'LP')->where('originlga', '=', 'Isiala Ngwa North')->count(); 
+    $abiaIsialaNgwaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Isiala Ngwa North')->count();
+  $abiaIsialaNgwaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Isiala Ngwa North')->count();
+  $abiaIsialaNgwaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Isiala Ngwa North')->count();
+  $abiaIsialaNgwaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isiala Ngwa North')->count(); 
 
-    $abiaIsialaNgwaSouthApc =  User::where('governor', '=', 'APC')->where('originlga', '=', 'Isiala Ngwa South')->count();
+    $abiaIsialaNgwaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Isiala Ngwa South')->count();
   $abiaIsialaNgwaSouthApga =  User::where('governor', '=', 'APGA')->where('originlga', '=', 'Isiala Ngwa South')->count();
   $abiaIsialaNgwaSouthpdp =  User::where('governor', '=', 'PDP')->where('originlga', '=', 'Isiala Ngwa South')->count();
   $abiaIsialaNgwaSouthlp =  User::where('governor', '=', 'LP')->where('originlga', '=', 'Isiala Ngwa South')->count(); 
