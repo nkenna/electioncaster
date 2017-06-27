@@ -2266,7 +2266,7 @@ if($("#state").val() == 'Sokoto'){
 	@inject('anambraChart', 'App\Http\Controllers\states\anambraController')
 	@inject('allAnambra2', 'App\Http\Controllers\states\anambraController')
 	@inject('allAnambra1', 'App\Http\Controllers\states\anambraController')
-	@inject('$allAnambraGov', 'App\Http\Controllers\states\anambraController')
+	@inject('allAnambraGov', 'App\Http\Controllers\states\anambraController')
 
 	<div id="anambra"><h2>Anambra State data Voting Data</h2>
 	<div>Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
