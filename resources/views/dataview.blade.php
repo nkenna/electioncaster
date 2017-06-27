@@ -544,6 +544,8 @@ a img{
             
              <div class="android-content mdl-layout__content">
 
+@inject('piePresidentVote', 'App\Http\Controllers\dataviewController')
+
 <div>Number of people registered: {{ Auth::user()->getAllVotes() }}</div>
 
 
@@ -561,6 +563,7 @@ a img{
  
   <div>  {!! Auth::user()->getPresidentChart()->get('sabar')->render() !!} </div>
     <div>  {!! Auth::user()->getPresidentChart()->get('tpie')->render() !!} </div>
+    <div>  {!!  $piePresidentVote->getFrontPresidentStatePie()->render() !!} </div>
     <div>  {!! Auth::user()->getPresidentChart()->get('agePres')->render() !!} </div>
 
         </div>

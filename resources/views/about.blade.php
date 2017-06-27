@@ -642,15 +642,15 @@ a img{
          <img class="android-logo-image" src="/css/mdl/logo.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/) }}">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="">Data-Land</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
           
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support this Project</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
            @if (Route::has('login'))

@@ -30,34 +30,34 @@ class frontPageController extends Controller
     $apga = DB::select('select * from users where president = ?', ['APGA']);
      $apga =+ count($apga);
 
-     $acpn = DB::select('select * from users where favparty = ?', ['ACPN']);
+     $acpn = DB::select('select * from users where president = ?', ['ACPN']);
      $acpn =+ count($acpn);
 
-     $aa = DB::select('select * from users where favparty = ?', ['AA']);
+     $aa = DB::select('select * from users where president = ?', ['AA']);
      $aa =+ count($apga);
 
-     $ad = DB::select('select * from users where favparty = ?', ['AD']);
+     $ad = DB::select('select * from users where president = ?', ['AD']);
      $ad =+ count($apga);
 
-     $kp = DB::select('select * from users where favparty = ?', ['KP']);
+     $kp = DB::select('select * from users where president = ?', ['KP']);
      $kp =+ count($kp);
 
-     $adc = DB::select('select * from users where favparty = ?', ['ADC']);
+     $adc = DB::select('select * from users where president = ?', ['ADC']);
      $adc =+ count($apga);
 
-     $ncp = DB::select('select * from users where favparty = ?', ['NCP']);
+     $ncp = DB::select('select * from users where president = ?', ['NCP']);
      $ncp =+ count($ncp);
 
-     $udp = DB::select('select * from users where favparty = ?', ['UDP']);
+     $udp = DB::select('select * from users where president = ?', ['UDP']);
      $udp =+ count($udp);
 
-     $upp = DB::select('select * from users where favparty = ?', ['UPP']);
+     $upp = DB::select('select * from users where president = ?', ['UPP']);
      $upp =+ count($upp);
 
-     $hdp = DB::select('select * from users where favparty = ?', ['HDP']);
+     $hdp = DB::select('select * from users where president = ?', ['HDP']);
      $hdp =+ count($hdp);
 
-     $ppa = DB::select('select * from users where favparty = ?', ['PPA']);
+     $ppa = DB::select('select * from users where president = ?', ['PPA']);
      $ppa =+ count($ppa);
 
 
