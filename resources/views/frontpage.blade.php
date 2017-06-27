@@ -779,7 +779,8 @@ a img{
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
           voting process done by its online users. It is only meant for Nigerians and 
           should not be used in place of any official voting process except otherwise. 
-          Election in Nigeria is still conducted and controlled by <b>INEC</b>. Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+          Election in Nigeria is still conducted and controlled by <b>INEC</b>. </p>
+          <p>Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
         
         </div>
 

@@ -653,11 +653,25 @@ a img{
           <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
-          
-          <a class="mdl-navigation__link" href="">Login</a>
-          <a class="mdl-navigation__link" href="">Register</a>
-          <a class="mdl-navigation__link" href="">Dashboard</a>
-          <a class="mdl-navigation__link" href="">Usernme</a>
+           @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                    <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
           <div class="android-drawer-separator"></div>
           
         </nav>

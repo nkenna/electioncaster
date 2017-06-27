@@ -752,7 +752,7 @@ $("#originlga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
                             <label for="dod" class="col-md-4 control-label">Date of Birth</label>
 
                             <div class="col-md-6">
-                                <input id="dod" type="date" min="1998-01-01" class="form-control" name="dod" required>
+                                <input id="dod" type="date" max="1998-01-01" class="form-control" name="dod" required>
 
                                 @if ($errors->has('dod'))
                                     <span class="help-block">

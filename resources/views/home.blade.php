@@ -406,6 +406,7 @@ a img{
 
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
+      <span class="android-title mdl-layout-title">
      <img class="android-logo-image" src="/css/mdl/logo.png"> 
             
           </span>

@@ -322,7 +322,7 @@ public function getAllPresidentVotes(){
             // A dimension of 0 means it will take 100% of the space
             ->dimensions(1000, 500) // Width x Height
             // This defines a preset of colors already done:)
-            
+            ->elementLabel(' ')
             // You could always set them manually
             ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111'])
             // Setup the diferent datasets (this is a multi chart)
@@ -337,6 +337,7 @@ public function getAllPresidentVotes(){
           
             //bar chart - party votes in states
             $chart4 = Charts::multi('bar', 'highcharts')
+            ->elementLabel(' ')
             // Setup the chart settings
             ->title("Presidential party votes in States")
             // A dimension of 0 means it will take 100% of the space
@@ -364,6 +365,7 @@ public function getAllPresidentVotes(){
             // A dimension of 0 means it will take 100% of the space
             ->dimensions(0, 400) // Width x Height
             // This defines a preset of colors already done:)
+            ->elementLabel(' ')
             ->template("material")
             // You could always set them manually
             ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#F3C444', '#333111'])
