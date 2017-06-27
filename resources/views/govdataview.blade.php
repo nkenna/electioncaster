@@ -2246,21 +2246,36 @@ if($("#state").val() == 'Sokoto'){
 
 
              	<!-- abia state section -->
-	<div id="abia"><h2>Abia State Voting data</h2>
+	<div id="abia">
+	<h2>Abia State Voting data not yet ready</h2>
 	
-	<div>Total number of users in Abia State: {{ Auth::user()->getAllAbia()}} </div>
+	<!--<div>Total number of users in Abia State: {{ Auth::user()->getAllAbia()}} </div>
 	<div>Total number of users using Abia State as Residence: {{ Auth::user()->getAllAbiaResident()}} </div>
 	<div>Total number of users using Abia State as Origin: {{ Auth::user()->getAllAbiaOrigin()}} </div>
 	<div>Total number of Gubernational Votes in Abia State: {{ Auth::user()->getAllAbiaGovVotes()}} </div>
-	<div>  {!! Auth::user()->getAbiaGovChart()->get('abiapartybar')->render() !!} </div>
-
+	<div>  {!! Auth::user()->getAbiaGovChart()->get('abiapartybar')->render() !!} </div>-->
 	</div>
 	<!-- end of abia state section -->
 
 
 	<div id="adamawa"><h2>Adamawa State data is not yet ready</h2></div>
 	<div id="akwaibom"><h2>Akwa Ibom State data is not yet ready</h2></div>
-	<div id="anambra"><h2>Anambra State data is not yet ready</h2></div>
+
+	<!-- anambra state section -->
+	<!-- inject the controllers -->
+	@inject('anambraChart', 'App\Http\Controllers\states\anambraController')
+	@inject('allAnambra2', 'App\Http\Controllers\states\anambraController')
+	@inject('allAnambra1', 'App\Http\Controllers\states\anambraController')
+	@inject('$allAnambraGov', 'App\Http\Controllers\states\anambraController')
+
+	<div id="anambra"><h2>Anambra State data Voting Data</h2>
+	<div>Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
+	<div>Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
+	<div>Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
+
+<div >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
+	</div>
+	<!-- end of anambra state section -->
 	<div id="bauchi"><h2>Bauchi State data is not yet ready</h2></div>
 	<div id="bayelsa"><h2>Bayelsa State data is not yet ready</h2></div>
 	<div id="benue"><h2>Benue State data is not yet ready</h2></div>
