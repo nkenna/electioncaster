@@ -93,6 +93,29 @@ class anambraController extends Controller
 
 public function anambraVoteLGA(){
 
+    $aguataAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APC']);
+    $aguataPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PDP']);
+    $aguataApga = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APGA']);
+    $aguataLp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'LP']);
+    $aguataUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'UPP']);
+    $aguataPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PPA']);
+
+
+    $anambraEastAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'APC']);
+    $anambraEastPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'PDP']);
+    $anambraEastApga = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'APGA']);
+    $anambraEastLp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'LP']);
+    $anambraEastUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'UPP']);
+    $anambraEastPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'PPA']);
+
+
+    $anambraWestAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'APC']);
+    $anambraWestPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'PDP']);
+    $anambraWestApga = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'APGA']);
+    $anambraWestLp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'LP']);
+    $anambraWestUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'UPP']);
+    $anambraWestPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'PPA']);
+
 }
 
 

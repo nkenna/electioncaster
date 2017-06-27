@@ -773,14 +773,14 @@ a img{
           </div>
         </div>
 
-        <div style=" padding: 2px; color: black;">
+        <div style=" padding: 2px; color: black; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
 
          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
           voting process done by its online users. It is only meant for Nigerians and 
           should not be used in place of any official voting process except otherwise. 
           Election in Nigeria is still conducted and controlled by <b>INEC</b>. </p>
-          <p>Go get your VOTER'S CARD. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+          <p>Get your <b>VOTER'S CARD</b>. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
         
         </div>
 
