@@ -93,7 +93,7 @@ class anambraController extends Controller
 
 public function anambraVoteLGA(){
 
-    $aguataAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APC']);
+    $aguataAPC = DB::select(DB::raw("select * from users where govlga = :lga and governor = :gov"), array('lga' => 'Aguata',  'gov' => 'APC'));
     $aguataPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PDP']);
     $aguataApga = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APGA']);
     $aguataLp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'LP']);

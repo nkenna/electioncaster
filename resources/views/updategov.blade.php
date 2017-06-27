@@ -392,7 +392,7 @@ a img{
 
 
 //list the lga
-var Abia = ['Select item...', 'Aba North', 'Aba South', 'Arochukwu', 'Bende', 'Ikwuano', 'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obi Ngwa', 'Ohafia', 'Osisioma', 'Ugwunagbo', 'Ukwa East', 'Ukwa West', 'Umuahia North', 'muahia South', 'Umu Nneochi'];
+var Abia = ['Select item...', 'Aba North', 'Aba South', 'Arochukwu', 'Bende', 'Ikwuano', 'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obi Ngwa', 'Ohafia', 'Osisioma', 'Ugwunagbo', 'Ukwa East', 'Ukwa West', 'Umuahia North', 'Umuahia South', 'Umu Nneochi'];
 var Adamawa = ['Select item...', 'Demsa', 'Fufure', 'Ganye', 'Gayuk', 'Gombi', 'Grie', 'Hong', 'Jada', 'Larmurde', 'Madagali', 'Maiha', 'Mayo Belwa', 'Michika', 'Mubi North', 'Mubi South', 'Numan', 'Shelleng', 'Song', 'Toungo', 'Yola North', 'Yola South'];
 var AkwaIbom = ['Select item...', 'Abak', 'Eastern Obolo', 'Eket', 'Esit Eket', 'Essien Udim', 'Etim Ekpo', 'Etinan', 'Ibeno', 'Ibesikpo Asutan', 'Ibiono-Ibom', 'Ika', 'Ikono', 'Ikot Abasi', 'Ikot Ekpene', 'Ini', 'Itu', 'Mbo', 'Mkpat-Enin', 'Nsit-Atai', 'Nsit-Ibom', 'Nsit-Ubium', 'Obot Akara', 'Okobo', 'Onna', 'Oron', 'Oruk Anam', 'Udung-Uko', 'Ukanafun', 'Uruan', 'Urue-Offong Oruko', 'Uyo'];
 var Anambra = ['Select item...', 'Aguata', 'Anambra East', 'Anambra West', 'Anaocha', 'Awka North', 'Awka South', 'Ayamelum', 'Dunukofia', 'Ekwusigo', 'Idemili North', 'Idemili South', 'Ihiala', 'Njikoka', 'Nnewi North', 'Nnewi South', 'Ogbaru', 'Onitsha North', 'Onitsha South', 'Orumba North', 'Orumba South', 'Oyi'];
@@ -486,29 +486,29 @@ $("#chooseOrigin").change(function(){
         
             $("#votelga").html('');
      for  (var i = 0; i < Zamfara.length; i++) {
-$("#votelga").append('<option value='+Zamfara[i]+'>'+Zamfara[i]+'</option>');
+$("#votelga1").append('<option value='+Zamfara[i]+'>'+Zamfara[i]+'</option>');
        }
     }
 
      if($("#ori").val() == 'Lagos'){
           $("#votelga").html('');
      for  (var i = 0; i < Lagos.length; i++) {
-$("#votelga").append('<option value='+Lagos[i]+'>'+Lagos[i]+'</option>');
+$("#votelga1").append('<option value='+Lagos[i]+'>'+Lagos[i]+'</option>');
        }
     }
 
      if($("#ori").val() == 'Enugu'){
           $("#votelga").html('');
      for  (var i = 0; i < Enugu.length; i++) {
-$("#votelga").append('<option value='+Enugu[i]+'>'+Enugu[i]+'</option>');
+$("#votelga1").append('<option value='+Enugu[i]+'>'+Enugu[i]+'</option>');
        }
     }
 
      if($("#ori").val() == 'Kogi'){
-       alert("msg");
+      
           $("#votelga").html('');
      for  (var i = 0; i < Kogi.length; i++) {
-$("#votelga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
+$("#votelga1").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
        }
     }
 
@@ -714,7 +714,7 @@ $("#chooseState").change(function(){
     <div id="takeState" style="display: none;"> <p>Resident state choosen.</p> 
 
     <div>
-    	<form  role="form" method="post" action="/updateGov" >
+    	<form  role="form" method="POST" action="/updateGov" >
 	 {{ csrf_field() }}
     
 
@@ -785,7 +785,7 @@ $("#chooseState").change(function(){
      <input type="text" name="ori" id="ori" hidden value="{{ Auth::user()->origin }}"  
     </div>
 
-    <select id="votelga" name="votelga">
+    <select id="votelga1" name="votelga1">
 	<option value="">Select LGA</option>
 </select>
 
