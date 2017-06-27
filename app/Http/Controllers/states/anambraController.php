@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\States;
+namespace App\Http\Controllers\states;
 
 
 use Illuminate\Http\Request;
