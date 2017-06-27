@@ -51,22 +51,22 @@ class anambraController extends Controller
     //retrieve votes according to party
     public function anambraVoteParty(){
     	 
-    	 $anambraGovApc = DB::select('select * from users where governor = ? and govstate = ?, ['APC', 'Anambra']');
+    	 $anambraGovApc = DB::select('select * from users where governor = ? and govstate = ?', ['APC', 'Anambra']);
     	 $anambraGovApc =+ count($anambraGovApc);
 
-    	 $anambraGovPdp = DB::select('select * from users where governor = ? and govstate = ?, ['PDP', 'Anambra']');
+    	 $anambraGovPdp = DB::select('select * from users where governor = ? and govstate = ?', ['PDP', 'Anambra']);
     	 $anambraGovPdp =+ count($anambraGovApc);
 
-    	 $anambraGovApga = DB::select('select * from users where governor = ? and govstate = ?, ['APGA', 'Anambra']');
+    	 $anambraGovApga = DB::select('select * from users where governor = ? and govstate = ?', ['APGA', 'Anambra']);
     	 $anambraGovApga =+ count($anambraGovApc);
 
-    	 $anambraGovLp = DB::select('select * from users where governor = ? and govstate = ?, ['LP', 'Anambra']');
+    	 $anambraGovLp = DB::select('select * from users where governor = ? and govstate = ?', ['LP', 'Anambra']);
     	 $anambraGovLp =+ count($anambraGovApc);
 
-         $anambraGovPpa = DB::select('select * from users where governor = ? and govstate = ?, ['PPA', 'Anambra']');
+         $anambraGovPpa = DB::select('select * from users where governor = ? and govstate = ?', ['PPA', 'Anambra']);
          $anambraGovPpa =+ count($anambraGovPpa);
 
-         $anambraGovUpp = DB::select('select * from users where governor = ? and govstate = ?, ['Upp', 'Anambra']');
+         $anambraGovUpp = DB::select('select * from users where governor = ? and govstate = ?', ['UPP', 'Anambra']);
          $anambraGovUpp =+ count($anambraGovUpp);
 
          //bar chart- anambra gov votes by party chart
@@ -90,5 +90,11 @@ class anambraController extends Controller
     }
 
   //var Anambra = ['Select item...', 'Aguata', 'Anambra East', 'Anambra West', 'Anaocha', 'Awka North', 'Awka South', 'Ayamelum', 'Dunukofia', 'Ekwusigo', 'Idemili North', 'Idemili South', 'Ihiala', 'Njikoka', 'Nnewi North', 'Nnewi South', 'Ogbaru', 'Onitsha North', 'Onitsha South', 'Orumba North', 'Orumba South', 'Oyi'];
+
+public function anambraVoteLGA(){
+
+}
+
+
 
 }
