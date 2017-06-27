@@ -406,7 +406,7 @@ a img{
 
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
-      <img class="android-logo-image" src="img/logo.png"> 
+     <img class="android-logo-image" src="/css/mdl/logo.png"> 
             
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
@@ -452,7 +452,7 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-         <img class="android-logo-image" src="img/logo.png"> 
+         <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -469,7 +469,7 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="android-logo-image" src="img/logo.png"> 
+          <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
            <a class="mdl-navigation__link" href="">Home</a>
