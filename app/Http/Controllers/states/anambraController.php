@@ -51,8 +51,8 @@ class anambraController extends Controller
     //retrieve votes according to party
     public function anambraVoteParty(){
     	 
-    	 $anambraGovApc = DB::select('select * from users where governor = ? and govstate = ?', ['APC', 'Anambra']);
-    	 $anambraGovApc =+ count($anambraGovApc);
+    	 $anambraGovApc = DB::select(DB::raw("select * from users where governor = :gov and govstate = :state"), array('gov'=>'APC', 'state'=>'Anambra')); 
+    	 $anambraGovApc =+ count($anambraGovApc);   
 
     	 $anambraGovPdp = DB::select('select * from users where governor = ? and govstate = ?', ['PDP', 'Anambra']);
     	 $anambraGovPdp =+ count($anambraGovApc);
