@@ -70,7 +70,7 @@ class anambraController extends Controller
          $anambraGovUpp =+ count($anambraGovUpp);
 
          //bar chart- anambra gov votes by party chart
- $anambrachart1 = Charts::create('bar', 'highcharts')
+ $anambraChart1 = Charts::create('bar', 'highcharts')
            
             
             ->title("Votes according to party in Abia State")
