@@ -569,7 +569,7 @@ a img{
         </div>
 
         <div>
-          <h4>Comments Section coming soon</h4>
+          <div id="disqus_thread"></div>
         </div>
        
        <div>

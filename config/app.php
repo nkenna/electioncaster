@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
+        Yajra\Disqus\DisqusServiceProvider::class,
 
         /*
          * Package Service Providers...
