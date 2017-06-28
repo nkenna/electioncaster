@@ -53,16 +53,16 @@ class dataviewController extends Controller
      $acpn =+ count($acpn);
 
      $aa = DB::select('select * from users where president = ?', ['AA']);
-     $aa =+ count($apga);
+     $aa =+ count($aa);
 
      $ad = DB::select('select * from users where president = ?', ['AD']);
-     $ad =+ count($apga);
+     $ad =+ count($ad);
 
      $kp = DB::select('select * from users where president = ?', ['KP']);
      $kp =+ count($kp);
 
      $adc = DB::select('select * from users where president = ?', ['ADC']);
-     $adc =+ count($apga);
+     $adc =+ count($adc);
 
      $ncp = DB::select('select * from users where president = ?', ['NCP']);
      $ncp =+ count($ncp);

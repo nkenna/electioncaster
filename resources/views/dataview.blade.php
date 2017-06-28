@@ -563,15 +563,13 @@ a img{
   <div> {!! Auth::user()->getPresidentChart()->get('tbar')->render() !!}</div>
  
   <div>  {!! Auth::user()->getPresidentChart()->get('sabar')->render() !!} </div>
-    <div>  {!! Auth::user()->getPresidentChart()->get('tpie')->render() !!} </div>
+    
     <div>  {!!  $piePresidentVote->getPresidentPartyPie()->render() !!} </div>
     <div>  {!! Auth::user()->getPresidentChart()->get('agePres')->render() !!} </div>
 
         </div>
 
-        <div>
-          <div id="disqus_thread"></div>
-        </div>
+        <div id="disqus_thread"></div>
        
        <div>
          <div><a class="glow" href="">Data for Gubernational Votes</a></div>
