@@ -256,10 +256,7 @@ public function anambraVoteLGA(){
             ->template("material")
             // You could always set them manually
             ->colors(['#2196F3', '#F44336', '#FFC107', '#F0C545', '#55C107',
-                '#219954', '#F44098', '#FFC133', '#000545', '#877107',
-                '#123456', '#876336', '#120107', '#F0C888', '#55C240',
-                '#219FFF', '#F44543', '#FFC678', '#300545', '#588107',
-                '#211113', '#123000'])
+                '#219954'])
             // Setup the diferent datasets (this is a multi chart)
           
 
@@ -268,7 +265,7 @@ public function anambraVoteLGA(){
             ->dataset('LP', [$aguataLp,$anambraEastLp,$anambraWestLp,$anaochaLp,$awkaNorthLp,$awkaSouthLp,$ayamelumLp,$dunukofiaLp,$ekwusigoLp,$idemiliNorthLp,$idemiliSouthLp,$ihialaLp,$njikokaLp,$nnewiNorthLp,$nnewiSouthLp,$ogbaruLp,$onitshaNorthLp,$onitshaSouthLp,$orumbaNorthLp,$orumbaSouthLp,$oyiLp])
             ->dataset('PDP', [$aguataPdp,$anambraEastPdp,$anambraWestPdp,$anaochaPdp,$awkaNorthPdp,$awkaSouthPdp,$ayamelumPdp,$dunukofiaPdp,$ekwusigoPdp,$idemiliNorthPdp,$idemiliSouthPdp,$ihialaPdp,$njikokaPdp,$nnewiNorthPdp,$nnewiSouthPdp,$ogbaruPdp,$onitshaNorthPdp,$onitshaSouthPdp,$orumbaNorthPdp,$orumbaSouthPdp,$oyiPdp])
             ->dataset('UPP', [$aguataUpp,$anambraEastUpp,$anambraWestUpp,$anaochaUpp,$awkaNorthUpp,$awkaSouthUpp,$ayamelumUpp,$dunukofiaUpp,$ekwusigoUpp,$idemiliNorthUpp,$idemiliSouthUpp,$ihialaUpp,$njikokaUpp,$nnewiNorthUpp,$nnewiSouthUpp,$ogbaruUpp,$onitshaNorthUpp,$onitshaSouthUpp,$orumbaNorthUpp,$orumbaSouthUpp,$oyiUpp])
-             ->dataset('PPA', [$aguataPpa,$anambraEastPpa,$anambraWestPpa,$anaochaPpa,$awkaNorthPpa,$awkaSouthPpa,$ayamelumPpa,$dunukofiaPpa,$ekwusigoPpa,$idemiliNorthPpa,$idemiliSouthPpa,$ihialaPpa,$njikokaPpa,$nnewiNorthPpa,$nnewiSouthPpa,$ogbaruPpa,$onitshaNorthPpa,$onitshaSouthPpa,$orumbaNorthPpa,$orumbaSouthPpa,$oyiPpa])
+            ->dataset('PPA', [$aguataPpa,$anambraEastPpa,$anambraWestPpa,$anaochaPpa,$awkaNorthPpa,$awkaSouthPpa,$ayamelumPpa,$dunukofiaPpa,$ekwusigoPpa,$idemiliNorthPpa,$idemiliSouthPpa,$ihialaPpa,$njikokaPpa,$nnewiNorthPpa,$nnewiSouthPpa,$ogbaruPpa,$onitshaNorthPpa,$onitshaSouthPpa,$orumbaNorthPpa,$orumbaSouthPpa,$oyiPpa])
             ->labels(['Aguata','Anambra East','Anambra West','Anaocha','Awka North','Awka South',
                 'Awka South','Ayamelum','Dunukofia','Ekwusigo','Idemili North',
                 'Idemili South', 'Ihiala', 'Njikoka', 'Nnewi North','Nnewi South','Ogbaru',
