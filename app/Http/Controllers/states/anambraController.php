@@ -274,7 +274,7 @@ public function anambraVoteLGA(){
                 'Idemili South', 'Ihiala', 'Njikoka', 'Nnewi North','Nnewi South','Ogbaru',
                 'Onitsha North', 'Onitsha South', 'Orumba North','Orumba South','Oyi']);
 
-            return anambraLgaParty;
+            return $anambraLgaParty;
 }
 
 
