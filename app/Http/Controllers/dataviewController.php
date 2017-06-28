@@ -89,7 +89,7 @@ class dataviewController extends Controller
             // Setup the chart settings
             ->title("president Votes according to party")
             // A dimension of 0 means it will take 100% of the space
-            ->dimensions(0, 400) // Width x Height
+            ->dimensions(1000, 500) // Width x Height
             // This defines a preset of colors already done:)
             ->template("material")
             // You could always set them manually
