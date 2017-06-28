@@ -570,6 +570,8 @@ a img{
         </div>
 
         <div id="disqus_thread"></div>
+
+                            
        
        <div>
          <div><a class="glow" href="">Data for Gubernational Votes</a></div>
