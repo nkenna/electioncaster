@@ -236,7 +236,7 @@ public function anambraVoteLGA(){
     $orumbaSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'UPP']);
     $orumbaSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'PPA']);
 
-    $oyihAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APC']);
+    $oyiAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APC']);
     $oyiPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'PDP']);
     $oyiApga = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APGA']);
     $oyiLp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'LP']);
