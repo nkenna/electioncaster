@@ -564,7 +564,7 @@ a img{
  
   <div>  {!! Auth::user()->getPresidentChart()->get('sabar')->render() !!} </div>
     <div>  {!! Auth::user()->getPresidentChart()->get('tpie')->render() !!} </div>
-    <div>  {!!  $piePresidentVote->piePresidentVote->render() !!} </div>
+    <div>  {!!  $piePresidentVote->getPresidentPartyPie()->render() !!} </div>
     <div>  {!! Auth::user()->getPresidentChart()->get('agePres')->render() !!} </div>
 
         </div>
