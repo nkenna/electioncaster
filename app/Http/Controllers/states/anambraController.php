@@ -92,7 +92,7 @@ class anambraController extends Controller
  
 public function anambraVoteLGA(){
 
-    $aguataAPC = DB::select(DB::raw("select * from users where govlga = :lga and governor = :gov"), array('lga' => 'Aguata',  'gov' => 'APC'));
+    $aguataAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata',  'APC']);
     $aguataPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PDP']);
     $aguataApga = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APGA']);
     $aguataLp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'LP']);
@@ -272,7 +272,7 @@ public function anambraVoteLGA(){
                 'Onitsha North', 'Onitsha South', 'Orumba North','Orumba South','Oyi']);
 
             return $anambraLgaParty;
-}
+ }
 
 
 }
