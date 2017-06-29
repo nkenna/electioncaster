@@ -571,6 +571,25 @@ a img{
 
 	</style>
 
+
+  <script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+
+ga('create', 'UA-101898149-1', 'auto');
+
+ga('send', 'pageview');
+
+
+</script>
+
   {!! Charts::assets() !!}
 </head>
 <body>
@@ -634,7 +653,7 @@ a img{
         <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
           <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
           <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
