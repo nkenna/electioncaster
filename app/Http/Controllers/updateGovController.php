@@ -13,7 +13,9 @@ use Carbon\Carbon;
 
 class updateGovController extends Controller
 {
-    protected $redirectTo = '/user/updategov';
+   protected $redirectTo = '/login';
+
+   
     public function __construct()
     {
         $this->middleware('auth');
