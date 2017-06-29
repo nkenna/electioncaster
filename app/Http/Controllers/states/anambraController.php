@@ -215,8 +215,8 @@ public function anambraVoteLGA(){
         $ayamelumAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'APC']);
     $ayamelumAPC =+ count($ayamelumAPC);
 
-    $ayamelumAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'PDP']);
-    $ayamelumAPC =+ count($ayamelumAPC);
+    $ayamelumPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'PDP']);
+    $ayamelumPdp =+ count($ayamelumPdp);
 
     $ayamelumApga = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'APGA']);
     $ayamelumApga =+ count($ayamelumApga);
