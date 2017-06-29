@@ -75,7 +75,7 @@ class anambraController extends Controller
  $anambraChart1 = Charts::create('bar', 'highcharts')
            
             
-            ->title("Votes according to party in Abia State")
+            ->title("Votes according to party in Anambra State")
             ->dimensions(0, 400) // Width x Height
             ->template("material")
             // You could always set them manually
@@ -509,7 +509,7 @@ $orumbaNorthPpa =+ count($orumbaNorthPpa);
             $anambraLgaParty = Charts::multi('bar', 'highcharts')
             ->elementLabel(' ')
             // Setup the chart settings
-            ->title("Gubernatorial party votes in Anambra LGAs")
+            ->title("Distribution of Gubernatorial votes according to party votes in Anambra LGAs")
             // A dimension of 0 means it will take 100% of the space
             ->dimensions(0, 400) // Width x Height
 

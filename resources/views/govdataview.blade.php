@@ -6,12 +6,11 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteiCheck - Voting Board</title>
+<title>VoteStats - Voting Board</title>
     <!-- Styles -->
     
     <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+  
      <script src="/js/jquery-3.2.1.min.js"></script>
 
 <!-- Styles -->
@@ -2129,18 +2128,29 @@ if($("#state").val() == 'Sokoto'){
             </div>
           </div>
           <!-- Navigation -->
+         
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
+           
            
                
           @if (Route::has('home'))
                 
                     @if (Auth::check())
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/home') }}">Dashboard</a>
+                   <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                     @else
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/register') }}">Register</a>
@@ -2150,16 +2160,15 @@ if($("#state").val() == 'Sokoto'){
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-           <img class="android-logo-image" src="/css/mdl/logo.png">
+         <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            
  
           </ul>
         </div>
@@ -2168,38 +2177,49 @@ if($("#state").val() == 'Sokoto'){
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-         <img class="android-logo-image" src="/css/mdl/logo.png">
+          <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+           <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+         
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
+          
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">Android on Google+</a>
-          <a class="mdl-navigation__link" href="">Android on Twitter</a>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                       <a class="mdl-navigation__link " href="{{ url('/home') }}">Dashboard</a>
+                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
+          
+         
+          
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-          <a class="mdl-navigation__link" href="">Android SDK</a>
         </nav>
       </div>
-            
              <div class="android-content mdl-layout__content">
 
-             <div>
+             <div style="height: 500px; width: 100%;">
 
             
              	<select id="state" name="state">
@@ -2270,16 +2290,38 @@ if($("#state").val() == 'Sokoto'){
 	@inject('anambraLgaParty', 'App\Http\Controllers\states\anambraController')
 	@inject('anambraAge', 'App\Http\Controllers\states\anambraController')
 
-	<div id="anambra"><h2>Anambra State data Voting Data</h2>
-	<div>Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
-	<div>Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
-	<div>Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
+	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;" id="anambra"><h2>Anambra State data Voting Data</h2>
+	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
+	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
+	<div class="mdl-typography--headline mdl-typography--font-thin">Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
 
-<div >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
-<div >  {!! $anambraAge->anambraVoteAge()->render() !!} </div>
+<div style="width: 100%; padding: 3px;" >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
+<div style="width: 100%; padding: 3px;">  {!! $anambraAge->anambraVoteAge()->render() !!} </div>
 
-<div >  {!! $anambraLgaParty->anambraVoteLGA()->render() !!} </div>
+<div style="width: 100%; padding: 3px;">  {!! $anambraLgaParty->anambraVoteLGA()->render() !!} </div>
 
+ <div id="disqus_thread"></div>
+ <script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://www.votestats.com.ng/user/govdataview';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'govDataviewAnambra'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://votestats.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
 
 
 	</div>
@@ -2322,8 +2364,36 @@ if($("#state").val() == 'Sokoto'){
 
              </div>
 
-                 <footer class="mdl-mega-footer">
-             <h6 align="left">Copyright © iVoteiCheck 2017 All Rights Reserved</h6> 
+           
+<footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
+            <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            
+            <a class="android-link mdl-typography--font-light" href="">SiteMap</a>
+            <a class="android-link mdl-typography--font-light" href="">Disclaimer</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
         </footer>
 
 
@@ -2332,6 +2402,6 @@ if($("#state").val() == 'Sokoto'){
            
 
 
-
+<script id="dsq-count-scr" src="//votestats.disqus.com/count.js" async></script>
 	</body>
 	</html>
