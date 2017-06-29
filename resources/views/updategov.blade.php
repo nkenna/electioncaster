@@ -685,22 +685,22 @@ $("#chooseState").change(function(){
 
 
 
- <div style="padding: 5px;"> Hello {{ Auth::user()->username }}, You can vote here.</h4> </div>
+ <div class="mdl-typography--font-regular" style="padding: 5px;"> Hello {{ Auth::user()->username }}, You can vote here.</h4> </div>
 
 
 
     <!-- governor voting panel -->
-<div style="padding: 5px;" class="mdl-typography--headline mdl-typography--font-thin">
-<div class="mdl-typography--headline mdl-typography--font-thin">Governor Voting Panel </div>
+<div style="padding: 5px;" class="mdl-typography--font-regular mdl-typography--font-thin">
+<div class="mdl-typography--headline mdl-typography--font-thin">Gubernatorial Voting Panel </div>
 
 
 <!-- resisent and state are the same -->
 @if (Auth::user()->resident == Auth::user()->origin)
-          <div> <p>Resident state and origin are the same.</p> </div>
+          
 
 <div>
 	<div>
-    	<form  role="form" method="post" action="/success" >
+    	<form  role="form" method="post" action="/updategov" >
 	 {{ csrf_field() }}
     
 
@@ -787,7 +787,7 @@ $("#chooseState").change(function(){
 
 <!-- resisent and state are not the same -->
 @elseif (Auth::user()->resident != Auth::user()->origin)
-	<div> <p>Resident state and origin are not the same.</p> </div>
+	
 	<div>
     <label for="chooseState">Choose to vote from {{ Auth::user()->resident }} </label>
      <input type="checkbox" name="chooseState" id="chooseState">   
@@ -799,7 +799,7 @@ $("#chooseState").change(function(){
     </div>
 
     <!-- Vote from resident state -->
-    <div id="takeState" style="display: none;"> <p>Resident state choosen.</p> 
+    <div class="mdl-typography--font-regular" id="takeState" style="display: none;"> <p>Resident state choosen.</p> 
 
     <div>
     	<form  role="form" method="POST" action="/updategov" >
@@ -863,7 +863,7 @@ $("#chooseState").change(function(){
     </div>
 
     <!-- Vote from state of origin -->
-    <div id="takeOrigin" style="display: none;"> <p>origin state choosen.</p>
+    <div id="takeOrigin" style="display: none;"> <p>Origin state choosen.</p>
     	<div>
     	<form  role="form" method="post" action="/updategov" >
 	 {{ csrf_field() }}

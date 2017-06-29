@@ -2219,7 +2219,7 @@ if($("#state").val() == 'Sokoto'){
       </div>
              <div class="android-content mdl-layout__content">
 
-             <div style="height: 500px; width: 100%;">
+             <div style="height: auto; width: 100%;">
 
             
              	<select id="state" name="state">
@@ -2290,9 +2290,9 @@ if($("#state").val() == 'Sokoto'){
 	@inject('anambraLgaParty', 'App\Http\Controllers\states\anambraController')
 	@inject('anambraAge', 'App\Http\Controllers\states\anambraController')
 
-	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;" id="anambra"><h2>Anambra State data Voting Data</h2>
-	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
-	<div class="mdl-typography--headline mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;" id="anambra"><h2>Anambra State data Voting Data</h2>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
 	<div class="mdl-typography--headline mdl-typography--font-thin">Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
 
 <div style="width: 100%; padding: 3px;" >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
