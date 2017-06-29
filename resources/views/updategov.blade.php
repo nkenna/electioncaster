@@ -463,6 +463,225 @@ $("#votelga").append('<option value='+Enugu[i]+'>'+Enugu[i]+'</option>');
 $("#votelga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
        }
     }
+
+     if($("#sta").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+    if($("#sta").val() == 'Anambra'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Anambra.length; i++) {
+$("#votelga1").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
+       }
+    }
+
+
+
 })
 
 
@@ -480,6 +699,14 @@ $("#chooseOrigin").change(function(){
            $("#takeState").hide();
            $("#takeOrigin").show();
        }
+
+       if($("#ori").val() == 'Anambra'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Anambra.length; i++) {
+$("#votelga1").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
+       }
+    }
 
 
  if($("#ori").val() == 'Zamfara'){
@@ -508,9 +735,19 @@ $("#votelga1").append('<option value='+Enugu[i]+'>'+Enugu[i]+'</option>');
       
           $("#votelga").html('');
      for  (var i = 0; i < Kogi.length; i++) {
-$("#votelga1").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
+$("#votelga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
        }
     }
+
+    if($("#ori").val() == 'Imo'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Imo.length; i++) {
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+       }
+    }
+
+
 
         })
 
@@ -785,7 +1022,7 @@ $("#chooseState").change(function(){
      <input type="text" name="ori" id="ori" hidden value="{{ Auth::user()->origin }}"  
     </div>
 
-    <select id="votelga1" name="votelga1">
+    <select id="votelga" name="votelga">
 	<option value="">Select LGA</option>
 </select>
 
