@@ -611,7 +611,7 @@ s.setAttribute('data-timestamp', +new Date());
                             
        
        <div>
-         <div><a class="glow" href="">Data for Gubernational Votes</a></div>
+         <div><a class="glow" href="{{ url('/user/govdataview') }}">Data for Gubernational Votes</a></div>
 
        </div>       
 
