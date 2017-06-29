@@ -636,7 +636,7 @@ $("#chooseState").change(function(){
 
 <div>
 	<div>
-    	<form  role="form" method="post" action="/updateGov" >
+    	<form  role="form" method="post" action="/updategov" >
 	 {{ csrf_field() }}
     
 
@@ -714,7 +714,7 @@ $("#chooseState").change(function(){
     <div id="takeState" style="display: none;"> <p>Resident state choosen.</p> 
 
     <div>
-    	<form  role="form" method="POST" action="/updateGov" >
+    	<form  role="form" method="POST" action="/updategov" >
 	 {{ csrf_field() }}
     
 
@@ -777,7 +777,7 @@ $("#chooseState").change(function(){
     <!-- Vote from state of origin -->
     <div id="takeOrigin" style="display: none;"> <p>origin state choosen.</p>
     	<div>
-    	<form  role="form" method="post" action="/updateGov" >
+    	<form  role="form" method="post" action="/updategov" >
 	 {{ csrf_field() }}
     
 

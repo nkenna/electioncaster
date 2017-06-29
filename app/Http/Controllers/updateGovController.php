@@ -13,7 +13,7 @@ use Carbon\Carbon;
 
 class updateGovController extends Controller
 {
-    protected $redirectTo = '/user/updateGov';
+    protected $redirectTo = '/user/updategov';
     public function __construct()
     {
         $this->middleware('auth');
@@ -21,7 +21,7 @@ class updateGovController extends Controller
 
      public function index()
     {
-        return view('user/updateGov');
+        return view('user/updategov');
     }
 
 
@@ -37,7 +37,7 @@ class updateGovController extends Controller
     	$user->save();
     	$request->session()->flash('message', 'Voting Successful');
         
-         return view('updateGov');
+         return view('updategov');
         //return redirect()->route('update');
         
     }
