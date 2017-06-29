@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Charts;
 use Carbon\Carbon;
+use App\User;
 
 class anambraController extends Controller
 {
@@ -277,27 +278,27 @@ public function anambraVoteLGA(){
 
  public function anambraVoteAge(){
     //retrieve age data
- $age18_30 = DB::whereYear('dod','<', '1999')
+ $age18_30 = User::whereYear('dod','<', '1999')
  ->whereYear('dod', '>', '1987')
  ->where('govstate', 'Anambra')->count();
 
- $age31_43 = DB::whereYear('dod','<', '1986')
+ $age31_43 = User::whereYear('dod','<', '1986')
  ->whereYear('dod', '>', '1974')
  ->where('govstate', 'Anambra')->count();
 
- $age44_56 = DB::whereYear('dod','<', '1973')
+ $age44_56 = User::whereYear('dod','<', '1973')
  ->whereYear('dod', '>', '1961')
  ->where('govstate', 'Anambra')->count();
 
- $age57_69 = DB::whereYear('dod','<', '1960')
+ $age57_69 = User::whereYear('dod','<', '1960')
  ->whereYear('dod', '>', '1948')
  ->where('govstate', 'Anambra')->count();
 
- $age70_82 = DB::whereYear('dod','<', '1947')
+ $age70_82 = User::whereYear('dod','<', '1947')
  ->whereYear('dod', '>', '1935')
  ->where('govstate', 'Anambra')->count();
 
- $age83 = DB::whereYear('dod','<=', '1934')
+ $age83 = User::whereYear('dod','<=', '1934')
  ->where('govstate', 'Anambra')->count();
 
 
