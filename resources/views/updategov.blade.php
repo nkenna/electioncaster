@@ -546,6 +546,13 @@ $("#votelga").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
        }
     }
 
+ if($("#ori").val() == 'Anambra'){
+      
+          $("#votelga").html('');
+     for  (var i = 0; i < Anambra.length; i++) {
+$("#votelga").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
+       }
+    }
 
 
         })
