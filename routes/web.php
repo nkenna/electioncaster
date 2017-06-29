@@ -58,7 +58,7 @@ Route::get('user/govdataview', function () {
 })->middleware('auth');
 
 Route::get('user/updategov', function () {
-    return view('user/updategov');
+    return view('updategov');
 })->middleware('auth');
 
 //Route::get('user/dataview', function () {
@@ -70,7 +70,7 @@ Route::get('user/updategov', function () {
 
 Route::match(['get','post'],'/update', 'updateController@update')->name('update');
 
-Route::match(['get','post'],'/updateGov', 'updateGovController@updateGov')->name('success');
+Route::match(['get','post'],'/updateGov', 'updateGovController@updateGov')->name('updategov');
 
 Auth::routes();
 
