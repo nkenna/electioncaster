@@ -379,7 +379,7 @@ $ihialaPpa =+ count($ihialaPpa);
     $nnewiSouthApga =+ count($nnewiSouthApga);
 
     $nnewiSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'LP']);
-    $$nnewiSouthLp =+ count($nnewiSouthLp);
+    $nnewiSouthLp =+ count($nnewiSouthLp);
 
     $nnewiSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'UPP']);
     $nnewiSouthUpp =+ count($nnewiSouthUpp);
@@ -498,7 +498,7 @@ $orumbaNorthPpa =+ count($orumbaNorthPpa);
 
     $oyiLp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'LP']);
     $oyiLp =+ count($oyiLp);
-    
+
     $oyiUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'UPP']);
     $oyiUpp =+ count($oyiUpp);
 
