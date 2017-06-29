@@ -70,7 +70,7 @@ Route::get('user/updategov', function () {
 
 Route::match(['get','post'],'/update', 'updateController@update')->name('update');
 
-Route::match(['get','post'],'/updategov', 'updateGovController@updateGov')->name('updategov');
+Route::match(['get','post'],'/updategov', 'updateGovController@updateGov')->name('success');
 
 Auth::routes();
 
