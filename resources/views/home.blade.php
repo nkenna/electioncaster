@@ -528,7 +528,7 @@ ga('send', 'pageview');
 <div style="margin-top: 50px;" >
     <div class="android-card-container mdl-grid">
        <div style="background: white; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
-      <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
+      <div style="width: 100%; text-align: justify;" class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
    <div style="width: 100%; text-align: justify;" class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
@@ -591,10 +591,10 @@ ga('send', 'pageview');
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">Choose State,LGA and Political Party, then vote. You can only choose 
-                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting.</span>
+                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting. <b style="color: red;">Only Anambra State is supported for now.</b></span>
               </div>
               <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/user/updategov') }}">
                   Enter to vote
                    <i class="material-icons">chevron_right</i>
                  </a>
