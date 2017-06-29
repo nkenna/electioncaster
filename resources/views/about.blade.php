@@ -681,7 +681,7 @@ a img{
       <div class="android-content mdl-layout__content">
       
 
-        <div style="margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+        <div style="text-align: left; margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
         <div class="mdl-typography--display-2 mdl-typography--font-thin">ABOUT</div>
           <div style="color: black;">
           <p>Votestats is an online platform that models Nigerian Voting System. it provides leads and insights for all politiclal/election stakeholders in Nigeria.</p>

@@ -678,7 +678,7 @@ $("#chooseState").change(function(){
 
 
 
- <div style="padding: 5px;"> Hello {{ Auth::user()->username }}, fYou can vote here.</h4> </div>
+ <div style="padding: 5px;"> Hello {{ Auth::user()->username }}, You can vote here.</h4> </div>
 
 
 
