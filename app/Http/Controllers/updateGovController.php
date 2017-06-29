@@ -9,13 +9,14 @@ use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
+use Illuminate\Routing\Redirector;
 
 
 class updateGovController extends Controller
 {
    protected $redirectTo = '/login';
 
-   
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -39,7 +40,7 @@ class updateGovController extends Controller
     	$user->save();
     	$request->session()->flash('message', 'Voting Successful');
         
-         return view('success');
+         return redirect()->('success');;
         //return redirect()->route('update');
         
     }
