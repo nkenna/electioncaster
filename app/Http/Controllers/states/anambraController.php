@@ -95,135 +95,358 @@ class anambraController extends Controller
 public function anambraVoteLGA(){
 
     $aguataAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata',  'APC']);
+     $aguataAPC =+ count($aguataAPC);
+    
     $aguataPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PDP']);
+    $aguataPdp =+ count($aguataPdp);
+    
     $aguataApga = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'APGA']);
+   $aguataApga =+ count($aguataApga);
+   
     $aguataLp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'LP']);
+   $aguataLp =+ count($aguataLp);
+    
     $aguataUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'UPP']);
+    $aguataUpp =+ count($aguataUpp);
+   
     $aguataPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Aguata', 'PPA']);
+    $aguataPpa =+ count($aguataPpa);
 
 
     $anambraEastAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'APC']);
+    $anambraEastAPC =+ count($anambraEastAPC);
+
     $anambraEastPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'PDP']);
+    $anambraEastPdp =+ count($anambraEastPdp);
+
     $anambraEastApga = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'APGA']);
+    $anambraEastApga =+ count($anambraEastApga);
+
     $anambraEastLp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'LP']);
+    $anambraEastLp =+ count($anambraEastLp);
+
     $anambraEastUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'UPP']);
+    $anambraEastUpp =+ count($anambraEastUpp);
+
     $anambraEastPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra East', 'PPA']);
+    $anambraEastPpa =+ count($anambraEastPpa);
+
 
 
     $anambraWestAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'APC']);
+    $anambraWestAPC =+ count($anambraWestAPC);
+
     $anambraWestPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'PDP']);
+    $anambraWestPdp =+ count($anambraWestPdp);
+
     $anambraWestApga = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'APGA']);
+    $anambraWestApga =+ count($anambraWestApga);
+
     $anambraWestLp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'LP']);
+    $anambraWestLp =+ count($anambraWestLp);
+
     $anambraWestUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'UPP']);
+    $anambraWestUpp =+ count($anambraWestUpp);
+
     $anambraWestPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Anambra West', 'PPA']);
+    $anambraWestPpa =+ count($anambraWestPpa);
+
+
 
      $anaochaAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'APC']);
+    $anaochaAPC =+ count($anaochaAPC);
+
     $anaochaPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'PDP']);
+     $anaochaPdp =+ count( $anaochaPdp);
+
     $anaochaApga = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'APGA']);
+    $anaochaApga =+ count($anaochaApga);
+
     $anaochaLp = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'LP']);
+    $anaochaLp =+ count($anaochaLp);
+
     $anaochaUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'UPP']);
+    $anaochaUpp=+ count($anaochaUpp);
+
     $anaochaPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Anaocha', 'PPA']);
+    $anaochaPpa =+ count($anaochaPpa);
+
+
 
      $awkaNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'APC']);
+    $awkaNorthAPC =+ count($awkaNorthAPC);
+
     $awkaNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'PDP']);
+    $awkaNorthPdp =+ count($awkaNorthPdp);
+
     $awkaNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'APGA']);
+    $awkaNorthApga =+ count($awkaNorthApga);
+
     $awkaNorthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'LP']);
+    $awkaNorthLp =+ count($awkaNorthLp);
+
     $awkaNorthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'UPP']);
+    $awkaNorthUpp =+ count($awkaNorthUpp);
+
     $awkaNorthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Awka North', 'PPA']);
+    $awkaNorthPpa =+ count($awkaNorthPpa);
+
 
      $awkaSouthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'APC']);
+    $awkaSouthAPC =+ count( $awkaSouthAPC);
+
     $awkaSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'PDP']);
+   $awkaSouthPdp =+ count($awkaSouthPdp);
+
     $awkaSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'APGA']);
+    $awkaSouthApga =+ count($awkaSouthApga);
+
     $awkaSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'LP']);
+    $awkaSouthLp =+ count($awkaSouthLp);
+
     $awkaSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'UPP']);
+    $awkaSouthUpp =+ count($awkaSouthUpp);
+
     $awkaSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Awka South', 'PPA']);
+    $awkaSouthPpa =+ count($awkaSouthPpa);
+
 
 
         $ayamelumAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'APC']);
-    $ayamelumPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'PDP']);
+    $ayamelumAPC =+ count($ayamelumAPC);
+
+    $ayamelumAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'PDP']);
+    $ayamelumAPC =+ count($ayamelumAPC);
+
     $ayamelumApga = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'APGA']);
+    $ayamelumApga =+ count($ayamelumApga);
+
     $ayamelumLp = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'LP']);
+   $ayamelumLp =+ count($ayamelumLp);
+
     $ayamelumUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'UPP']);
+    $ayamelumUpp =+ count($ayamelumUpp);
+
     $ayamelumPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Ayamelum', 'PPA']);
+    $ayamelumPpa =+ count($ayamelumPpa);
+
 
 
         $dunukofiaAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'APC']);
+    $dunukofiaAPC =+ count($dunukofiaAPC);
+
     $dunukofiaPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'PDP']);
+    $dunukofiaPdp =+ count($dunukofiaPdp);
+
     $dunukofiaApga = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'APGA']);
+    $dunukofiaApga =+ count($dunukofiaApga);
+
     $dunukofiaLp = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'LP']);
+   $dunukofiaLp =+ count($dunukofiaLp);
+
     $dunukofiaUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'UPP']);
+    $dunukofiaUpp =+ count($dunukofiaUpp);
+
     $dunukofiaPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Dunukofia', 'PPA']);
+    $dunukofiaPpa =+ count($dunukofiaPpa);
+
+
 
         $ekwusigoAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'APC']);
+     $ekwusigoAPC =+ count( $ekwusigoAPC);
+
     $ekwusigoPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'PDP']);
+    $ekwusigoPdp =+ count($ekwusigoPdp);
+
     $ekwusigoApga = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'APGA']);
+    $ekwusigoApga =+ count($ekwusigoApga);
+
     $ekwusigoLp = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'LP']);
+   $ekwusigoLp =+ count($ekwusigoLp);
+
     $ekwusigoUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'UPP']);
+   $ekwusigoUpp =+ count($ekwusigoUpp);
+
     $ekwusigoPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Ekwusigo', 'PPA']);
+    $ekwusigoPpa =+ count($ekwusigoPpa);
+
 
      $idemiliNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'APC']);
+     $idemiliNorthAPC =+ count($idemiliNorthAPC);
+
     $idemiliNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'PDP']);
+     $idemiliNorthPdp =+ count($idemiliNorthPdp);
+
     $idemiliNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'APGA']);
+     $idemiliNorthApga =+ count($idemiliNorthApga);
+
     $idemiliNorthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'LP']);
+     $idemiliNorthLp=+ count($idemiliNorthLp);
+
     $idemiliNorthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'UPP']);
+     $idemiliNorthUpp =+ count($idemiliNorthUpp);
+
     $idemiliNorthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili North', 'PPA']);
+     $idemiliNorthPpa =+ count($idemiliNorthPpa);
+
 
      $idemiliSouthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'APC']);
+    $idemiliSouthAPC =+ count($idemiliSouthAPC);
+
     $idemiliSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'PDP']);
+    $idemiliSouthPdp =+ count($idemiliSouthPdp);
+
     $idemiliSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'APGA']);
+    $idemiliSouthApga =+ count($idemiliSouthApga);
+
     $idemiliSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'LP']);
+   $idemiliSouthLp=+ count($idemiliSouthLp);
+
     $idemiliSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'UPP']);
+   $idemiliSouthUpp =+ count($idemiliSouthUpp);
+
     $idemiliSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Idemili South', 'PPA']);
+$idemiliSouthPpa =+ count($idemiliSouthPpa);
+
 
      $ihialaAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'APC']);
+    $ihialaAPC =+ count($ihialaAPC);
+
     $ihialaPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'PDP']);
+    $ihialaPdp =+ count($ihialaPdp);
+
     $ihialaApga = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'APGA']);
+    $ihialaApga =+ count($ihialaApga);
+
     $ihialaLp = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'LP']);
+    $ihialaLp =+ count($ihialaLp);
+
     $ihialaUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'UPP']);
+    $ihialaUpp =+ count($ihialaUpp);
+
     $ihialaPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Ihiala', 'PPA']);
+$ihialaPpa =+ count($ihialaPpa);
+
+
 
      $njikokaAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'APC']);
+    $njikokaAPC =+ count($njikokaAPC);
+
     $njikokaPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'PDP']);
+    $njikokaPdp =+ count($njikokaPdp);
+
     $njikokaApga = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'APGA']);
+    $njikokaApga =+ count($njikokaApga);
+
     $njikokaLp = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'LP']);
+    $njikokaLp =+ count($njikokaLp);
+
     $njikokaUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'UPP']);
+    $njikokaUpp =+ count($njikokaUpp);
+
     $njikokaPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Njikoka', 'PPA']);
+    $njikokaPpa =+ count($njikokaPpa);
+
+
 
      $nnewiNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'APC']);
-    $nnewiNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'PDP']);
+   $nnewiNorthAPC=+ count($nnewiNorthAPC);
+
+   $nnewiNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'PDP']);
+   $nnewiNorthPdp =+ count($nnewiNorthPdp);
+
     $nnewiNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'APGA']);
+   $nnewiNorthApga =+ count($nnewiNorthApga);
+
     $nnewiNorthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'LP']);
+   $nnewiNorthLp =+ count($nnewiNorthLp);
+
     $nnewiNorthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'UPP']);
+   $nnewiNorthUpp =+ count($nnewiNorthUpp);
+
     $nnewiNorthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi North', 'PPA']);
+    $nnewiNorthPpa =+ count($nnewiNorthPpa);
+
+
 
     $nnewiSouthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'APC']);
+    $nnewiSouthAPC =+ count($nnewiSouthAPC);
+
     $nnewiSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'PDP']);
+    $nnewiSouthPdp =+ count($nnewiSouthPdp);
+
     $nnewiSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'APGA']);
+    $nnewiSouthApga =+ count($nnewiSouthApga);
+
     $nnewiSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'LP']);
+    $$nnewiSouthLp =+ count($nnewiSouthLp);
+
     $nnewiSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'UPP']);
+    $nnewiSouthUpp =+ count($nnewiSouthUpp);
+
     $nnewiSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Nnewi South', 'PPA']);
+    $nnewiSouthPpa =+ count($nnewiSouthPpa);
+
 
     $ogbaruAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'APC']);
+    $ogbaruAPC =+ count($ogbaruAPC);
+
     $ogbaruPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'PDP']);
+    $ogbaruPdp =+ count($ogbaruPdp);
+
     $ogbaruApga = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'APGA']);
+    $ogbaruApga =+ count($ogbaruApga);
+
     $ogbaruLp = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'LP']);
+    $ogbaruLp =+ count($ogbaruLp);
+
     $ogbaruUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'UPP']);
+    $ogbaruUpp =+ count($ogbaruUpp);
+
     $ogbaruPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Ogbaru', 'PPA']);
+    $ogbaruPpa =+ count($ogbaruPpa);
+
 
     $onitshaNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'APC']);
+    $onitshaNorthAPC =+ count($onitshaNorthAPC);
+
     $onitshaNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'PDP']);
+    $onitshaNorthPdp =+ count($onitshaNorthPdp);
+
     $onitshaNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'APGA']);
+    $onitshaNorthApga =+ count($onitshaNorthApga);
+
     $onitshaNorthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'LP']);
+    $onitshaNorthLp =+ count($onitshaNorthLp);
+
     $onitshaNorthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'UPP']);
+    $onitshaNorthUpp =+ count($onitshaNorthUpp);
+
     $onitshaNorthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha North', 'PPA']);
+$onitshaNorthPpa =+ count($onitshaNorthPpa);
+
+
 
     $onitshaSouthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'APC']);
-    $onitshaSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'PDP']);
-    $onitshaSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'APGA']);
-    $onitshaSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'LP']);
-    $onitshaSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'UPP']);
-    $onitshaSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'PPA']);
+    $onitshaSouthAPC =+ count($onitshaSouthAPC);
 
+    $onitshaSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'PDP']);
+    $onitshaSouthPdp =+ count($onitshaSouthPdp);
+
+    $onitshaSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'APGA']);
+    $onitshaSouthApga =+ count($onitshaSouthApga);
+
+    $onitshaSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'LP']);
+    $onitshaSouthLp =+ count($onitshaSouthLp);
+
+    $onitshaSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'UPP']);
+    $onitshaSouthUpp =+ count($onitshaSouthUpp);
+
+    $onitshaSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Onitsha South', 'PPA']);
+    $onitshaSouthPpa =+ count($onitshaSouthPpa);
+
+
+    
     $orumbaNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'APC']);
     $orumbaNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'PDP']);
     $orumbaNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'APGA']);

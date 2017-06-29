@@ -509,10 +509,10 @@ a img{
     <div class="android-card-container mdl-grid">
        <div style="background: white; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
       <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
-   <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
-     <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
-     <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
-      <div style="width: 100%;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
+   <div style="width: 100%; text-align: justify;" class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
+     <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
+     <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
+      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
       
        </div>
        <div class="mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone" >
