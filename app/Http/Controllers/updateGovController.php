@@ -37,7 +37,7 @@ class updateGovController extends Controller
     	$user->save();
     	$request->session()->flash('message', 'Voting Successful');
         
-         return view('updategov');
+         return view('success');
         //return redirect()->route('update');
         
     }
