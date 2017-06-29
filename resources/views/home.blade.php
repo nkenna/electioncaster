@@ -8,12 +8,11 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteiCheck - Dashboard</title>
+<title>VoteStats - Dashboard</title>
     <!-- Styles -->
     
     <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+    
      <script src="/js/jquery-3.2.1.min.js"></script>
 
 <!-- Styles -->
@@ -240,14 +239,7 @@ a img{
   padding: 80px 16px 0 16px;
 }
 
-  .android-customized-section-text p {
-    padding-top: 16px;
-  }
-
-.android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
+ eight: 400px;
 }
 
 .android-more-section {
@@ -479,11 +471,10 @@ a img{
           <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          
           
           <div class="android-drawer-separator"></div>
           @if (Route::has('login'))
