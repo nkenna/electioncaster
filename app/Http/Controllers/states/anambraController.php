@@ -446,28 +446,64 @@ $onitshaNorthPpa =+ count($onitshaNorthPpa);
     $onitshaSouthPpa =+ count($onitshaSouthPpa);
 
 
-    
+
     $orumbaNorthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'APC']);
+    $orumbaNorthAPC =+ count($orumbaNorthAPC);
+
     $orumbaNorthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'PDP']);
+    $orumbaNorthPdp =+ count($orumbaNorthPdp);
+
     $orumbaNorthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'APGA']);
+    $orumbaNorthApga =+ count($orumbaNorthApga);
+
     $orumbaNorthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'LP']);
+    $orumbaNorthLp =+ count($orumbaNorthLp);
+
     $orumbaNorthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'UPP']);
+    $orumbaNorthUpp =+ count($orumbaNorthUpp);
+
     $orumbaNorthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba North', 'PPA']);
+$orumbaNorthPpa =+ count($orumbaNorthPpa);
+
+
 
     $orumbaSouthAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'APC']);
+    $orumbaSouthAPC =+ count($orumbaSouthAPC);
+
     $orumbaSouthPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'PDP']);
+    $orumbaSouthPdp =+ count($orumbaSouthPdp);
+
     $orumbaSouthApga = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'APGA']);
+    $orumbaSouthApga =+ count($orumbaSouthApga);
+
     $orumbaSouthLp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'LP']);
+    $orumbaSouthLp =+ count($orumbaSouthLp);
+
     $orumbaSouthUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'UPP']);
+    $orumbaSouthUpp =+ count($orumbaSouthUpp);
+
     $orumbaSouthPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Orumba South', 'PPA']);
+    $orumbaSouthPpa =+ count($orumbaSouthPpa);
+
+
 
     $oyiAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APC']);
-    $oyiPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'PDP']);
-    $oyiApga = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APGA']);
-    $oyiLp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'LP']);
-    $oyiUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'UPP']);
-    $oyiPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'PPA']);
+    $oyiAPC =+ count($oyiAPC);
 
+    $oyiPdp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'PDP']);
+    $oyiPdp =+ count($oyiPdp);
+
+    $oyiApga = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'APGA']);
+    $oyiApga =+ count($oyiApga);
+
+    $oyiLp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'LP']);
+    $oyiLp =+ count($oyiLp);
+    
+    $oyiUpp = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'UPP']);
+    $oyiUpp =+ count($oyiUpp);
+
+    $oyiPpa = DB::select('select * from users where govlga = ? and governor = ?', ['Oyi', 'PPA']);
+    $oyiPpa =+ count($oyiPpa);
 
     //bar chart - party votes in Anambra LGAs
             $anambraLgaParty = Charts::multi('bar', 'highcharts')

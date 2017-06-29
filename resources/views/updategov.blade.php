@@ -693,7 +693,7 @@ $("#chooseState").change(function(){
 
 <div>
 	<div>
-    	<form  role="form" method="post" action="/updategov" >
+    	<form  role="form" method="post" action="" >
 	 {{ csrf_field() }}
     
 
