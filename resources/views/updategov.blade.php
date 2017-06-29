@@ -698,13 +698,13 @@ $("#chooseState").change(function(){
 @if (Auth::user()->resident == Auth::user()->origin)
           
 
-<div>
-	<div>
+<div style="margin-top: 10px;">
+	<div style="margin-top: 10px;">
     	<form  role="form" method="post" action="/updategov" >
 	 {{ csrf_field() }}
     
 
-    <div>
+    <div style="margin-top: 10px;">
      <input type="text" name="sta" id="sta" hidden value="{{ Auth::user()->resident }}">   
     </div>
 
@@ -737,7 +737,7 @@ $("#chooseState").change(function(){
 
     
 
-    <div>
+    <div style="margin-top: 10px;">
     <select id="govparty" name="govparty">
                                     
      <option value="" selected="selected">Select Favorite Party</option>
@@ -777,7 +777,7 @@ $("#chooseState").change(function(){
   </select>
     </div>
 
-    <div>
+    <div style="margin-top: 10px;">
         <button id="govvotebtn" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button" type="Submit">Vote</button>
     </div>
     
@@ -788,20 +788,20 @@ $("#chooseState").change(function(){
 <!-- resisent and state are not the same -->
 @elseif (Auth::user()->resident != Auth::user()->origin)
 	
-	<div>
+	<div style="margin-top: 10px;">
     <label for="chooseState">Choose to vote from {{ Auth::user()->resident }} </label>
      <input type="checkbox" name="chooseState" id="chooseState">   
     </div>
 
-<div>
+<div style="margin-top: 10px;">
     <label for="chooseOrigin">Choose to vote from {{ Auth::user()->origin }}</label>
      <input type="checkbox" name="chooseOrigin" id="chooseOrigin">   
     </div>
 
     <!-- Vote from resident state -->
-    <div class="mdl-typography--font-regular" id="takeState" style="display: none;"> <p>Resident state choosen.</p> 
+    <div class="mdl-typography--font-regular" id="takeState" style="display: none; margin-top: 10px;"> <p>Resident state choosen.</p> 
 
-    <div>
+    <div style="margin-top: 10px;">
     	<form  role="form" method="POST" action="/updategov" >
 	 {{ csrf_field() }}
     
@@ -814,7 +814,7 @@ $("#chooseState").change(function(){
 	<option value="">Select LGA</option>
 </select>
 
-    <div>
+    <div style="margin-top: 10px;">
     <select id="govparty" name="govparty">
                                     
      <option value="" selected="selected">Select Favorite Party</option>
@@ -854,7 +854,7 @@ $("#chooseState").change(function(){
   </select>
     </div>
 
-    <div>
+    <div style="margin-top: 10px;">
         <button id="govvotebtn"  class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button" type="Submit">Vote</button>
     </div>
     
@@ -934,7 +934,7 @@ $("#chooseState").change(function(){
 </div>
 <!--end of governor Voting panel -->
                 
-<div style=" padding: 2px; color: black; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+<div style="margin-top:15px; padding: 2px; color: black; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
 
          <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
