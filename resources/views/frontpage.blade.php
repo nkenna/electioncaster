@@ -672,6 +672,7 @@ a img{
           <div style="color: white;" class="logo-font android-slogan">Get Involved </div>
           <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
           <div style="color: white;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
+        
 
                        <div class="logo-font android-create-character">
             <a style="color: white;" href="{{ url('/register') }}"><img src="img/not.png"> Create your Profile and Vote</a>

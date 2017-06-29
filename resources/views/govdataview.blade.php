@@ -2268,6 +2268,7 @@ if($("#state").val() == 'Sokoto'){
 	@inject('allAnambra1', 'App\Http\Controllers\states\anambraController')
 	@inject('allAnambraGov', 'App\Http\Controllers\states\anambraController')
 	@inject('anambraLgaParty', 'App\Http\Controllers\states\anambraController')
+	@inject('anambraAge', 'App\Http\Controllers\states\anambraController')
 
 	<div id="anambra"><h2>Anambra State data Voting Data</h2>
 	<div>Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
@@ -2275,8 +2276,11 @@ if($("#state").val() == 'Sokoto'){
 	<div>Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
 
 <div >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
+<div >  {!! $anambraAge->anambraVoteAge()->render() !!} </div>
 
 <div >  {!! $anambraLgaParty->anambraVoteLGA()->render() !!} </div>
+
+
 
 	</div>
 	<!-- end of anambra state section -->

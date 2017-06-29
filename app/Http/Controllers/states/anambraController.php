@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Charts;
+use Carbon\Carbon;
 
 class anambraController extends Controller
 {
@@ -55,13 +56,13 @@ class anambraController extends Controller
     	 $anambraGovApc =+ count($anambraGovApc);   
 
     	 $anambraGovPdp = DB::select('select governor,govstate from users where governor = ? and govstate = ?', ['PDP', 'Anambra']);
-    	 $anambraGovPdp =+ count($anambraGovApc);
+    	 $anambraGovPdp =+ count($anambraGovPdp);
 
     	 $anambraGovApga = DB::select('select governor,govstate from users where governor = ? and govstate = ?', ['APGA', 'Anambra']);
-    	 $anambraGovApga =+ count($anambraGovApc);
+    	 $anambraGovApga =+ count($anambraGovApga);
 
     	 $anambraGovLp = DB::select('select governor,govstate from users where governor = ? and govstate = ?', ['LP', 'Anambra']);
-    	 $anambraGovLp =+ count($anambraGovApc);
+    	 $anambraGovLp =+ count($anambraGovLp);
 
          $anambraGovPpa = DB::select('select governor,govstate from users where governor = ? and govstate = ?', ['PPA', 'Anambra']);
          $anambraGovPpa =+ count($anambraGovPpa);
@@ -272,6 +273,53 @@ public function anambraVoteLGA(){
                 'Onitsha North', 'Onitsha South', 'Orumba North','Orumba South','Oyi']);
 
             return $anambraLgaParty;
+ }
+
+ public function anambraVoteAge(){
+    //retrieve age data
+ $age18_30 = DB::whereYear('dod','<', '1999')
+ ->whereYear('dod', '>', '1987')
+ ->where('govstate', 'Anambra')->count();
+
+ $age31_43 = DB::whereYear('dod','<', '1986')
+ ->whereYear('dod', '>', '1974')
+ ->where('govstate', 'Anambra')->count();
+
+ $age44_56 = DB::whereYear('dod','<', '1973')
+ ->whereYear('dod', '>', '1961')
+ ->where('govstate', 'Anambra')->count();
+
+ $age57_69 = DB::whereYear('dod','<', '1960')
+ ->whereYear('dod', '>', '1948')
+ ->where('govstate', 'Anambra')->count();
+
+ $age70_82 = DB::whereYear('dod','<', '1947')
+ ->whereYear('dod', '>', '1935')
+ ->where('govstate', 'Anambra')->count();
+
+ $age83 = DB::whereYear('dod','<=', '1934')
+ ->where('govstate', 'Anambra')->count();
+
+
+ //bar chart- votes by age
+ $anambraAge = Charts::create('bar', 'highcharts')
+           
+            // Setup the chart settings
+            ->title("Votes according to Age")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
+            // This defines a preset of colors already done:)
+             ->elementLabel(' ')
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#F3C444', '#333111'])
+            // Setup the diferent datasets (this is a multi chart)
+            ->values([$age18_30, $age31_43, $age44_56, $age57_69, $age70_82, $age83])
+            
+            // Setup what the values mean
+            ->labels(['18 - 30yrs', '31 - 43yrs', '44 - 56yrs', '57 - 69yrs', '70 - 82yrs', '83yrs above']);
+ 
+            return $anambraAge;
  }
 
 
