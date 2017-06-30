@@ -717,7 +717,7 @@ ga('send', 'pageview');
 <div class="mdl-layout-spacer"></div>
 
         <div class="mdl-color--pink-400" style="margin-top: 10px; width: 100%; height: 200px; color: black;">
-          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center><a style="color: black;"  href="{{ url('/user/updategov') }}">Data for Gubernatorial Votes</a></center></div>
+          <div style="margin-top: 10px;" class="mdl-typography--display-2 mdl-typography--font-thin"><center><a style="color: black;"  href="{{ url('/user/govdataview') }}">Data for Gubernatorial Votes</a></center></div>
         </div>
 
 <div class="mdl-layout-spacer"></div>

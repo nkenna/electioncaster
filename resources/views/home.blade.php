@@ -553,10 +553,10 @@ ga('send', 'pageview');
 
 @if (Auth::user()->president != null || Auth::user()->governor != null || Auth::user()->senate != null ||  Auth::user()->statehouse != null )
                    
-         <div class="mdl-typography--font-light mdl-typography--subhead">  [President] Party voted for: Auth::user()->president </div>      
-        <div class="mdl-typography--font-light mdl-typography--subhead">[Governor] Party voted for: Auth::user()->governor</div>
-        <div class="mdl-typography--font-light mdl-typography--subhead">[Senate] Party voted for: Auth::user()->senate</div>
-        <div class="mdl-typography--font-light mdl-typography--subhead">[State house] Party voted for: Auth::user()->statehouse</div>
+         <div class="mdl-typography--font-light mdl-typography--subhead">  [President] Party voted for: {{Auth::user()->president}} </div>      
+        <div class="mdl-typography--font-light mdl-typography--subhead">[Governor] Party voted for: {{Auth::user()->governor}}</div>
+        <div class="mdl-typography--font-light mdl-typography--subhead">[Senate] Party voted for: {{Auth::user()->senate}}</div>
+        <div class="mdl-typography--font-light mdl-typography--subhead">[State house] Party voted for: {{Auth::user()->statehouse}}</div>
 
                  
                     @else
