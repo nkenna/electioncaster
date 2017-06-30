@@ -501,25 +501,25 @@ $("#chooseOrigin").change(function(){
 
        if($("#ori").val() == 'Anambra'){
       
-          $("#votelga").html('');
+          $("#votelga1").html('');
      for  (var i = 0; i < Anambra.length; i++) {
-$("#votelga").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
+$("#votelga1").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
        }
     }
 
 
  if($("#ori").val() == 'Zamfara'){
         
-            $("#votelga").html('');
+            $("#votelga1").html('');
      for  (var i = 0; i < Zamfara.length; i++) {
-$("#votelga").append('<option value='+Zamfara[i]+'>'+Zamfara[i]+'</option>');
+$("#votelga1").append('<option value='+Zamfara[i]+'>'+Zamfara[i]+'</option>');
        }
     }
 
      if($("#ori").val() == 'Lagos'){
-          $("#votelga").html('');
+          $("#votelga1").html('');
      for  (var i = 0; i < Lagos.length; i++) {
-$("#votelga").append('<option value='+Lagos[i]+'>'+Lagos[i]+'</option>');
+$("#votelga1").append('<option value='+Lagos[i]+'>'+Lagos[i]+'</option>');
        }
     }
 
@@ -532,25 +532,25 @@ $("#votelga").append('<option value='+Enugu[i]+'>'+Enugu[i]+'</option>');
 
      if($("#ori").val() == 'Kogi'){
       
-          $("#votelga").html('');
+          $("#votelga1").html('');
      for  (var i = 0; i < Kogi.length; i++) {
-$("#votelga").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
+$("#votelga1").append('<option value='+Kogi[i]+'>'+Kogi[i]+'</option>');
        }
     }
 
     if($("#ori").val() == 'Imo'){
       
-          $("#votelga").html('');
+          $("#votelga1").html('');
      for  (var i = 0; i < Imo.length; i++) {
-$("#votelga").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
+$("#votelga1").append('<option value='+Imo[i]+'>'+Imo[i]+'</option>');
        }
     }
 
  if($("#ori").val() == 'Anambra'){
       
-          $("#votelga").html('');
+          $("#votelga1").html('');
      for  (var i = 0; i < Anambra.length; i++) {
-$("#votelga").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
+$("#votelga1").append('<option value='+Anambra[i]+'>'+Anambra[i]+'</option>');
        }
     }
 
@@ -715,99 +715,11 @@ ga('send', 'pageview');
 <div class="mdl-typography--headline mdl-typography--font-thin">Gubernatorial Voting Panel </div>
 
 
-<!-- resisent and state are the same -->
-@if (Auth::user()->resident == Auth::user()->origin)
-          
-
-<div style="margin-top: 10px;">
-	<div style="margin-top: 10px;">
-    	<form  role="form" method="post" action="/updategov" >
-	 {{ csrf_field() }}
-    
-
-    <div style="margin-top: 10px;">
-     <input type="text" name="sta" id="sta" hidden value="{{ Auth::user()->resident }}">   
-    </div>
-
-<select id="votelga" name="votelga">
-	<option value="">Select LGA</option>
-  <option value="Aguata">Aguata</option>
-  <option value="Anambra East">Anambra East</option>
-  <option value="Anambra West">Anambra West</option>
-  <option value="Anaocha">Anaocha</option>
-  <option value="Awka North">Awka North</option>
-  <option value="Awka South">Awka South</option>
-  <option value="Ayamelum">Ayamelum</option>
-  <option value="Dunukofia">Dunukofia</option>
-  <option value="Ekwusigo">Ekwusigo</option>
-  <option value="Idemili North">Idemili North</option>
-  <option value="Idemili South">Idemili South</option>
-  <option value="Ihiala">Ihiala</option>
-  <option value="Njikoka">Njikoka</option>
-  <option value="Nnewi North">Nnewi North</option>
-  <option value="Nnewi South">Nnewi South</option>
-  <option value="Ogbaru">Ogbaru</option>
-  <option value="Onitsha North">Onitsha North</option>
-  <option value="Onitsha South">Onitsha South</option>
-  <option value="Orumba North">Orumba North</option>
-  <option value="Orumba South">Orumba South</option>
-  <option value="Oyi">Oyi</option>
-  
-</select>
 
 
-    
-
-    <div style="margin-top: 10px;">
-    <select id="govparty" name="govparty">
-                                    
-     <option value="" selected="selected">Select Favorite Party</option>
-
-     <option value="PDP">Peoples Democratic Party</option>
-     <option value="APC">All Progressive Congress</option>
-     <option value="APGA">All Progressive Grand Alliance</option>
-     <option value="ACD">Advanced Congress of Democrats</option>
-     <option value="A">Accord</option>
-     <option value="ID">Independent Democrats</option>
-     <option value="ACPN">Alliance Congress Party of Nigeria</option>
-     <option value="APA">African Peoples Alliance</option>
-     <option value="CPP">Citizens Popular Party</option>
-     <option value="AA">Action Alliance</option>
-     <option value="DPP">Democratic Peoples Party</option>
-     <option value="DPC">Democratic Peoples Congress</option>
-     <option value="AD">Alliance for Democracy</option>
-     <option value="KP">Kowa Party</option>
-     <option value="LP">Labour Party</option>
-     <option value="UPN">Unity Party of Nigeria</option>
-     <option value="MPPP">Mega Progressive Peoples Party</option>
-     <option value="NCP">National Conscience Party</option>
-     <option value="NNPP">New Nigeria Peoples Party</option>
-     <option value="PPA">progressive Peoples Alliance</option>
-     <option value="PDM">Peoples Democratic Movement</option>
-     <option value="FRESH">Fresh Democractic Party</option>
-     <option value="HDP">Hope Democratic Party</option>
-     <option value="PPN">Peoples Party of Nigeria</option>
-     <option value="UPP">United Progressive Party</option>
-     <option value="PDC">People For Democratic Change</option>
-     <option value="ADC">African Democractic Congress</option>
-     <option value="YDP">Youth Democratic Party</option>
-     <option value="SDP">Social Democratic Party</option>
-     <option value="UDP">United Democratic Party</option>
 
 
-  </select>
-    </div>
 
-    <div style="margin-top: 10px;">
-        <button id="govvotebtn" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button" type="Submit">Vote</button>
-    </div>
-    
-</form>
-</div>
-</div>
-
-<!-- resisent and state are not the same -->
-@elseif (Auth::user()->resident != Auth::user()->origin)
 	
 	<div style="margin-top: 10px;">
     <label for="chooseState">Choose to vote from {{ Auth::user()->resident }} </label>
@@ -894,7 +806,7 @@ ga('send', 'pageview');
      <input type="text" name="ori" id="ori" hidden value="{{ Auth::user()->origin }}"  
     </div>
 
-    <select id="votelga" name="votelga">
+    <select id="votelga1" name="votelga1">
 	<option value="">Select LGA</option>
 </select>
 
@@ -947,7 +859,7 @@ ga('send', 'pageview');
      </div>
 
 
- @endif
+
 
 
 
