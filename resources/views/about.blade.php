@@ -735,6 +735,53 @@ a img{
           </ul>
           </p>
 
+          <p>How to use:</p>
+          <p>To create a new Profile, follow either of this steps:
+          <ul>
+            <li>Click on the Register link on the Main Navigation Bar</li>
+            <li>Click on the Create Profile Link on the frontpage display</li>
+            <li>Use this <a href="www.votestats.com.ng">LINK</a> to access the register page easily.</li>
+          </ul>
+          <p>After creating a new profile, you will be logged into your dashboard automatically.</p>
+          </p>
+
+          <p>How to vote:</p>
+          <p>
+            The data presented by Votestats is collected through an online voting process. To add your 
+            own vote, follow these steps:
+            <ul>
+              <li><a href="www.votestats.com.ng/login"> Login </a> into your dashboard with your email and password.</li>
+              <li>To enter the Presidential Voting boot, use the <a href="www.votestats.com.ng/user/update">LINK</a> in the Presidential Voting boot.</li>
+               <li>To enter the Gubernatorial Voting boot, use the <a href="www.votestats.com.ng/user/updategov">LINK</a> in the Gubernatorial Voting boot.</li>
+                <li>To enter the Senatorial Voting boot, use the <a href="">LINK</a> in the Senatorial Voting boot [<b style="color: red">Not yet available</b>].</li>
+
+            </ul>
+
+          </p>
+
+          <p>How to Access the Collated Data:</p>
+          <p>
+            Votestats uses charts for data representation. They are catergorized into:
+            <ul>
+              <li>States</li>
+              <li>Gender</li>
+              <li>Local Government Areas</li>
+              <li>Politicial Parties</li>
+              <li>Age</li>
+              <li>Occupation</li>
+              <li>More will still be added.</li>
+            </ul>
+
+            <p>Follow any of these steps to access the data/charts:
+<ul>
+  <li>Click on the <a href="www.votestats.com.ng/dataland">Data-land</a> link on the main navigation menu, choose the data category you want.</li>
+  <li>Click on the <a href="www.votestats.com.ng/user/dataview"Presidential Vote Data</a> to access it [You have to be logged in]</li>
+  <li>Click on the <a href="www.votestats.com.ng/user/govdataview"Gubernatorial Vote Data</a> to access it [You have to be logged in]</li>
+</ul>
+            </p>
+
+          </p>
+
           <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election voting process done by its online users. It is only meant for Nigerians and should not be used in place of any official voting process except otherwise.</p>
           <p style="color: black;">Election in Nigeria is still conducted and controlled by <b>INEC</b>.</p>
