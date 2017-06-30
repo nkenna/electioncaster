@@ -66,8 +66,32 @@ $age18_30 = User::whereYear('dod','<', '1999')
  ->whereYear('dod', '>', '1935')->where('govstate', '=', 'Adamawa')->count();
 
  $age83 = User::whereYear('dod','<=', '1934')->where('govstate', '=', 'Adamawa')->count();
-  
+ 
+//bar chart- votes by age
+ $chart5 = Charts::create('bar', 'highcharts')
+           
+            // Setup the chart settings
+            ->title("president Votes according to Age")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
+            // This defines a preset of colors already done:)
+
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#F3C444', '#333111'])
+            // Setup the diferent datasets (this is a multi chart)
+            ->values([$age18_30, $age31_43, $age44_56, $age57_69, $age70_82, $age83])
+            
+            // Setup what the values mean
+            ->labels(['18 - 30yrs', '31 - 43yrs', '44 - 56yrs', '57 - 69yrs', '70 - 82yrs', '83yrs above']);
+
+   
+
+
     }
+
+
+
 
     //var Adamawa = ['Select item...', 'Demsa', 'Fufure', 'Ganye', 'Gayuk', 'Gombi', 'Grie', 'Hong', 'Jada', 'Larmurde', 'Madagali', 'Maiha', 'Mayo Belwa', 'Michika', 'Mubi North', 'Mubi South', 'Numan', 'Shelleng', 'Song', 'Toungo', 'Yola North', 'Yola South'];
 }

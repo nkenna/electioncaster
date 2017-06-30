@@ -34,7 +34,12 @@ class updateGovController extends Controller
     	$user = User::find($id);
     	$user->governor = $request->input('govparty');
     	$user->govstate = $request->input('sta');
-    	$user->govlga = $request->input('votelga');
+        if($request->input('votelga') = null){
+         $user->govlga = $request->input('votelga1');   
+        }else{
+            $user->govlga = $request->input('votelga1');   
+        }
+    	
     	$user->govvote = Carbon::now();
     	
     	$user->save();
