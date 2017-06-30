@@ -541,10 +541,7 @@ public function getAllPresidentVotes(){
             ->dimensions(0, 400) // Width x Height
             ->template("material")
             // You could always set them manually
-            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#F12345',
-                '#8886F3', '#F443FF', '#4FC567', '#FFFF11', '#F12000',
-                '#219777', '#FFF336', '#4FCFFF', '#F3C1FF', '#F11345',
-                '#219111', '#F00036'])
+            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#F12345'])
             // Setup the diferent datasets (this is a multi chart)
            ->dataset('APC', [$abiaAbaNorthApc,$abiaAbaSouthApc,$abiaArochukwuApc,$abiaBendeApc,$abiaIkwuanoApc,$abiaIsialaNgwaNorthApc,$abiaIsialaNgwaSouthApc,$abiaIsuikwuatoApc,$abiaObiNgwaApc,$abiaOhafiaApc,$abiaOsisiomaApc,$abiaUgwunagboApc,$abiaUkwaEastApc,$abiaUkwaWestApc,$abiaUmuahiaNorthApc,$abiaUmuahiaSouthApc,$abiaUmuNneochiApc])
             ->dataset('APGA', [$abiaAbaNorthApga,$abiaAbaSouthApga,$abiaArochukwuApga,$abiaBendeApga,$abiaIkwuanoApga,$abiaIsialaNgwaNorthApga,$abiaIsialaNgwaSouthApga,$abiaIsuikwuatoApga,$abiaObiNgwaApga,$abiaOhafiaApga,$abiaOsisiomaApga,$abiaUgwunagboApga,$abiaUkwaEastApga,$abiaUkwaWestApga,$abiaUmuahiaNorthApga,$abiaUmuahiaSouthApga,$abiaUmuNneochiApgaPC])
