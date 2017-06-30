@@ -612,14 +612,15 @@ a img{
             </div>
           </div>
           <!-- Navigation -->
-          <div class="android-navigation-container">
+         
+   <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
-           	   
+               
           @if (Route::has('login'))
                 
                     @if (Auth::check())
@@ -633,14 +634,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-          <img class="android-logo-image" src="/css/mdl/logo.png">
+            <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Support this Project</li>
-            <li class="mdl-menu__item">Resolve an Issue</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
           </ul>
@@ -650,16 +651,18 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-        <img class="android-logo-image" src="/css/mdl/logo.png">
+        <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="">Data-Land</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
           <a class="mdl-navigation__link" href="">Support this Project</a>
           <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
@@ -668,21 +671,17 @@ a img{
                 
                     @if (Auth::check())
                     <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
-                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+                       <a class="mdl-navigation__link " href="{{ url('/logout') }}">Logout</a>
+                        
                     @else
                         <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
                     @endif
                 
             @endif
+          
+         
+          
           <div class="android-drawer-separator"></div>
           
         </nav>
@@ -691,7 +690,14 @@ a img{
 
       <div class="android-content mdl-layout__content">
       
-
+      <div class="mdl-typography--font-regular" style="padding: 5px; height: 400px;">
+        <p>Contact us:</p>
+        <ul>
+          <li><span>Facebook</span></li>
+          <li><span>Twitter</span></li>
+          <li><span>Whatsapp</span></li>
+        </ul>
+      </div>
          
 
 
