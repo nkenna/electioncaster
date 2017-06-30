@@ -165,6 +165,7 @@ return [
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Yajra\Disqus\DisqusServiceProvider::class,
+        Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -230,6 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
+        'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
 
     ],
 
