@@ -534,7 +534,7 @@ public function getAllPresidentVotes(){
   $abiaUmuNneochiPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Umu Nneochi')->count();     
 
 //bar chart- abia votes by party chart
- $abiaChartLGA= Charts::create('bar', 'highcharts')
+ $abiaChartLGA= Charts::multi('bar', 'highcharts')
            
             
             ->title("Votes count distribution according LGA in Abia State")
