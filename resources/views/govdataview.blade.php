@@ -2117,7 +2117,7 @@ ga('create', 'UA-101898149-1', 'auto');
 
 ga('send', 'pageview');
 
-  
+
     </script>           
 
     {!! Charts::assets() !!}
@@ -2282,19 +2282,45 @@ ga('send', 'pageview');
 
 
              	<!-- abia state section -->
-	<div id="abia">
-	<h2>Abia State Voting data not yet ready</h2>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;" id="abia">
 	
-	<!--<div>Total number of users in Abia State: {{ Auth::user()->getAllAbia()}} </div>
-	<div>Total number of users using Abia State as Residence: {{ Auth::user()->getAllAbiaResident()}} </div>
-	<div>Total number of users using Abia State as Origin: {{ Auth::user()->getAllAbiaOrigin()}} </div>
-	<div>Total number of Gubernational Votes in Abia State: {{ Auth::user()->getAllAbiaGovVotes()}} </div>
-	<div>  {!! Auth::user()->getAbiaGovChart()->get('abiapartybar')->render() !!} </div>-->
+	
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Total number of users in Abia State: {{ Auth::user()->getAllAbia()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Total number of users using Abia State as Residence: {{ Auth::user()->getAllAbiaResident()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Total number of users using Abia State as Origin: {{ Auth::user()->getAllAbiaOrigin()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Total number of Gubernational Votes in Abia State: {{ Auth::user()->getAllAbiaGovVotes()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">  {!! Auth::user()->getAbiaGovChart()->get('abialgabar')->render() !!} </div>
+	
+	
+	<div id="disqus_thread"></div>
+ <script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://www.votestats.com.ng/user/govdataview';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'govDataviewAnambra'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://votestats.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
 	</div>
 	<!-- end of abia state section -->
 
-
+<!--Adamawa state starts-->
 	<div id="adamawa"><h2>Adamawa State data is not yet ready</h2></div>
+	<!--Adamawa state ends-->
 	<div id="akwaibom"><h2>Akwa Ibom State data is not yet ready</h2></div>
 
 	<!-- anambra state section -->
@@ -2309,7 +2335,7 @@ ga('send', 'pageview');
 	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;" id="anambra"><h2>Anambra State data Voting Data</h2>
 	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Resident: {{ $allAnambra2->allAnambraResident()}} </div>
 	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Anambra State as Origin: {{ $allAnambra1->allAnambraOrigin()}} </div>
-	<div class="mdl-typography--headline mdl-typography--font-thin">Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Count of Gubernational Votes in Anambra State: {{ $allAnambraGov->allAnambraVotes()}} </div>
 
 <div style="width: 100%; padding: 3px;" >  {!! $anambraChart->anambraVoteParty()->render() !!} </div>
 <div style="width: 100%; padding: 3px;">  {!! $anambraAge->anambraVoteAge()->render() !!} </div>
