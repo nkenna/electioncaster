@@ -527,6 +527,7 @@ ga('send', 'pageview');
 <!-- upper pane -->
 <div style="margin-top: 50px;" >
     <div class="android-card-container mdl-grid">
+
        <div style="background: white; height: 400px;" class=" mdl-typography--text-center mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone"> 
       <div style="width: 100%; text-align: justify;" class="mdl-typography--headline mdl-typography--font-thin"> Name: {{ Auth::user()->name }}</div>
    <div style="width: 100%; text-align: justify;" class="mdl-typography--headline mdl-typography--font-thin"> Age: {{ Auth::user()->getAge() }}</div>
@@ -535,6 +536,8 @@ ga('send', 'pageview');
       <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
       
        </div>
+
+
        <div class="mdl-color-text--deep-purple-400 mdl-shadow--16dp mdl-grid mdl-cell--4-col-desktop mdl-cell--8-col-tablet mdl-cell--7-col-phone" >
            
 <div style="width: 100%;" class="mdl-typography--text-uppercase mdl-typography--font-bold mdl-color--light-green">
@@ -542,10 +545,29 @@ ga('send', 'pageview');
 </div>
            <div>
           <div>
-              <div class="mdl-typography--font-regular">Presidential: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }} </div>
-              <div class="mdl-typography--font-regular">Governorship: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }}</div>
-              <div class="mdl-typography--font-regular">Senate: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
-              <div class="mdl-typography--font-regular">State House: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
+              <div class="mdl-typography--font-light mdl-typography--subhead">Presidential: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }} </div>
+              <div class="mdl-typography--font-light mdl-typography--subhead">Governorship: You can vote from <b>{{ Auth::user()->resident }}</b> or <b>{{ Auth::user()->origin }}</div>
+              <div class="mdl-typography--font-light mdl-typography--subhead">Senate: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
+              <div class="mdl-typography--font-light mdl-typography--subhead">State House: You can vote from <b>{{ Auth::user()->originlga }}</b></p>
+          
+
+@if (Auth::user()->president != null || Auth::user()->governor != null || Auth::user()->senate != null ||  Auth::user()->statehouse != null )
+                   
+         <div class="mdl-typography--font-light mdl-typography--subhead">  [President] Party voted for: Auth::user()->president </div>      
+        <div class="mdl-typography--font-light mdl-typography--subhead">[Governor] Party voted for: Auth::user()->governor</div>
+        <div class="mdl-typography--font-light mdl-typography--subhead">[Senate] Party voted for: Auth::user()->senate</div>
+        <div class="mdl-typography--font-light mdl-typography--subhead">[State house] Party voted for: Auth::user()->statehouse</div>
+
+                 
+                    @else
+          <div class="mdl-typography--font-light mdl-typography--subhead">You have not placed any vote yet. Vote now and join the discussion.</div>           
+                    @endif
+
+               
+                
+            
+
+
           </div>
          
        </div>
