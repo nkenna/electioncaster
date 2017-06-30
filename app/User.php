@@ -426,120 +426,165 @@ public function getAllPresidentVotes(){
     $abiaGovApga =  User::where('governor', '=', 'APGA')->where('govstate', '=', 'Abia')->count();
    $abiaGovPdp =  User::where('governor', '=', 'PDP')->where('govstate', '=', 'Abia')->count();      
    $abiaGovLp = User::where('governor', '=', 'LG')->where('govstate', '=', 'Abia')->count();
+     $abiaGovPpa = User::where('governor', '=', 'PPA')->where('govstate', '=', 'Abia')->count();
         
 //var Abia = ['Select item...', 'Aba North', 'Aba South', 'Arochukwu', 'Bende', 'Ikwuano', 'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obi Ngwa', 'Ohafia', 'Osisioma', 'Ugwunagbo', 'Ukwa East', 'Ukwa West', 'Umuahia North', 'Umuahia South', 'Umu Nneochi'];   
   //retrieving Abia State lga vote data
-  $abiaAbaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Abia North')->count();
-  $abiaAbaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Abia North')->count();
-  $abiaAbaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Abia North')->count();
-  $abiaAbaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Abia North')->count();     
+  $abiaAbaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Aba North')->count();
+  $abiaAbaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Aba North')->count();
+  $abiaAbaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Aba North')->count();
+  $abiaAbaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Aba North')->count();
+  $abiaAbaNorthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Aba North')->count();      
     
-  $abiaAbaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Abia South')->count();
-  $abiaAbaSouthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Abia South')->count();
-  $abiaAbaSouthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Abia South')->count();
-  $abiaAbaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Abia South')->count(); 
+  $abiaAbaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Aba South')->count();
+  $abiaAbaSouthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Aba South')->count();
+  $abiaAbaSouthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Aba South')->count();
+  $abiaAbaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Aba South')->count(); 
+  $abiaAbaSouthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Aba South')->count(); 
 
     $abiaArochukwuApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Arochukwu')->count();
   $abiaArochukwuApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Arochukwu')->count();
   $abiaArochukwupdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Arochukwu')->count();
-  $abiaArochukwulp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Arochukwu')->count(); 
+  $abiaArochukwulp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Arochukwu')->count();
+  $abiaArochukwuPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Arochukwu')->count();  
 
     $abiaBendeApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Bende')->count();
-  $abiaAbaBendeApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Bende')->count();
-  $abiaAbaBendepdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Bende')->count();
-  $abiaAbaBendelp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Bende')->count(); 
+  $abiaBendeApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Bende')->count();
+  $abiaBendepdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Bende')->count();
+  $abiaBendelp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Bende')->count();
+  $abiaBendePpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Bende')->count();  
 
     $abiaIkwuanoApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ikwuano')->count();
   $abiaIkwuanoApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ikwuano')->count();
   $abiaIkwuanopdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ikwuano')->count();
   $abiaIkwuanolp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ikwuano')->count(); 
+  $abiaIkwuanoPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Ikwuano')->count(); 
 
     $abiaIsialaNgwaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Isiala Ngwa North')->count();
   $abiaIsialaNgwaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Isiala Ngwa North')->count();
   $abiaIsialaNgwaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Isiala Ngwa North')->count();
-  $abiaIsialaNgwaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isiala Ngwa North')->count(); 
+  $abiaIsialaNgwaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isiala Ngwa North')->count();
+  $abiaIsialaNgwaNorthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Isiala Ngwa North')->count();  
 
     $abiaIsialaNgwaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Isiala Ngwa South')->count();
   $abiaIsialaNgwaSouthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Isiala Ngwa South')->count();
   $abiaIsialaNgwaSouthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Isiala Ngwa South')->count();
-  $abiaIsialaNgwaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isiala Ngwa South')->count(); 
+  $abiaIsialaNgwaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isiala Ngwa South')->count();
+  $abiaIsialaNgwaSouthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Isiala Ngwa South')->count();  
 
     $abiaIsuikwuatoApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Isuikwuato')->count();
   $abiaIsuikwuatoApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Isuikwuato')->count();
   $abiaIsuikwuatopdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Isuikwuato')->count();
   $abiaIsuikwuatolp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Isuikwuato')->count(); 
+  $abiaIsuikwuatoPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Isuikwuato')->count(); 
 
     $abiaObiNgwaApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Obi Ngwa')->count();
   $abiaObiNgwaApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Obi Ngwa')->count();
   $abiaObiNgwapdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Obi Ngwa')->count();
-  $abiaObiNgwalp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Obi Ngwa')->count(); 
+  $abiaObiNgwalp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Obi Ngwa')->count();
+  $abiaObiNgwaPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Obi Ngwa')->count();  
 
     $abiaOhafiaApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ohafia')->count();
   $abiaOhafiaApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ohafia')->count();
   $abiaOhafiapdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ohafia')->count();
   $abiaOhafialp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ohafia')->count(); 
+  $abiaOhafiaPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Ohafia')->count(); 
+
 
     $abiaOsisiomaApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Osisioma')->count();
   $abiaOsisiomaApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Osisioma')->count();
   $abiaOsisiomapdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Osisioma')->count();
   $abiaOsisiomalp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Osisioma')->count(); 
+  $abiaOsisiomaPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Osisioma')->count(); 
 
     $abiaUgwunagboApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ugwunagbo')->count();
   $abiaUgwunagboApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ugwunagbo')->count();
   $abiaUgwunagbopdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ugwunagbo')->count();
   $abiaUgwunagbolp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ugwunagbo')->count(); 
-
+  $abiaUgwunagboPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Ugwunagbo')->count(); 
+  
   $abiaUkwaEastApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ukwa East')->count();
   $abiaUkwaEastApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ukwa East')->count();
   $abiaUkwaEastpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ukwa East')->count();
   $abiaUkwaEastlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ukwa East')->count(); 
-
-    $abiaAbaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ukwa East')->count();
-  $abiaAbaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ukwa East')->count();
-  $abiaAbaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ukwa East')->count();
-  $abiaAbaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ukwa East')->count(); 
-
+  $abiaUkwaEastPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Ukwa East')->count(); 
+   
     $abiaUkwaWestApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Ukwa West')->count();
   $abiaUkwaWestApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Ukwa West')->count();
   $abiaUkwaWestpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Ukwa West')->count();
-  $abiaUkwaWestlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ukwa West')->count(); 
+  $abiaUkwaWestlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Ukwa West')->count();
+  $abiaUkwaWestPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Ukwa West')->count();  
 
   $abiaUmuahiaNorthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Umuahia North')->count();
   $abiaUmuahiaNorthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Umuahia North')->count();
   $abiaUmuahiaNorthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Umuahia North')->count();
   $abiaUmuahiaNorthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Umuahia North')->count();     
+  $abiaUmuahiaNorthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Umuahia North')->count(); 
 
   $abiaUmuahiaSouthApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Umuahia South')->count();
   $abiaUmuahiaSouthApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Umuahia Soth')->count();
   $abiaUmuahiaSouthpdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Umuahia South')->count();
   $abiaUmuahiaSouthlp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Umuahia South')->count();     
+  $abiaUmuahiaSouthPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Umuahia South')->count();     
 
   $abiaUmuNneochiApc =  User::where('governor', '=', 'APC')->where('govlga', '=', 'Umu Nneochi')->count();
   $abiaUmuNneochiApga =  User::where('governor', '=', 'APGA')->where('govlga', '=', 'Umu Nneochi')->count();
   $abiaUmuNneochipdp =  User::where('governor', '=', 'PDP')->where('govlga', '=', 'Umu Nneochi')->count();
   $abiaUmuNneochilp =  User::where('governor', '=', 'LP')->where('govlga', '=', 'Umu Nneochi')->count();     
-  
+  $abiaUmuNneochiPpa = User::where('governor', '=', 'PPA')->where('govlga', '=', 'Umu Nneochi')->count();     
+
 //bar chart- abia votes by party chart
- $abiachart1 = Charts::create('bar', 'highcharts')
+ $abiaChartLGA= Charts::create('bar', 'highcharts')
            
             
-            ->title("Votes according to party in Abia State")
+            ->title("Votes count distribution according LGA in Abia State")
             ->dimensions(0, 400) // Width x Height
             ->template("material")
             // You could always set them manually
-            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111'])
+            ->colors(['#2196F3', '#F44336', '#4FC107', '#F3C111', '#F12345',
+                '#8886F3', '#F443FF', '#4FC567', '#FFFF11', '#F12000',
+                '#219777', '#FFF336', '#4FCFFF', '#F3C1FF', '#F11345',
+                '#219111', '#F00036'])
             // Setup the diferent datasets (this is a multi chart)
-            ->values([$abiaGovApc,$abiaGovApga,$abiaGovLp,$abiaGovPdp])
+           ->dataset('APC', [$abiaAbaNorthApc,$abiaAbaSouthApc,$abiaArochukwuApc,$abiaBendeApc,$abiaIkwuanoApc,$abiaIsialaNgwaNorthApc,$abiaIsialaNgwaSouthApc,$abiaIsuikwuatoApc,$abiaObiNgwaApc,$abiaOhafiaApc,$abiaOsisiomaApc,$abiaUgwunagboApc,$abiaUkwaEastApc,$abiaUkwaWestApc,$abiaUmuahiaNorthApc,$abiaUmuahiaSouthApc,$abiaUmuNneochiApc])
+            ->dataset('APGA', [$abiaAbaNorthApga,$abiaAbaSouthApga,$abiaArochukwuApga,$abiaBendeApga,$abiaIkwuanoApga,$abiaIsialaNgwaNorthApga,$abiaIsialaNgwaSouthApga,$abiaIsuikwuatoApga,$abiaObiNgwaApga,$abiaOhafiaApga,$abiaOsisiomaApga,$abiaUgwunagboApga,$abiaUkwaEastApga,$abiaUkwaWestApga,$abiaUmuahiaNorthApga,$abiaUmuahiaSouthApga,$abiaUmuNneochiApgaPC])
+            ->dataset('PDP', [$abiaAbaNorthpdp,$abiaAbaSouthpdp,$abiaArochukwupdp,$abiaBendepdp,$abiaIkwuanopdp,$abiaIsialaNgwaNorthpdp,$abiaIsialaNgwaSouthpdp,$abiaIsuikwuatopdp,$abiaObiNgwapdp,$abiaOhafiapdp,$abiaOsisiomapdp,$abiaUgwunagbopdp,$abiaUkwaEastpdp,$abiaUkwaWestpdp,$abiaUmuahiaNorthpdp,$abiaUmuahiaSouthpdp,$abiaUmuNneochipdp])
+            ->dataset('PPA', [$abiaAbaNorthPpa,$abiaAbaSouthPpa,$abiaArochukwuPpa,$abiaBendePpa,$abiaIkwuanoPpa,$abiaIsialaNgwaNorthPpa,$abiaIsialaNgwaSouthPpa,$abiaIsuikwuatoPpa,$abiaObiNgwaPpa,$abiaOhafiaPpa,$abiaOsisiomaPpa,$abiaUgwunagboPpa,$abiaUkwaEastPpa,$abiaUkwaWestPpa,$abiaUmuahiaNorthPpa,$abiaUmuahiaSouthPpa,$abiaUmuNneochiPpa])
+            ->dataset('LP', [$abiaAbaNorthlp,$abiaAbaSouthlp,$abiaArochukwulp,$abiaBendelp,$abiaIkwuanolp,$abiaIsialaNgwaNorthlp,$abiaIsialaNgwaSouthlp,$abiaIsuikwuatolp,$abiaObiNgwalp,$abiaOhafialp$abiaOsisiomalp,$abiaUgwunagbolp,$abiaUkwaEastlp,$abiaUkwaWestlp,$abiaUmuahiaNorthlp,$abiaUmuahiaSouthlp,$abiaUmuNneochilp])
+            // Setup what the values mean
+            ->labels(['Aba North', 'Aba South', 'Arochukwu', 'Bende', 'Ikwuano',
+                'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obi Ngwa', 'Ohafia',
+                'Osisioma', 'Ugwunagbo', 'Ukwa East', 'Ukwa West', 'Umuahia North',
+                'Umuahia South', 'Umu Nneochi']);
+
+
+//bar chart- abia votes by party chart
+            $abiaPartyChart = Charts::create('bar', 'highcharts')
+           
+            // Setup the chart settings
+            ->title("Votes distribution according to party in Abia State")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
+            // This defines a preset of colors already done:)
+             ->elementLabel(' ')
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#333111'])
+            // Setup the diferent datasets (this is a multi chart)
+            ->values([$abiaGovApc, $abiaGovApga, $abiaGovPpa, $abiaGovPdp, $abiaGovLp])
             
             // Setup what the values mean
-            ->labels(['APC', 'APGA', 'LP', 'PDP']);
+            ->labels(['APC', 'APGA', 'PPA', 'PDP', 'LP']);
 
-            $abiaChart = collect(['abiapartybar' => $abiachart1]);
 
-            return $abiaChart;
+            $abiaDataLGA = collect(['abialgabar' => $abiaChartLGA, 'abiapartychart' => $abiaPartyChart]);
+
+            return $abiaDataLGA;
 
     }
 
+  
+ 
 
 
 
