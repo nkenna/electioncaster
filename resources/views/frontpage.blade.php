@@ -647,8 +647,7 @@ a img{
           <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+         
           
           <div class="android-drawer-separator"></div>
           @if (Route::has('login'))
@@ -673,9 +672,9 @@ a img{
       <div class="android-content mdl-layout__content">
       <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
-          <div style="color: darkgreen;" class="logo-font android-slogan">Get Involved </div>
-          <div style="color: darkgreen;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
-          <div style="color: darkgreen;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
+          <div style="color: white;" class="logo-font android-slogan">Get Involved </div>
+          <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
+          <div style="color: white;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
         
 
                        <div class="logo-font android-create-character">
@@ -758,7 +757,7 @@ a img{
 
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="img/p6.jpg">
+                <img src="img/aaaaa.png">
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Detailed Insights and Leads</h4>
