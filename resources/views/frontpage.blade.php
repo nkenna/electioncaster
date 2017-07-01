@@ -186,7 +186,7 @@ a img{
   position: relative;
   height: 800px;
   width: auto;
-  background: url('img/aaaaa.png') center top no-repeat;
+  background: url('img/front.jpg') center top no-repeat;
   background-color: lightgreen;
   background-size: cover;
   margin-top: 10px;
@@ -674,7 +674,7 @@ a img{
       <a name="top"></a>
         <div class="android-be-together-section mdl-typography--text-center">
           <div style="color: darkgreen;" class="logo-font android-slogan">Get Involved </div>
-          <div style="color: arkgreen;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
+          <div style="color: darkgreen;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
           <div style="color: darkgreen;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
         
 
@@ -792,7 +792,7 @@ a img{
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
+              <button class="mdl-mega-footer--social-btn"><img src="/img/facebook.png"></button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
               &nbsp;
