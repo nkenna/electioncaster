@@ -34,7 +34,7 @@ class updateGovController extends Controller
     	$user = User::find($id);
     	$user->governor = $request->input('govparty');
     	$user->govstate = $request->input('sta');
-        if($request->input('votelga') = ''){
+        if($request->input('votelga') === ''){
          $user->govlga = $request->input('votelga1');   
         }else{
             $user->govlga = $request->input('votelga');   
