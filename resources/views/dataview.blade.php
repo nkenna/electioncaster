@@ -604,9 +604,9 @@ s.setAttribute('data-timestamp', +new Date());
 <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+                    <button style="background: url('img/facebook.png');" class="mdl-mega-footer--social-btn" ></button>
+                &nbsp;
+              <button style="background: url('img/twitter.png');" class="mdl-mega-footer--social-btn"></button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
             </div>
