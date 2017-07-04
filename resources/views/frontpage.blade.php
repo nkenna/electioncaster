@@ -288,12 +288,6 @@ a img{
   }
 
 
-.android-tv {
-  display: inline-block;
-  width: 300px;
-  margin-right: 80px;
-}
-
  
 
 
@@ -793,7 +787,7 @@ a img{
             <div class="mdl-mega-footer--left-section">
                 <button style="background: url('img/facebook.png');" class="mdl-mega-footer--social-btn"></button>
               &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+              <button style="background: url('img/twitter.png');" class="mdl-mega-footer--social-btn"></button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
             </div>
