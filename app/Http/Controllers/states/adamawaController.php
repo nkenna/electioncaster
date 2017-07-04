@@ -37,11 +37,19 @@ class adamawaController extends Controller
         return $allAdamawaOri;
        
     }
+    
+    //get vote count
+    public function getAllVoteCount(){
+    $allAdamawaCount = DB::select('select origin from users where govState = ?', ['Adamawa']);
+        $allAdamawaCount =+ count($allAdamawaCount);
+        
+        return $allAdamawaCount;
+    }
 
     //get all users registered under adamawa
     public function allRegisterAdamawa(){
        
-        return $allAdamawaRes() + $allAdamawaOri();
+        return $allAdamawa = $allAdamawaRes() + $allAdamawaOri();
     }
 
 
@@ -68,7 +76,7 @@ $age18_30 = User::whereYear('dod','<', '1999')
  $age83 = User::whereYear('dod','<=', '1934')->where('govstate', '=', 'Adamawa')->count();
  
 //bar chart- votes by age
- $chart5 = Charts::create('bar', 'highcharts')
+ $adamawaAge = Charts::create('bar', 'highcharts')
            
             // Setup the chart settings
             ->title("president Votes according to Age")
@@ -86,7 +94,7 @@ $age18_30 = User::whereYear('dod','<', '1999')
             ->labels(['18 - 30yrs', '31 - 43yrs', '44 - 56yrs', '57 - 69yrs', '70 - 82yrs', '83yrs above']);
 
    
-
+return $adamawaAge;
 
     }
 
@@ -249,6 +257,22 @@ public function getVoteByLGAAdamawa(){
 
      $mayobelwaSDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Mayo Belwa','SDP']);                
     $mayobelwaSDP =+ count($mayobelwaSDP);
+    
+    
+    
+    $michikaAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','APC']);                
+    $michikaAPC =+ count($michikaAPC);
+
+     $michikaPDM =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','PDM']);                
+    $michikaPDM =+ count($michikaPDM);
+
+     $mmichikaPDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','PDP']);                
+    $michikaPDP =+ count($michikaPDP);
+
+     $michikaSDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','SDP']);                
+    $michikaSDP =+ count($michikaSDP);
+    
+    
 
 
     $mubinorthAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Mubi North','APC']);                
@@ -357,22 +381,116 @@ public function getVoteByLGAAdamawa(){
     $yolasouthSDP =+ count($yolasouthSDP);
 
 
+  //bar chart - party votes in Anambra LGAs
+            $adamawaLgaParty = Charts::multi('bar', 'highcharts')
+            ->elementLabel(' ')
+            // Setup the chart settings
+            ->title("Distribution of Gubernatorial votes according to party votes in Adamawa State LGAs")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
 
+            // This defines a preset of colors already done:)
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336', '#FFC107', '#F0C545'])
+            // Setup the diferent datasets (this is a multi chart)
+          
 
-     
+            ->dataset('APC', [$demsaAPC, $fufereAPC, $ganyeAPC, $gayukAPC, $gombiAPC, $grieAPC, $hongAPC, $jadaAPC, $larmurdeAPC, $madagaliAPC, $maihaAPC, $mayobelwaAPC, $michikaAPC, $mubinorthAPC, $mubisouthAPC, $numanAPC, $shellengAPC, $songAPC, $toungoAPC, $yolanorthAPC, $yolasouthAPC])
+            ->dataset('PDM', [$demsaPDM, $fuferePDM, $ganyePDM, $gayukPDM, $gombiPDM, $griePDM, $hongPDM, $jadaPDM, $larmurdePDM, $madagaliPDM, $maihaPDM, $mayobelwaPDM, $michikaPDM, $mubinorthPDM, $mubisouthPDM, $numanPDM, $shellengPDM, $songPDM, $toungoPDM, $yolanorthPDM, $yolasouthPDM])
+            ->dataset('PDP', [$demsaPDP, $fuferePDP, $ganyePDP, $gayukPDP, $gombiPDP, $griePDP, $hongPDP, $jadaPDP, $larmurdePDP, $madagaliPDP, $maihaPDP, $mayobelwaPDP, $michikaPDP, $mubinorthPDP, $mubisouthPDP, $numanPDP, $shellengPDP, $songPDP, $toungoPDP, $yolanorthPDP, $yolasouthPDP])
+            ->dataset('SDP', [$demsaSDP, $fufereSDP, $ganyeSDP, $gayukSDP, $gombiSDP, $grieSDP, $hongSDP, $jadaSDP, $larmurdeSDP, $madagaliSDP, $maihaSDP, $mayobelwaSDP, $michikaSDP, $mubinorthSDP, $mubisouthSDP, $numanSDP, $shellengSDP, $songSDP, $toungoSDP, $yolanorthSDP, $yolasouthSDP])
+            
+            
+            ->labels(['Demsa', 'Fufure', 'Ganye', 'Gayuk','Gombi', 'Grie', 'Hong', 'Jada', 'Larmurde', 'Madagali', 'Maiha', 'Mayo Belwa', 'Michika', 'Mubi North', 'Mubi South','Mubi North', 'Numan','Shelleng', 'Song', 'Toungo', 'Yola North', 'Yola South']);
+
+     return $adamawaLgaParty;
 
     
 
 }
 
 
-    //var Adamawa = ['Select item...', 'Demsa', 'Fufure', 'Ganye', 'Gayuk',
-    //Gombi', 'Grie', 'Hong', 'Jada', 'Larmurde', 'Madagali', 'Maiha',
-     'Mayo Belwa', 'Michika', 'Mubi North', 'Mubi South', 'Numan'
-     //'Shelleng', 'Song', 'Toungo', 'Yola North', 'Yola South'];
-
 
      public function getVotesByOccupation(){
-     	$student = DB::select('select * from users where occupation = ? and govstate = ?', ['Student','Adamawa']);
-     }
+     	
+    $farmer = DB::select('select * from users where occupation = ? and govstate = ?', ['Farmer','Adamawa']);
+		$farmer =+ count($farmer);
+
+		$civilServant = DB::select('select * from users where occupation = ? and govstate = ?', ['Civil Servant', 'Adamawa']);
+		$civilServant =+ count($civilServant);
+                
+                $student = DB::select('select * from users where occupation = ? and govstate = ?', ['Student', 'Adamawa']);
+		$student =+ count($student);
+
+		$publicServant = DB::select('select * from users where occupation = ? and govstate = ?', ['Public Servant', 'Adamawa']);
+		$publicServant = count($publicServant);
+
+		$politician = DB::select('select * from users where occupation = ? and govstate = ?', ['Politician', 'Adamawa']);
+		$politician =+ count($politician);
+
+		$business = DB::select('select * from users where occupation = ? and govstate = ?', ['Business', 'Adamawa']);
+		$business =+ count($business);
+
+		$tradesman = DB::select('select * from users where occupation = ? and govstate = ?', ['Skilled', 'Adamawa']);
+		$tradesman =+ count($tradesman);
+
+		$self = DB::select('select * from users where occupation and govstate = ?', ['Self Employed', 'Adamawa']);
+		$self=+ count($self);
+
+		$trader = DB::select('select * from users where occupation and govstate = ?', ['Trader', 'Adamawa']);
+		$trader =+ count($trader);
+
+		$teacher = DB::select('select * from users where occupation and govstate = ?', ['Teacher', 'Adamawa']);
+                $teacher =+ count($teacher);
+                
+                
+                 //bar chart- votes by age
+ $adamawaOccupation = Charts::create('bar', 'highcharts')
+           
+            // Setup the chart settings
+            ->title("Votes distribution according to Occupation")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
+            // This defines a preset of colors already done:)
+             ->elementLabel(' ')
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336', '#4FC107','#F3C111', '#F3C444', '#333111','#F3C000', '#F88444', '#3FF111'])
+            // Setup the diferent datasets (this is a multi chart)
+            ->values([$student, $farmer, $business, $civilServant, $politician, $publicServant, $self, $teacher, $trader, $tradesman])
+            
+            // Setup what the values mean
+            ->labels(['Student', 'Farmer', 'Business', 'Civil Servant', 'Politician', 'Public Servant', 'Self-Employed', 'Teacher/Lecturer', 'Trader', 'Skilled/Tradesman']);
+ 
+            return $adamawaOccupation;
+        }
+        
+        
+        public function getVotesBySex(){
+            $male = DB::select('select * from users where gender = ? and govstate = ?', ['Male', 'Adamawa']);
+             $female = DB::select('select * from users where gender = ? and govstate = ?', ['Female', 'Adamawa']);
+             
+        
+              //bar chart- votes by age
+ $adamawaGender = Charts::create('bar', 'highcharts')
+           
+            // Setup the chart settings
+            ->title("Votes distribution according to Gender")
+            // A dimension of 0 means it will take 100% of the space
+            ->dimensions(0, 400) // Width x Height
+            // This defines a preset of colors already done:)
+             ->elementLabel(' ')
+            ->template("material")
+            // You could always set them manually
+            ->colors(['#2196F3', '#F44336'])
+            // Setup the diferent datasets (this is a multi chart)
+            ->values([$male, $female])
+            
+            // Setup what the values mean
+            ->labels(['Male', 'Female']);
+ 
+            return $adamawaGender;
+             
+        }
 }

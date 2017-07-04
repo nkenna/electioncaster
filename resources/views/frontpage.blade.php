@@ -791,7 +791,7 @@ a img{
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"><img src="/img/facebook.png"></button>
+                <button style="background: url('img/facebook.png');" class="mdl-mega-footer--social-btn"></button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
               &nbsp;

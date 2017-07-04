@@ -2308,8 +2308,60 @@ s.setAttribute('data-timestamp', +new Date());
 	<!-- end of abia state section -->
 
 <!--Adamawa state starts-->
-	<div id="adamawa"><h2>Adamawa State data is not yet ready</h2></div>
+	<div id="adamawa">
+     @inject('allAdamawaRes', 'App\Http\Controllers\adamawaController')
+     @inject('allAdamawaOri', 'App\Http\Controllers\adamawaController')
+     @inject('allAdamawa', 'App\Http\Controllers\adamawaController')
+     @inject('adamawaAge', 'App\Http\Controllers\adamawaController')
+     @inject('adamawaLgaParty', 'App\Http\Controllers\adamawaController')
+     @inject('adamawaOccupation', 'App\Http\Controllers\adamawaController')
+     @inject('adamawaGender', 'App\Http\Controllers\adamawaController')
+     @inject('allAdamawaCount', 'App\Http\Controllers\adamawaController')
+     
+     
+     <div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users registered under Adamawa State: {{ $allAdamawa->allRegisterAdamawa()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Resident: {{ $allAdamawaRes->allAdamawaResident()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Origin: {{ $allAdamawaOri->allAdamawaOrigin()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Count of Gubernational Votes in Adamawa State: {{ $allAdamawaCount->getAllVoteCount()}} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $adamawaAge->getVoteByAgeAdamawa()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $adamawaLgaParty->getVoteByLGAAdamawa()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $damawaOccupation->getVotesByOccupation()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $adamawaGender->getVotesBySex()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $adamawaAge->getVoteByAgeAdamawa()->render() !!} </div>
+     
+     
+            	
+	<div id="disqus_thread"></div>
+ <script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://www.votestats.com.ng/user/govdataview';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'govDataviewAnambra'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://votestats.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
+        </div>
 	<!--Adamawa state ends-->
+        
+        
 	<div id="akwaibom"><h2>Akwa Ibom State data is not yet ready</h2></div>
 
 	<!-- anambra state section -->
