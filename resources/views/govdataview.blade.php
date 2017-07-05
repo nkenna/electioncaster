@@ -2309,14 +2309,14 @@ s.setAttribute('data-timestamp', +new Date());
 
 <!--Adamawa state starts-->
 	<div id="adamawa">
-     @inject('allAdamawaRes', 'App\Http\Controllers\adamawaController')
-     @inject('allAdamawaOri', 'App\Http\Controllers\adamawaController')
-     @inject('allAdamawa', 'App\Http\Controllers\adamawaController')
-     @inject('adamawaAge', 'App\Http\Controllers\adamawaController')
-     @inject('adamawaLgaParty', 'App\Http\Controllers\adamawaController')
-     @inject('adamawaOccupation', 'App\Http\Controllers\adamawaController')
-     @inject('adamawaGender', 'App\Http\Controllers\adamawaController')
-     @inject('allAdamawaCount', 'App\Http\Controllers\adamawaController')
+     @inject('allAdamawaRes', 'App\Http\Controllers\states\adamawaController')
+     @inject('allAdamawaOri', 'App\Http\Controllers\states\adamawaController')
+     @inject('allAdamawa', 'App\Http\Controllers\states\adamawaController')
+     @inject('adamawaAge', 'App\Http\Controllers\states\adamawaController')
+     @inject('adamawaLgaParty', 'App\Http\Controllers\states\adamawaController')
+     @inject('adamawaOccupation', 'App\Http\Controllers\states\adamawaController')
+     @inject('adamawaGender', 'App\Http\Controllers\states\adamawaController')
+     @inject('allAdamawaCount', 'App\Http\Controllers\states\adamawaController')
      
      
      <div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users registered under Adamawa State: {{ $allAdamawa->allRegisterAdamawa()}} </div>
