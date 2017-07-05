@@ -40,7 +40,7 @@ class adamawaController extends Controller
     
     //get vote count
     public function getAllVoteCount(){
-    $allAdamawaCount = DB::select('select origin from users where govState = ?', ['Adamawa']);
+    $allAdamawaCount = DB::select('select * from users where govstate = ?', ['Adamawa']);
         $allAdamawaCount =+ count($allAdamawaCount);
         
         return $allAdamawaCount;
@@ -79,7 +79,7 @@ $age18_30 = User::whereYear('dod','<', '1999')
  $adamawaAge = Charts::create('bar', 'highcharts')
            
             // Setup the chart settings
-            ->title("president Votes according to Age")
+            ->title("Votes according to Age in Adamawa State")
             // A dimension of 0 means it will take 100% of the space
             ->dimensions(0, 400) // Width x Height
             // This defines a preset of colors already done:)
