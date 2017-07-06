@@ -2311,7 +2311,7 @@ s.setAttribute('data-timestamp', +new Date());
 	<div id="adamawa">
      @inject('allAdamawa', 'App\Http\Controllers\states\adamawaController')
      @inject('allAdamawaOri', 'App\Http\Controllers\states\adamawaController')
-     @inject('allAdamawaRes', 'App\Http\Controllers\states\adamawaController')
+   
      @inject('adamawaAge', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaLgaParty', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaOccupation', 'App\Http\Controllers\states\adamawaController')

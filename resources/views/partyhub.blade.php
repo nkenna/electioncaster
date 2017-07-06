@@ -8,10 +8,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>VoteStats- Partyhub</title>
+<title>VoteStats - Support Us</title>
     <!-- Styles -->
     
-    <!-- Scripts -->
     
 
 
@@ -21,8 +20,12 @@
         <link rel="stylesheet" href="/css/mdl/material.min.css"/>
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
-	
-	<style>
+  
+
+
+
+
+  <style>
 
 
 body {
@@ -364,7 +367,15 @@ a img{
   padding: 80px 16px 0 16px;
 }
 
+  .android-customized-section-text p {
+    padding-top: 16px;
+  }
 
+.android-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
 
 .android-more-section {
   padding: 80px 0;
@@ -579,10 +590,7 @@ a img{
   
 }
 
-	</style>
-
-
-
+  </style>
 
   {!! Charts::assets() !!}
   {!! Analytics::render() !!}
@@ -592,7 +600,7 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            
+          <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -605,12 +613,12 @@ a img{
             </div>
           </div>
           <!-- Navigation -->
-           <div class="android-navigation-container">
+          <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
            
                
           @if (Route::has('login'))
@@ -626,14 +634,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            
+          <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            <li class="mdl-menu__item">Support this Project</li>
+            <li class="mdl-menu__item">Resolve an Issue</li>
             
  
           </ul>
@@ -643,36 +651,24 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-        
-        </span>
+      <img class="android-logo-image" src="/css/mdl/logo.png"> 
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
+          <a class="mdl-navigation__link" href="">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
-          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+          <a class="mdl-navigation__link" href="">Data-Land</a>
+          <a class="mdl-navigation__link" href="">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
-          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
-            
           
+          <a class="mdl-navigation__link" href="">Support this Project</a>
+          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
-          @if (Route::has('login'))
-                
-                    @if (Auth::check())
-                    <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
-                       <a class="mdl-navigation__link " href="{{ url('/logout') }}">Logout</a>
-                        
-                    @else
-                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
-                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
-                    @endif
-                
-            @endif
           
-         
-          
+          <a class="mdl-navigation__link" href="">Login</a>
+          <a class="mdl-navigation__link" href="">Register</a>
+          <a class="mdl-navigation__link" href="">Dashboard</a>
+          <a class="mdl-navigation__link" href="">Usernme</a>
           <div class="android-drawer-separator"></div>
           
         </nav>
@@ -682,79 +678,28 @@ a img{
       <div class="android-content mdl-layout__content">
       
 
-       
-<div class="android-more-section">
+         
+
+
+
+
+
+
+
  
-  <div class="android-section-title mdl-typography--display-1-color-contrast"> Click to read about each party: </div>
-  <div class="android-card-container mdl-grid">
-
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-    
- <div class="mdl-card__title">
-    <h4 class="mdl-card__title-text">APC</h4>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <span class="mdl-typography--font-light mdl-typography--subhead">All People's Congress</span>
-    </div>
-              <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/apc') }}">
-                  All about APC
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-    
- <div class="mdl-card__title">
-    <h4 class="mdl-card__title-text">PDP</h4>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <span class="mdl-typography--font-light mdl-typography--subhead">People's Democratic Party</span>
-    </div>
-              <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/pdp') }}">
-                  All about PDP
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
 
             
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-    
- <div class="mdl-card__title">
-    <h4 class="mdl-card__title-text">APGA</h4>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <span class="mdl-typography--font-light mdl-typography--subhead"></span>
-    </div>
-              <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/apcga) }}">
-                  All about APGA
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-
-
-
 
             
           </div>
         </div>
 
-
-
-
- <footer class="android-footer mdl-mega-footer">
+        <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-                    <button style="background: url('img/facebook.png');" class="mdl-mega-footer--social-btn" ></button>
-                &nbsp;
-              <button style="background: url('img/twitter.png');" class="mdl-mega-footer--social-btn"></button>
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
             </div>
@@ -767,7 +712,7 @@ a img{
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
+            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
             <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
           </div>
 
@@ -779,19 +724,6 @@ a img{
           </div>
 
         </footer>
-
-
-
-
- 
-
-            
-
-            
-          </div>
-        </div>
-
-       
 
 
 
