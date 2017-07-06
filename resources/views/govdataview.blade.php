@@ -2311,7 +2311,7 @@ s.setAttribute('data-timestamp', +new Date());
 	<div id="adamawa">
      @inject('allAdamawa', 'App\Http\Controllers\states\adamawaController')
      @inject('allAdamawaOri', 'App\Http\Controllers\states\adamawaController')
-   
+     @inject('allAdamawaRes', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaAge', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaLgaParty', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaOccupation', 'App\Http\Controllers\states\adamawaController')
@@ -2320,7 +2320,7 @@ s.setAttribute('data-timestamp', +new Date());
      
      
      <div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users registered under Adamawa State: {{ $allAdamawa->allRegisterAdamawa()}} </div>
-	
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Resident: {{ $allAdamawaRes->allAdamawaResident()}} </div>
 	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Origin: {{ $allAdamawaOri->allAdamawaOrigin()}} </div>
 	<div class="mdl-typography--font-regular mdl-typography--font-thin">Count of Gubernational Votes in Adamawa State: {{ $allAdamawaCount->getAllVoteCount()}} </div>
 
