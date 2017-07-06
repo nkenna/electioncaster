@@ -115,13 +115,13 @@ public function getVoteByLGAAdamawa(){
     $fufureAPC =+ count($fufureAPC);
 
     $fufurePDM = DB::select('select * from users where govlga = ? and governor = ?', ['Fufure','PDM']);                    
-    $fuferePDM =+ count($fuferePDM);
+    $fufurePDM =+ count($fufurePDM);
 
     $fufurePDP = DB::select('select * from users where govlga = ? and governor = ?', ['Fufure','PDP']);                    
-    $fuferePDP =+ count($fuferePDP);
+    $fufurePDP =+ count($fufurePDP);
 
     $fufureSDP = DB::select('select * from users where govlga = ? and governor = ?', ['Fufure','SDP']);                    
-    $fufereSDP =+ count($fufereSDP);
+    $fufureSDP =+ count($fufureSDP);
 
 
     $ganyeAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Ganye','APC']);                    
