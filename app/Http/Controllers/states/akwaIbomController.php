@@ -168,29 +168,21 @@ return $akwaIbomAge;
         $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
     $abakAPC =+ count($abakAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
+          $easternOboloAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Eastern Obolo','APC']);              
+    $easternOboloAPC =+ count($easternOboloAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
+          $esitEketAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Esit Eket','APC']);              
+    $esitEketAPC =+ count($esitEketAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
+          $essienUdimAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Essien Udim','APC']);              
+    $essienUdimAPC =+ count($essienUdimAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
+          $etimEkpoAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Etim Ekpo','APC']);              
+    $etimEkpoAPC =+ count($etimEkpoAPC);
     
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
-    
-          $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
-    $abakAPC =+ count($abakAPC);
-    
-          $EtinanAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Etinan','APC']);              
-    $abakAPC =+ count($EtinanAPC);
+          $etinanAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Etinan','APC']);              
+    $etinanAPC =+ count($etinanAPC);
     
           $ibenoAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Ibeno','APC']);              
     $ibenoAPC =+ count($ibenoAPC);

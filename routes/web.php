@@ -37,6 +37,14 @@ Route::get('/supportus', function () {
     return view('supportus');
 });
 
+Route::get('/nigeria/political/party/hub', function () {
+    return view('partyhub');
+});
+
+Route::get('/nigeria/political/party/hub/apc', function () {
+    return view('apc');
+});
+
 //Route::match(['get','post'],'/', 'frontPageController@getFrontPresidentPie')->name('frontpage');
 
 
