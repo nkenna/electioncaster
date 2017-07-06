@@ -46,13 +46,7 @@ class adamawaController extends Controller
         return $allAdamawaCount;
     }
 
-    //get all users registered under adamawa
-    public function allRegisterAdamawa(){
-       
-        $allAdamawa = allAdamawaResident() + $allAdamawaOrigin();
-        return $allAdamawa;
-    }
-
+    
 
     //retrieve vote by age
     public function getVoteByAgeAdamawa(){
