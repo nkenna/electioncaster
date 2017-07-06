@@ -179,7 +179,7 @@ public function getVoteByLGAAdamawa(){
     $hongAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Hong','APC']);                    
     $hongAPC =+ count($hongAPC);
 
-        $HongPDM = DB::select('select * from users where govlga = ? and governor = ?', ['Hong','PDM']);                    
+        $hongPDM = DB::select('select * from users where govlga = ? and governor = ?', ['Hong','PDM']);                    
     $hongPDM =+ count($hongPDM);
 
         $hongPDP = DB::select('select * from users where govlga = ? and governor = ?', ['Hong','PDP']);                    
