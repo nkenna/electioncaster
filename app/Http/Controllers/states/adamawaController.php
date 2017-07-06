@@ -112,7 +112,7 @@ public function getVoteByLGAAdamawa(){
 
 
     $fufureAPC = DB::select('select * from users where govlga = ? and governor = ?', ['Fufure','APC']);                    
-    $fufereAPC =+ count($fufereAPC);
+    $fufureAPC =+ count($fufureAPC);
 
     $fufurePDM = DB::select('select * from users where govlga = ? and governor = ?', ['Fufure','PDM']);                    
     $fuferePDM =+ count($fuferePDM);
@@ -391,10 +391,10 @@ public function getVoteByLGAAdamawa(){
             // Setup the diferent datasets (this is a multi chart)
           
 
-            ->dataset('APC', [$demsaAPC, $fufereAPC, $ganyeAPC, $gayukAPC, $gombiAPC, $grieAPC, $hongAPC, $jadaAPC, $larmurdeAPC, $madagaliAPC, $maihaAPC, $mayobelwaAPC, $michikaAPC, $mubinorthAPC, $mubisouthAPC, $numanAPC, $shellengAPC, $songAPC, $toungoAPC, $yolanorthAPC, $yolasouthAPC])
-            ->dataset('PDM', [$demsaPDM, $fuferePDM, $ganyePDM, $gayukPDM, $gombiPDM, $griePDM, $hongPDM, $jadaPDM, $larmurdePDM, $madagaliPDM, $maihaPDM, $mayobelwaPDM, $michikaPDM, $mubinorthPDM, $mubisouthPDM, $numanPDM, $shellengPDM, $songPDM, $toungoPDM, $yolanorthPDM, $yolasouthPDM])
-            ->dataset('PDP', [$demsaPDP, $fuferePDP, $ganyePDP, $gayukPDP, $gombiPDP, $griePDP, $hongPDP, $jadaPDP, $larmurdePDP, $madagaliPDP, $maihaPDP, $mayobelwaPDP, $michikaPDP, $mubinorthPDP, $mubisouthPDP, $numanPDP, $shellengPDP, $songPDP, $toungoPDP, $yolanorthPDP, $yolasouthPDP])
-            ->dataset('SDP', [$demsaSDP, $fufereSDP, $ganyeSDP, $gayukSDP, $gombiSDP, $grieSDP, $hongSDP, $jadaSDP, $larmurdeSDP, $madagaliSDP, $maihaSDP, $mayobelwaSDP, $michikaSDP, $mubinorthSDP, $mubisouthSDP, $numanSDP, $shellengSDP, $songSDP, $toungoSDP, $yolanorthSDP, $yolasouthSDP])
+            ->dataset('APC', [$demsaAPC, $fufureAPC, $ganyeAPC, $gayukAPC, $gombiAPC, $grieAPC, $hongAPC, $jadaAPC, $larmurdeAPC, $madagaliAPC, $maihaAPC, $mayobelwaAPC, $michikaAPC, $mubinorthAPC, $mubisouthAPC, $numanAPC, $shellengAPC, $songAPC, $toungoAPC, $yolanorthAPC, $yolasouthAPC])
+            ->dataset('PDM', [$demsaPDM, $fufurePDM, $ganyePDM, $gayukPDM, $gombiPDM, $griePDM, $hongPDM, $jadaPDM, $larmurdePDM, $madagaliPDM, $maihaPDM, $mayobelwaPDM, $michikaPDM, $mubinorthPDM, $mubisouthPDM, $numanPDM, $shellengPDM, $songPDM, $toungoPDM, $yolanorthPDM, $yolasouthPDM])
+            ->dataset('PDP', [$demsaPDP, $fufurePDP, $ganyePDP, $gayukPDP, $gombiPDP, $griePDP, $hongPDP, $jadaPDP, $larmurdePDP, $madagaliPDP, $maihaPDP, $mayobelwaPDP, $michikaPDP, $mubinorthPDP, $mubisouthPDP, $numanPDP, $shellengPDP, $songPDP, $toungoPDP, $yolanorthPDP, $yolasouthPDP])
+            ->dataset('SDP', [$demsaSDP, $fufureSDP, $ganyeSDP, $gayukSDP, $gombiSDP, $grieSDP, $hongSDP, $jadaSDP, $larmurdeSDP, $madagaliSDP, $maihaSDP, $mayobelwaSDP, $michikaSDP, $mubinorthSDP, $mubisouthSDP, $numanSDP, $shellengSDP, $songSDP, $toungoSDP, $yolanorthSDP, $yolasouthSDP])
             
             
             ->labels(['Demsa', 'Fufure', 'Ganye', 'Gayuk','Gombi', 'Grie', 'Hong', 'Jada', 'Larmurde', 'Madagali', 'Maiha', 'Mayo Belwa', 'Michika', 'Mubi North', 'Mubi South','Mubi North', 'Numan','Shelleng', 'Song', 'Toungo', 'Yola North', 'Yola South']);
