@@ -49,7 +49,7 @@ class adamawaController extends Controller
     //get all users registered under adamawa
     public function allRegisterAdamawa(){
        
-        return $allAdamawa = $allAdamawaRes() + $allAdamawaOri();
+        return $allAdamawa = $allAdamawaResident() + $allAdamawaOrigin();
     }
 
 

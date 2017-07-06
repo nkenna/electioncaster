@@ -367,7 +367,7 @@ a img{
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
            <!-- <img class="android-logo-image" src="img/android-logo.png"> -->
-           <h4 style="color: blue;"><b>VoteStats</b></h4>
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -402,7 +402,7 @@ a img{
           </div>
           <span class="android-mobile-title mdl-layout-title">
            <!-- <img class="android-logo-image" src="img/android-logo.png">-->
-           <h4 style="color: blue;"><b>VoteStats</b></h4>
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
@@ -420,7 +420,7 @@ a img{
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
          <!-- <img class="android-logo-image" src="img/android-logo-white.png"> -->
-         <h4 style="color: blue;"><b>VoteStats</b></h4>
+         <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Home</a>
@@ -432,8 +432,7 @@ a img{
           <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          
           
           <div class="android-drawer-separator"></div>
           @if (Route::has('login'))
