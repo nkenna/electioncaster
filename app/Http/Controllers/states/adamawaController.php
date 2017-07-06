@@ -261,7 +261,7 @@ public function getVoteByLGAAdamawa(){
      $michikaPDM =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','PDM']);                
     $michikaPDM =+ count($michikaPDM);
 
-     $mmichikaPDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','PDP']);                
+     $michikaPDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','PDP']);                
     $michikaPDP =+ count($michikaPDP);
 
      $michikaSDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Michika','SDP']);                
