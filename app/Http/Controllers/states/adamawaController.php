@@ -238,7 +238,7 @@ public function getVoteByLGAAdamawa(){
     $maihaPDP =+ count($maihaPDP);
 
     $maihaSDP = DB::select('select * from users where govlga = ? and governor = ?', ['Maiha', 'SDP']);                 
-    $maihaSDP =+ count($maihaASDP);
+    $maihaSDP =+ count($maihaSDP);
 
 
     $mayobelwaAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Mayo Belwa','APC']);                
