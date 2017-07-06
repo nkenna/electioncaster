@@ -2320,7 +2320,7 @@ s.setAttribute('data-timestamp', +new Date());
      
      
      <div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users registered under Adamawa State: {{ $allAdamawa->allRegisterAdamawa()}} </div>
-	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Resident: {{ $allAdamawaRes->allAdamawaResident()}} </div>
+	
 	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Adamawa State as Origin: {{ $allAdamawaOri->allAdamawaOrigin()}} </div>
 	<div class="mdl-typography--font-regular mdl-typography--font-thin">Count of Gubernational Votes in Adamawa State: {{ $allAdamawaCount->getAllVoteCount()}} </div>
 
