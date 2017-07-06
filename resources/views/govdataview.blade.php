@@ -2309,7 +2309,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <!--Adamawa state starts-->
 	<div id="adamawa">
-     @inject('allAdamawaRes', 'App\Http\Controllers\states\adamawaController')
+     @inject('allAdamawa', 'App\Http\Controllers\states\adamawaController')
      @inject('allAdamawaOri', 'App\Http\Controllers\states\adamawaController')
      @inject('allAdamawa', 'App\Http\Controllers\states\adamawaController')
      @inject('adamawaAge', 'App\Http\Controllers\states\adamawaController')
