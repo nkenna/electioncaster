@@ -45,6 +45,10 @@ Route::get('/nigeria/political/party/hub/apc', function () {
     return view('party/apc');
 });
 
+Route::get('/nigeria/political/party/hub/pdp', function () {
+    return view('party/pdp');
+});
+
 //Route::match(['get','post'],'/', 'frontPageController@getFrontPresidentPie')->name('frontpage');
 
 
