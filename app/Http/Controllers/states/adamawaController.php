@@ -430,13 +430,13 @@ public function getVoteByLGAAdamawa(){
 		$tradesman = DB::select('select * from users where occupation = ? and govstate = ?', ['Skilled', 'Adamawa']);
 		$tradesman =+ count($tradesman);
 
-		$self = DB::select('select * from users where occupation and govstate = ?', ['Self Employed', 'Adamawa']);
+		$self = DB::select('select * from users where occupation = ? and govstate = ?', ['Self Employed', 'Adamawa']);
 		$self=+ count($self);
 
-		$trader = DB::select('select * from users where occupation and govstate = ?', ['Trader', 'Adamawa']);
+		$trader = DB::select('select * from users where occupation = ? and govstate = ?', ['Trader', 'Adamawa']);
 		$trader =+ count($trader);
 
-		$teacher = DB::select('select * from users where occupation and govstate = ?', ['Teacher', 'Adamawa']);
+		$teacher = DB::select('select * from users where occupation = ? and govstate = ?', ['Teacher', 'Adamawa']);
                 $teacher =+ count($teacher);
                 
                 
