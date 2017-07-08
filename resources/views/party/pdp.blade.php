@@ -730,7 +730,7 @@ The party is a moderate advocate of state-autonomy and religious freedom for the
 </p>
 
 <p>
-  In the 2015 elections, the incumbent president and PDP presidential nominee, Goodluck Jonathan, was defeated by General Muhammadu Buhari of the All Progressives Congress by 55% to 45%, losing by 2.6 million votes, out of approximately 28.6 million valid votes cast. Out of Nigeria's 36 states and the Federal Capital Territory, General Muhammadu Buhari won 21 states while President Goodluck Jonathan won 15 states and the Federal Capital Territory.
+  In the 2015 elections, the incumbent president and PDP presidential nominee, Goodluck Jonathan, was defeated by General Muhammadu Buhari of the <a href="{{ url('/party/apc') }}">All Progressives Congress</a> by 55% to 45%, losing by 2.6 million votes, out of approximately 28.6 million valid votes cast. Out of Nigeria's 36 states and the Federal Capital Territory, General Muhammadu Buhari won 21 states while President Goodluck Jonathan won 15 states and the Federal Capital Territory.
 </p>
         
         <p>Culled from <a href="https://en.wikipedia.org/wiki/People%27s_Democratic_Party_(Nigeria)" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase android-link">wikipedia</a>. To provide more information about this article, please contact us: votestatsng@gmail.com</p>
