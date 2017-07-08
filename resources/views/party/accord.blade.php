@@ -8,12 +8,11 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>VoteStats - Home</title>
+<title>VoteStats- ACCORD</title>
     <!-- Styles -->
     
     <!-- Scripts -->
-    <!--<script src="{{ asset('css/mdl/material.min.js') }}"></script>-->
-    <!--<script src="{{ asset('css/mdl/material.min.css') }}"></script>-->
+    
 
 
 
@@ -22,8 +21,11 @@
         <link rel="stylesheet" href="/css/mdl/material.min.css"/>
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
-	
-	<style>
+  
+
+
+
+  <style>
 
 
 body {
@@ -186,7 +188,7 @@ a img{
   position: relative;
   height: 800px;
   width: auto;
-  background: url('img/front.jpg') center top no-repeat;
+  background: url('img/slide3.jpg') center top no-repeat;
   background-color: lightgreen;
   background-size: cover;
   margin-top: 10px;
@@ -211,7 +213,7 @@ a img{
 
 .android-create-character {
   font-size: 21px;
-  padding-top: 300px;
+  padding-top: 400px;
 }
 
   .android-create-character a {
@@ -288,14 +290,20 @@ a img{
   }
 
 
+.android-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
  
 
 
 .android-wear-section {
   position: relative;
-  
+  background: url('img/p3.jpg') center top no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 600px;
 }
 
 .android-wear-band {
@@ -347,6 +355,17 @@ a img{
     position: relative;
     top: 6px;
   }
+
+.android-customized-section {
+  text-align: center;
+}
+
+.android-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
 
 
 
@@ -563,10 +582,7 @@ a img{
   
 }
 
-	</style>
-
-
-
+  </style>
 
   {!! Charts::assets() !!}
   {!! Analytics::render() !!}
@@ -576,8 +592,7 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-           <img class="android-logo-image" src="/css/mdl/logo.png"> 
-           
+          <img class="android-logo-image" src="/css/mdl/logo.png">
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -589,16 +604,15 @@ a img{
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
           </div>
-
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
            
-           	   
+               
           @if (Route::has('login'))
                 
                     @if (Auth::check())
@@ -612,14 +626,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            <li class="mdl-menu__item">Support this Project</li>
+            <li class="mdl-menu__item">Resolve an Issue</li>
             
  
           </ul>
@@ -629,25 +643,34 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-        <img class="android-logo-image" src="/css/mdl/logo.png"> 
+         <img class="android-logo-image" src="/css/mdl/logo.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
+          <a class="mdl-navigation__link" href="">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
-          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+          <a class="mdl-navigation__link" href="">Data-Land</a>
+          <a class="mdl-navigation__link" href="">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
-          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
-            
-         
+          
+          <a class="mdl-navigation__link" href="">Support this Project</a>
+          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
-          @if (Route::has('login'))
+
+            @if (Route::has('login'))
                 
                     @if (Auth::check())
-                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                     @else
                         <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
@@ -656,7 +679,6 @@ a img{
             @endif
           
          
-          
           <div class="android-drawer-separator"></div>
           
         </nav>
@@ -664,127 +686,27 @@ a img{
 
 
       <div class="android-content mdl-layout__content">
-      <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div style="color: white;" class="logo-font android-slogan">Get Involved </div>
-          <div style="color: white;" class="logo-font android-sub-slogan">welcome to VoteStats </div>
-          <div style="color: white;" class="logo-font android-sub-slogan">Simulate, Model, Forecast and Predict Nigeria's Voting System.</div>
+      
+      <div style="width: 100%; text-align: left; padding: 5px; ">
+      <div>
+   <center>  <p class="mdl-typography--display-2">Biblograghy about ACCORD</p></center> 
+
+<p>
+  Accord is a political party in Nigeria. In the 2015 National Assembly of Nigeria election, the party won 1 seat in the House of Representatives (Dauda Kako Abayomi Are from Mushin I constituency) and 0 out of 109 seats in the Senate.
+</p>
         
-
-                       <div class="logo-font android-create-character">
-            <a style="color: green;" href="{{ url('/register') }}"><img src="img/not.png"> Create your Profile and Vote</a>
-          </div>
-                   
-
-          
-
-          <a href="#more">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
-        </div>
-
-@inject('partyPie', 'App\Http\Controllers\frontPageController')
-@inject('statePie', 'App\Http\Controllers\frontPageController')
-@inject('favPartyLine', 'App\Http\Controllers\frontPageController')
-
-<div class="android-wear-section">
-          <div class="android-wear-band">
-          <div >  {!! $favPartyLine->getFrontFavPartyLine()->render() !!} </div>
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The Platform that suits everyone</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-               VoteStats can provide you with data to follow the Election trend.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="{{ url('/about') }}">
-                  Read More about the Platform&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
- <div class="android-more-section">
- <a name="more"></a>
-          <div class="android-section-title mdl-typography--display-1-color-contrast">More from VoteStats</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                
-               <div>  {!! $partyPie->getFrontPresidentPie()->render() !!} </div> 
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Captures all the Politicial Parties</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">The Platform also mocks Nigerian Voting System.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/login') }}">
-                  Login to Start
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                 <div>  {!! $statePie->getFrontPresidentStatePie()->render() !!} </div>
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Captures all the States and its LGA</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">The Platform also collates and Correlates the mocked votes.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/user/dataview') }}">
-                   Start Voting
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="img/aaaaa.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Detailed Insights and Leads</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">The Platform creates insights and leads which is both useful to all.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/dataland') }}">
-                  View More Data
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            
-          </div>
-        </div>
-
-        <div style=" padding: 2px; color: black; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
-
-         <p style="color: black;" class="mdl-typography--headline mdl-typography--font-thin">NOTE:</p>
-          <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
-          voting process done by its online users. It is only meant for Nigerians and 
-          should not be used in place of any official voting process except otherwise. 
-          Election in Nigeria is still conducted and controlled by <a href="www.inecnigeria.org">INEC</a>. </p>
-          <p>Get your <b>VOTER'S CARD</b>. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
+        <p>Culled from <a href="https://en.wikipedia.org/wiki/Accord_(Nigeria)" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase android-link">wikipedia</a>. To provide more information about this article, please contact us: votestatsng@gmail.com or our <a href="www.facebook.com/votestatsng">facbook page</a></p>
+      </div> 
         
-        </div>
+      </div>
 
-        <footer class="android-footer mdl-mega-footer">
+
+
+
+
+ <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
+          <div class="mdl-mega-footer--left-section">
                 <button style="background: url('img/facebook.png');" class="mdl-mega-footer--social-btn" ></button>
                 &nbsp;
               <button style="background: url('img/twitter.png');" class="mdl-mega-footer--social-btn"></button>
@@ -812,6 +734,16 @@ a img{
           </div>
 
         </footer>
+
+ 
+
+            
+
+            
+          </div>
+        </div>
+
+       
 
 
 
