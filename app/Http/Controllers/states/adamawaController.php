@@ -304,7 +304,7 @@ public function getVoteByLGAAdamawa(){
     $numanPDM =+ count($numanAPC);
 
     $numanPDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Numan','PDP']);                
-    $numanPDP =+ count($numanAPC);
+    $numanPDP =+ count($numanPDP);
 
     $numanSDP =  DB::select('select * from users where govlga = ? and governor = ?', ['Numan','SDP']);                
     $numanSDP =+ count($numanSDP);
@@ -440,7 +440,7 @@ public function getVoteByLGAAdamawa(){
                 $teacher =+ count($teacher);
                 
                 
-                 //bar chart- votes by age
+                 
  $adamawaOccupation = Charts::create('bar', 'highcharts')
            
             // Setup the chart settings

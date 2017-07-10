@@ -685,7 +685,7 @@ a img{
   <div class="android-card-container mdl-grid">
 
 
- <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+ <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
               
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">APC</h4>
@@ -694,8 +694,40 @@ a img{
                 <span class="mdl-typography--font-light mdl-typography--subhead">All Progressives Congress</span>
               </div>
               <div class="mdl-card__actions">
-                 <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('party/apc') }}">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/apc') }}">
                   Read More about APC
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+              
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">PDP</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">People's Democratic Party</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/pdp') }}">
+                  Read More about PDP
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+              
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">ACCORD</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Acord Party</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/accord') }}">
+                  Read More about ACCORD
                    <i class="material-icons">chevron_right</i>
                  </a>
               </div>
@@ -714,8 +746,7 @@ a img{
             
 
             
-          </div>
-        </div>
+          
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">

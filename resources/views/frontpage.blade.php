@@ -767,6 +767,24 @@ a img{
               </div>
             </div>
 
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="img/aaaaa.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Political Parties Hub</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Votestats provides a hub for political parties. Nigerian Political parties now have an online platform to reach the public.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub') }}">
+                  View More Data
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
             
           </div>
         </div>

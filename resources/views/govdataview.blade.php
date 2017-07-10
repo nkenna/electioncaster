@@ -2330,7 +2330,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <div style="width: 100%; padding: 3px;" >  {!! $adamawaOccupation->getVotesByOccupation()->render() !!} </div>
 
-<div style="width: 100%; padding: 3px;" >  {!! $adamawaGender->getVotesBySex()->render() !!} </div>
+
 
 <div style="width: 100%; padding: 3px;" >  {!! $adamawaAge->getVoteByAgeAdamawa()->render() !!} </div>
      
