@@ -795,7 +795,7 @@ a img{
           <p style="color: black;">VoteStats provides modeled election voting data from mocked election 
           voting process done by its online users. It is only meant for Nigerians and 
           should not be used in place of any official voting process except otherwise. 
-          Election in Nigeria is still conducted and controlled by <a href="www.inecnigeria.org">INEC</a>. </p>
+          Election in Nigeria is still conducted and controlled by {{ HTML::link('www.inecnigeria.org', 'INEC') }}. </p>
           <p>Get your <b>VOTER'S CARD</b>. Both Votestats modelled data accuracy and positive growth of Nigeria depends on your positive activities with your Voter's card.</p>
         
         </div>
@@ -803,10 +803,12 @@ a img{
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <a class="mdl-mega-footer--social-btn" href="facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
+            {{ HTML::link('www.facebook.com/votestatsng', '<img src="img/facebook.png" height="36px" width="36px">')}}
+             
                
                 &nbsp;
-                <a class="mdl-mega-footer--social-btn" href="twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
+                 {{ HTML::link('www.twitter.com/votestatsng', '<img src="img/twitter.png" height="36px" width="36px">')}}
+               
            
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
