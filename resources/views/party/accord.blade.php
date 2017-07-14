@@ -695,7 +695,7 @@ a img{
   Accord is a political party in Nigeria. In the 2015 National Assembly of Nigeria election, the party won 1 seat in the House of Representatives (Dauda Kako Abayomi Are from Mushin I constituency) and 0 out of 109 seats in the Senate.
 </p>
         
-        <p>Culled from <a href="https://en.wikipedia.org/wiki/Accord_(Nigeria)" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase android-link">wikipedia</a>. To provide more information about this article, please contact us: votestatsng@gmail.com or our <a href="www.facebook.com/votestatsng">facbook page</a></p>
+        <p>Culled from <a href="https://en.wikipedia.org/wiki/Accord_(Nigeria)" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase android-link">wikipedia</a>. To provide more information about this article, please contact us: votestatsng@gmail.com or our <a href="www.facebook.com/votestatsng">facebook page</a></p>
       </div> 
         
       </div>

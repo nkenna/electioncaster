@@ -415,7 +415,7 @@ var Kebbi = ['Select item...', 'Aleiro', 'Arewa Dandi', 'Argungu', 'Augie', 'Bag
 var Kogi = ['Select item...', 'Adavi', 'Ajaokuta', 'Ankpa', 'Bassa', 'Dekina', 'Ibaji', 'Idah', 'Igalamela Odolu', 'Ijumu', 'Kabba Bunu', 'Kogi', 'Lokoja', 'Mopa Muro', 'Ofu', 'Ogori Magongo', 'Okehi', 'Okene', 'Olamaboro', 'Omala', 'Yagba East', 'Yagba West'];
 var Kwara = ['Select item...', 'Asa', 'Baruten', 'Edu', 'Ekiti', 'Ifelodun', 'Ilorin East', 'Ilorin South', 'Ilorin West', 'Irepodun', 'Isin', 'Kaiama', 'Moro', 'Offa', 'Oke Ero', 'Oyun', 'Pategi'];
 var Lagos = ['Select item...', 'Agege', 'Ajeromi-Ifelodun', 'Alimosho', 'Amuwo-Odofin', 'Apapa', 'Badagry', 'Epe', 'Eti Osa', 'Ibeju-Lekki', 'Ifako-Ijaiye', 'Ikeja', 'Ikorodu', 'Kosofe', 'Lagos Island', 'Lagos Mainland', 'Mushin', 'Ojo', 'Oshodi-Isolo', 'Shomolu', 'Surulere'];
-var Nassarawa = ['Select item...', 'Akwanga', 'Awe', 'Doma', 'Karu', 'Keana', 'Keffi', 'Kokona', 'Lafia', 'Nasarawa', 'Nasarawa Egon', 'Obi', 'Toto', 'Wamba'];
+var Nasarawa = ['Select item...', 'Akwanga', 'Awe', 'Doma', 'Karu', 'Keana', 'Keffi', 'Kokona', 'Lafia', 'Nasarawa', 'Nasarawa Egon', 'Obi', 'Toto', 'Wamba'];
 var Niger = ['Select item...', 'Agaie', 'Agwara', 'Bida', 'Borgu', 'Bosso', 'Chanchaga', 'Edati', 'Gbako', 'Gurara', 'Katcha', 'Kontagora', 'Lapai', 'Lavun', 'Magama', 'Mariga', 'Mashegu', 'Mokwa', 'Moya', 'Paikoro', 'Rafi', 'Rijau', 'Shiroro', 'Suleja', 'Tafa', 'Wushishi'];
 var Ogun = ['Select item...', 'Abeokuta North', 'Abeokuta South', 'Ado-Odo Ota', 'Egbado North', 'Egbado South', 'Ewekoro', 'Ifo', 'Ijebu East', 'Ijebu North', 'Ijebu North East', 'Ijebu Ode', 'Ikenne', 'Imeko Afon', 'Ipokia', 'Obafemi Owode', 'Odeda', 'Odogbolu', 'Ogun Waterside', 'Remo North', 'Shagamu'];
 var Ondo = ['Select item...', 'Akoko North-East', 'Akoko North-West', 'Akoko South-West', 'Akoko South-East', 'Akure North', 'Akure South', 'Ese Odo', 'Idanre', 'Ifedore', 'Ilaje', 'Ile Oluji-Okeigbo', 'Irele', 'Odigbo', 'Okitipupa', 'Ondo East', 'Ondo West', 'Ose', 'Owo'];
@@ -433,6 +433,118 @@ var Zamfara = ['Select item...', 'Anka', 'Bakura', 'Birnin Magaji Kiyaw', 'Bukku
 
 //populating resident lga
      $("#chooseState").change(function(){
+
+         if($("#sta").val() == 'Yobe'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Yobe.length; i++) {
+$("#votelga").append('<option value='+Yobe[i]+'>'+Yobe[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Taraba'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Taraba.length; i++) {
+$("#votelga").append('<option value='+Taraba[i]+'>'+Taraba[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Sokoto'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Sokoto.length; i++) {
+$("#votelga").append('<option value='+Sokoto[i]+'>'+Sokoto[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Rivers'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Rivers.length; i++) {
+$("#votelga").append('<option value='+Rivers[i]+'>'+Rivers[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Plateau'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Plateau.length; i++) {
+$("#votelga").append('<option value='+Plateau[i]+'>'+Plateau[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Oyo'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Oyo.length; i++) {
+$("#votelga").append('<option value='+Oyo[i]+'>'+Oyo[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Osun'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Osun.length; i++) {
+$("#votelga").append('<option value='+Osun[i]+'>'+Osun[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Ondo'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Ondo.length; i++) {
+$("#votelga").append('<option value='+Ondo[i]+'>'+Ondo[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Ogun'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Ogun.length; i++) {
+$("#votelga").append('<option value='+Ogun[i]+'>'+Ogun[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Niger'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Niger.length; i++) {
+$("#votelga").append('<option value='+Niger[i]+'>'+Niger[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Nasarawa'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Nasarawa.length; i++) {
+$("#votelga").append('<option value='+Nasarawa[i]+'>'+Nasarawa[i]+'</option>');
+       }
+    }
+
+
+
+        if($("#sta").val() == 'Kwara'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Kwara.length; i++) {
+$("#votelga").append('<option value='+Kwara[i]+'>'+Kwara[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Kebbi'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Kebbi.length; i++) {
+$("#votelga").append('<option value='+Kebbi[i]+'>'+Kebbi[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Katsina'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Katsina.length; i++) {
+$("#votelga").append('<option value='+Katsina[i]+'>'+Katsina[i]+'</option>');
+       }
+    }
+
+       if($("#sta").val() == 'Kano'){
+            $("#votelga").html('');
+     for  (var i = 0; i < Kano.length; i++) {
+$("#votelga").append('<option value='+Kano[i]+'>'+Kano[i]+'</option>');
+       }
+    }
+
+
+
+
+
 
          if($("#sta").val() == 'Ebonyi'){
             $("#votelga").html('');
@@ -603,6 +715,117 @@ $("#chooseOrigin").change(function(){
            $("#takeState").hide();
            $("#takeOrigin").show();
        }
+
+
+
+        if($("#ori").val() == 'Yobe'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Yobe.length; i++) {
+$("#votelga1").append('<option value='+Yobe[i]+'>'+Yobe[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Taraba'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Taraba.length; i++) {
+$("#votelga1").append('<option value='+Taraba[i]+'>'+Taraba[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Sokoto'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Sokoto.length; i++) {
+$("#votelga1").append('<option value='+Sokoto[i]+'>'+Sokoto[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Rivers'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Rivers.length; i++) {
+$("#votelga1").append('<option value='+Rivers[i]+'>'+Rivers[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Plateau'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Plateau.length; i++) {
+$("#votelga1").append('<option value='+Plateau[i]+'>'+Plateau[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Oyo'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Oyo.length; i++) {
+$("#votelga1").append('<option value='+Oyo[i]+'>'+Oyo[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Osun'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Osun.length; i++) {
+$("#votelga1").append('<option value='+Osun[i]+'>'+Osun[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Ondo'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Ondo.length; i++) {
+$("#votelga1").append('<option value='+Ondo[i]+'>'+Ondo[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Ogun'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Ogun.length; i++) {
+$("#votelga1").append('<option value='+Ogun[i]+'>'+Ogun[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Niger'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Niger.length; i++) {
+$("#votelga1").append('<option value='+Niger[i]+'>'+Niger[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Nasarawa'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Nasarawa.length; i++) {
+$("#votelga1").append('<option value='+Nasarawa[i]+'>'+Nasarawa[i]+'</option>');
+       }
+    }
+
+
+
+        if($("#ori").val() == 'Kwara'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Kwara.length; i++) {
+$("#votelga1").append('<option value='+Kwara[i]+'>'+Kwara[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Kebbi'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Kebbi.length; i++) {
+$("#votelga1").append('<option value='+Kebbi[i]+'>'+Kebbi[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Katsina'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Katsina.length; i++) {
+$("#votelga1").append('<option value='+Katsina[i]+'>'+Katsina[i]+'</option>');
+       }
+    }
+
+       if($("#ori").val() == 'Kano'){
+            $("#votelga1").html('');
+     for  (var i = 0; i < Kano.length; i++) {
+$("#votelga1").append('<option value='+Kano[i]+'>'+Kano[i]+'</option>');
+       }
+    }
+
+
 
 
 if($("#ori").val() == 'Ebonyi'){
