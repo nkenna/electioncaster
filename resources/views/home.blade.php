@@ -597,7 +597,7 @@ a img{
               </div>
               <div class="mdl-card__supporting-text">
                 <span class="mdl-typography--font-light mdl-typography--subhead">Choose State,LGA and Political Party, then vote. You can only choose 
-                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting. <b style="color: red;">Only Anambra State is supported for now.</b></span>
+                your State of Origin or State of Residence. Votes can be changed in 7 days time after voting. <b style="color: red;">Voting for all States have been activated.</b></span>
               </div>
               <div class="mdl-card__actions">
                  <a class=" glow android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/user/updategov') }}">
