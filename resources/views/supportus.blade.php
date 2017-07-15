@@ -679,7 +679,23 @@ a img{
       
 
          
-
+<div style="text-align: justify; margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+  <p>
+    VoteStats, an online platform that models Nigeria Voting System. It is still a new
+    Platform and very much open to support in order to enhance its development and provide
+    fantatstic services that Nigeria needs.
+  </p>
+  <p>To support this project, Please cntact us through any of these channels:</p>
+  <p>
+    <ul>
+      <li><span style="color: blue;">Phone:</span> +2348158001641</li>
+      <li><span style="color: blue;">WhatsApp:</span> +2348158001641</li>
+      <li><span style="color: blue;">Email:</span> votestatsng@gmail.com</li>
+      
+    </ul>
+  </p>
+  <div style="float: left;"><p>VoteStats Team.</p></div>
+</div>
 
 
 
@@ -697,11 +713,12 @@ a img{
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+               <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
+               
+                &nbsp;
+                <a class="mdl-mega-footer--social-btn" href="https://www.twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
+           
+              
             </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">
