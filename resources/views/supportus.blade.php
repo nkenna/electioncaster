@@ -600,7 +600,8 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-          <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -612,15 +613,16 @@ a img{
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
           </div>
+
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
-           	   
+               
           @if (Route::has('login'))
                 
                     @if (Auth::check())
@@ -634,14 +636,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-          <img class="android-logo-image" src="/css/mdl/logo.png"> 
+            <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Support this Project</li>
-            <li class="mdl-menu__item">Resolve an Issue</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
           </ul>
@@ -651,24 +653,34 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-      <img class="android-logo-image" src="/css/mdl/logo.png"> 
+        <img class="android-logo-image" src="/css/mdl/logo.png"> 
+        </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="">Data-Land</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
+         
           
           <div class="android-drawer-separator"></div>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
           
-          <a class="mdl-navigation__link" href="">Login</a>
-          <a class="mdl-navigation__link" href="">Register</a>
-          <a class="mdl-navigation__link" href="">Dashboard</a>
-          <a class="mdl-navigation__link" href="">Usernme</a>
+         
+          
           <div class="android-drawer-separator"></div>
           
         </nav>
