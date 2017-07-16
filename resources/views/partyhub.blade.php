@@ -8,7 +8,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>VoteStats - Support Us</title>
+<title>VoteStats - Political Parties Hub</title>
     <!-- Styles -->
     
     
@@ -704,7 +704,7 @@ a img{
                  <h4 class="mdl-card__title-text">ACCORD</h4>
               </div>
               <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Acord Party</span>
+                <span class="mdl-typography--font-light mdl-typography--subhead">Accord Party</span>
               </div>
               <div class="mdl-card__actions">
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/accord') }}">
@@ -713,6 +713,24 @@ a img{
                  </a>
               </div>
             </div>
+
+
+              <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--3dp">
+              
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">LABOUR</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Labour Party</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/nigeria/political/party/hub/labour') }}">
+                  Read More about Labour Party
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
 
   </div>
   </div>
@@ -748,7 +766,7 @@ a img{
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
             <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
           </div>
 

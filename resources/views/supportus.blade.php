@@ -642,7 +642,7 @@ a img{
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support VoteStats</a></li>
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
@@ -700,8 +700,8 @@ a img{
   <p>To support this project, Please cntact us through any of these channels:</p>
   <p>
     <ul>
-      <li><span style="color: blue;">Phone:</span> +2348158001641</li>
-      <li><span style="color: blue;">WhatsApp:</span> +2348158001641</li>
+      <li><span style="color: blue;">Phone:</span> +2348139059856</li>
+      <li><span style="color: blue;">WhatsApp:</span> +2348139059856</li>
       <li><span style="color: blue;">Email:</span> votestatsng@gmail.com</li>
       
     </ul>
@@ -740,7 +740,7 @@ a img{
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Copyright © 2017 iVoteiCheck</p>
+            <p class="mdl-typography--font-light">Copyright © 2017 VoteStats</p>
             <p class="mdl-typography--font-light">Created and Designed by Steinacoz Creations</p>
           </div>
 
