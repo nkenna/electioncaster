@@ -53,6 +53,10 @@ Route::get('/nigeria/political/party/hub/accord', function () {
     return view('party/accord');
 });
 
+Route::get('/nigeria/political/party/hub/labour', function () {
+    return view('party/lp');
+});
+
 //Route::match(['get','post'],'/', 'frontPageController@getFrontPresidentPie')->name('frontpage');
 
 

@@ -167,6 +167,23 @@ return $akwaIbomAge;
     public function getVotesByLGA(){
         $abakAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APC']);              
     $abakAPC =+ count($abakAPC);
+
+    $abakAA =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','AA']);              
+    $abakAA =+ count($abakAA);
+
+    $abakACPN=  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','ACPN']);              
+    $abakACPN =+ count($abakACPN);
+
+    $abakAD =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','AD']);              
+    $abakAD =+ count($abakAD);
+
+    $abakADC =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','ADC']);              
+    $abakADC =+ count($abakADC);
+
+    $abakAPA =  DB::select('select * from users where govlga = ? and governor = ?', ['Abak','APA']);              
+    $abakAPA =+ count($abakAPA);
+
+
     
     
           $easternOboloAPC =  DB::select('select * from users where govlga = ? and governor = ?', ['Eastern Obolo','APC']);              

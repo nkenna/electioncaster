@@ -8,9 +8,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>VoteStats - Report an Issue</title>
+<title>VoteStats- LABOUR PARTY</title>
     <!-- Styles -->
     
+    <!-- Scripts -->
     
 
 
@@ -21,7 +22,6 @@
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
   
-
 
 
 
@@ -367,15 +367,7 @@ a img{
   padding: 80px 16px 0 16px;
 }
 
-  .android-customized-section-text p {
-    padding-top: 16px;
-  }
 
-.android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
-}
 
 .android-more-section {
   padding: 80px 0;
@@ -600,8 +592,7 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-           <img class="android-logo-image" src="/css/mdl/logo.png"> 
-           
+          <img class="android-logo-image" src="/css/mdl/logo.png">
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -613,14 +604,13 @@ a img{
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
           </div>
-
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
            
                
           @if (Route::has('login'))
@@ -636,14 +626,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
+            <li class="mdl-menu__item">Support this Project</li>
+            <li class="mdl-menu__item">Resolve an Issue</li>
             
  
           </ul>
@@ -653,25 +643,34 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-        <img class="android-logo-image" src="/css/mdl/logo.png"> 
+         <img class="android-logo-image" src="/css/mdl/logo.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
+          <a class="mdl-navigation__link" href="">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
-          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
+          <a class="mdl-navigation__link" href="">Data-Land</a>
+          <a class="mdl-navigation__link" href="">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
-          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
-            
-         
+          
+          <a class="mdl-navigation__link" href="">Support this Project</a>
+          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
           
           <div class="android-drawer-separator"></div>
-          @if (Route::has('login'))
+
+            @if (Route::has('login'))
                 
                     @if (Auth::check())
-                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
                     @else
                         <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
@@ -680,7 +679,6 @@ a img{
             @endif
           
          
-          
           <div class="android-drawer-separator"></div>
           
         </nav>
@@ -689,46 +687,33 @@ a img{
 
       <div class="android-content mdl-layout__content">
       
-
-         
-<div style="text-align: justify; margin: 1.5px; padding: 5px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
-  <p>
-    VoteStats, an online platform that models Nigeria Voting System. It is still a new
-    Platform and still undergoing updates. You can help build VoteStats by reporting an issue or missed data through any of these channels:
-  </p>
-  
-  <p>
-    <ul>
-      <li><span style="color: blue;">Phone:</span> +2348158001641</li>
-      <li><span style="color: blue;">WhatsApp:</span> +2348158001641</li>
-      <li><span style="color: blue;">Email:</span> votestatsng@gmail.com</li>
-      
-    </ul>
-  </p>
-  <div style="float: left;"><p>VoteStats Team.</p></div>
-</div>
+      <div style="width: 100%; text-align: left; padding: 5px; ">
+      <div>
+   <center>  <p class="mdl-typography--display-2">Biblograghy about LABOUR PARTY</p></center> 
+       
+<p>The Labour Party is a Social Democratic political party in Nigeria. The party won 1 out of the 360 seats in the House of Representatives and no seats in the Senate. The party's flagbearer in Ondo State, Olusegun Mimiko, emerged the state governor after winning a judicial challenge. Due to the nearly non-existent political structure of the party, Dr. Mimiko notably flirted with Action Congress (AC) stalwarts especially in the run-up to the Ekiti State governorship rerun election in April 2009 and later defected to <a href="http://votestats.com.ng/nigeria/political/party/hub/pdp">PDP</a>. </p>
 
 
 
 
 
+        <p>Culled from <a href="https://en.m.wikipedia.org/wiki/Labour_Party_(Nigeria)" class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase android-link">wikipedia</a>. To provide more information about this article, please contact us: votestatsng@gmail.com or our <a href="https//:www.facebook.com/votestatsng">facbook page</a></p>
+      </div>
+        
+      </div>
 
- 
 
-            
 
-            
-          
 
-        <footer class="android-footer mdl-mega-footer">
+
+ <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-               <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
+          <div class="mdl-mega-footer--left-section">
+                  <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
                
                 &nbsp;
                 <a class="mdl-mega-footer--social-btn" href="https://www.twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
            
-              
             </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">
@@ -751,6 +736,16 @@ a img{
           </div>
 
         </footer>
+
+ 
+
+            
+
+            
+          </div>
+        </div>
+
+       
 
 
 
