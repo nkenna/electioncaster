@@ -8,12 +8,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>iVoteStats - issues</title>
+<title>VoteStats - Report an Issue</title>
     <!-- Styles -->
     
-    <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
+    
 
 
 
@@ -22,14 +20,12 @@
         <link rel="stylesheet" href="/css/mdl/material.min.css"/>
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
-	
+  
 
 
 
 
-	<style>
-
-
+  <style>
 
 
 body {
@@ -188,6 +184,15 @@ a img{
       bottom: 16px;
     }
 
+.android-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background: url('img/slide3.jpg') center top no-repeat;
+  background-color: lightgreen;
+  background-size: cover;
+  margin-top: 10px;
+}
 
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -285,8 +290,41 @@ a img{
   }
 
 
+.android-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+ 
 
 
+.android-wear-section {
+  position: relative;
+  background: url('img/p3.jpg') center top no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+.android-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.android-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .android-wear-band-text p {
+    padding-top: 8px;
+  }
 
 .android-link {
   text-decoration: none;
@@ -552,7 +590,7 @@ a img{
   
 }
 
-	</style>
+  </style>
 
   {!! Charts::assets() !!}
   {!! Analytics::render() !!}
@@ -562,7 +600,8 @@ a img{
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-          <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -574,15 +613,16 @@ a img{
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
           </div>
+
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Data-land</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
-           	   
+               
           @if (Route::has('login'))
                 
                     @if (Auth::check())
@@ -596,14 +636,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-          <img class="android-logo-image" src="/css/mdl/logo.png">
+            <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Support this Project</li>
-            <li class="mdl-menu__item">Resolve an Issue</li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
           </ul>
@@ -616,22 +656,31 @@ a img{
         <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
-          <a class="mdl-navigation__link" href="">Data-Land</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
+          <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
+          <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+          <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
+            
+         
           
           <div class="android-drawer-separator"></div>
+          @if (Route::has('login'))
+                
+                    @if (Auth::check())
+                        <a class="mdl-navigation__link" href="{{ url('/home') }}">Dashboard</a>
+                    @else
+                        <a class="mdl-navigation__link " href="{{ url('/login') }}">Login</a>
+                        <a class="mdl-navigation__link " href="{{ url('/register') }}">Register</a>
+                    @endif
+                
+            @endif
           
-          <a class="mdl-navigation__link" href="">Login</a>
-          <a class="mdl-navigation__link" href="">Register</a>
-          <a class="mdl-navigation__link" href="">Dashboard</a>
-          <a class="mdl-navigation__link" href="">Usernme</a>
+         
+          
           <div class="android-drawer-separator"></div>
           
         </nav>
@@ -642,7 +691,22 @@ a img{
       
 
          
-
+<div style="text-align: justify; margin: 1.5px; padding: 5px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+  <p>
+    VoteStats, an online platform that models Nigeria Voting System. It is still a new
+    Platform and still undergoing updates. You can help build VoteStats by reporting an issue or missed data through any of these channels:
+  </p>
+  
+  <p>
+    <ul>
+      <li><span style="color: blue;">Phone:</span> +2348158001641</li>
+      <li><span style="color: blue;">WhatsApp:</span> +2348158001641</li>
+      <li><span style="color: blue;">Email:</span> votestatsng@gmail.com</li>
+      
+    </ul>
+  </p>
+  <div style="float: left;"><p>VoteStats Team.</p></div>
+</div>
 
 
 
@@ -654,8 +718,7 @@ a img{
             
 
             
-          </div>
-        </div>
+          
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
