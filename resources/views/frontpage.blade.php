@@ -803,13 +803,12 @@ a img{
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-              <a class="mdl-mega-footer--social-btn" href="facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
+              <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
                
                 &nbsp;
-                <a class="mdl-mega-footer--social-btn" href="twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
+                <a class="mdl-mega-footer--social-btn" href="https://www.twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
            
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn"></button>
+              
             </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">

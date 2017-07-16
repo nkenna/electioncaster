@@ -691,7 +691,7 @@ a img{
       
 
          
-<div style="text-align: justify; margin: 1.5px; padding: 3px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
+<div style="text-align: justify; margin: 1.5px; padding: 5px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;">
   <p>
     VoteStats, an online platform that models Nigeria Voting System. It is still a new
     Platform and very much open to support in order to enhance its development and provide
@@ -719,8 +719,7 @@ a img{
             
 
             
-          </div>
-        </div>
+          
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
