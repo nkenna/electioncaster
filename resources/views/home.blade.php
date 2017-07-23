@@ -518,7 +518,7 @@ a img{
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
       <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
-       <div style="width: 100%; text-align: center;" class="mdl-typography--headline mdl-typography--font-bold"> <a href="{{/editprofile}}">EDIT PROFILE</a></div>
+       <div style="width: 100%; text-align: center;" class="mdl-typography--headline mdl-typography--font-bold"> <a href="{{editprofile}}">EDIT PROFILE</a></div>
       
        </div>
 
