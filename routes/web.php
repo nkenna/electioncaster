@@ -81,6 +81,10 @@ Route::get('user/updategov', function () {
     return view('updategov');
 })->middleware('auth');
 
+Route::get('/editprofile', function () {
+    return view('editprofile');
+})->middleware('auth');
+
 //Route::get('user/dataview', function () {
   //  return view('dataview');
 //});

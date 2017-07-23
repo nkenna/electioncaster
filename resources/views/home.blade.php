@@ -455,7 +455,7 @@ a img{
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support VoteStats</a></li>
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
@@ -518,6 +518,7 @@ a img{
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> Favourite Party: {{ Auth::user()->favparty }}</div>
      <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Residence: {{ Auth::user()->resident }}</div>
       <div style="width: 100%; text-align: left;" class="mdl-typography--headline mdl-typography--font-thin"> State of Origin: {{ Auth::user()->origin }}</div>
+       <div style="width: 100%; text-align: center;" class="mdl-typography--headline mdl-typography--font-bold"> <a href="{{/editprofile}}">EDIT PROFILE</a></div>
       
        </div>
 

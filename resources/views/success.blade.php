@@ -705,7 +705,7 @@ a img{
       
       <div style="width: 100%; height: 400px;">
         <center>
-          <p class="mdl-typography--display-2 mdl-typography--font-thin">You have Successfully voted.</p>
+          <p class="mdl-typography--display-2 mdl-typography--font-thin">Operation Successful.</p>
           <div style="width: 100%;"><a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/home') }}">Return to your Dashboard</a></div>
           <div style="width: 100%;"><a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Go to the Data-Land</a></div>
         </center>

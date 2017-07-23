@@ -2171,7 +2171,7 @@ if($("#state").val() == 'Sokoto'){
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support VoteStats</a></li>
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
@@ -2361,8 +2361,62 @@ s.setAttribute('data-timestamp', +new Date());
         </div>
 	<!--Adamawa state ends-->
         
+     <!--Akwa ibom state section-->   
+	<div id="akwaibom">
+
+	 @inject('allAkwaIbomOri', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('allAkwaIbomRes', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('akwaIbomAge', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('akwaibomLgaParty', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('akwaIbomOccupation', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('akwaIbomGender', 'App\Http\Controllers\states\akwaIbomController')
+     @inject('allAkwaIbomVotes', 'App\Http\Controllers\states\akwaIbomController')
+     
+     
+     
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Akwa Ibom State as Resident: {{ $allAkwaIbomRes->getAllAkwaIbomResident()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin" style="width: 100%; padding: 3px;">Number of users using Akwa Ibom State as Origin: {{ $allAkwaIbomOri->getAllAkwaIbomOrigin()}} </div>
+	<div class="mdl-typography--font-regular mdl-typography--font-thin">Count of Gubernational Votes in Akwa Ibom State: {{ $allAkwaIbomVotes->getAllAkwaIbomVotes()}} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $akwaibomLgaParty->getVotesByParty()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $akwaIbomGender->getAkwaIbomVotesBySex()->render() !!} </div>
+
+<div style="width: 100%; padding: 3px;" >  {!! $akwaIbomOccupation->getVotesByOccupation()->render() !!} </div>
+
+
+
+<div style="width: 100%; padding: 3px;" >  {!! $akwaIbomAge->getVotesByAge()->render() !!} </div>
+     
+     
+
+
+
+	<div id="disqus_thread"></div>
+ <script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://www.votestats.com.ng/user/govdataview';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'govDataviewAkwaIbom'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://votestats.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         
-	<div id="akwaibom"><h2>Akwa Ibom State data is not yet ready</h2></div>
+        </div>
+	</div>
+	<!--Akwa Ibom State ends==>
 
 	<!-- anambra state section -->
 	<!-- inject the controllers -->

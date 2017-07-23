@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-		  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html>
+<head>
+ 
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>VoteStats - Voting Board</title>
+<title>VoteStats - Edit Profile</title>
     <!-- Styles -->
     
-    <!-- Scripts -->
-    <script src="{{ asset('css/mdl/material.min.js') }}"></script>
-    <script src="{{ asset('css/mdl/material.min.css') }}"></script>
-     <script src="/js/jquery-3.2.1.min.js"></script>
+    
 
 <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,8 +21,12 @@
         <link rel="stylesheet" href="/css/mdl/material.min.css"/>
 <script src="/css/mdl/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
+    
 
-   <style>
+
+
+    
+    <style>
 
 
 body {
@@ -182,13 +185,7 @@ a img{
       bottom: 16px;
     }
 
-.android-be-together-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background-color: lightgreen;
-  background-size: cover;
-}
+
 
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -197,16 +194,6 @@ a img{
   font-weight: 500;
 }
 
-
-
-
-.android-auto {
-  display: inline-block;
-  width: 300px;
-  overflow: hidden;
-}
-
-  
 
 
 
@@ -238,58 +225,6 @@ a img{
   .android-alt-link .material-icons {
     position: relative;
     top: 6px;
-  }
-
-
-
-.android-more-section {
-  padding: 80px 0;
-  max-width: 1044px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-  .android-more-section .android-section-title {
-    margin-left: 12px;
-    padding-bottom: 24px;
-  }
-
-.android-card-container {
-}
-
-  .android-card-container .mdl-card__media {
-    overflow: hidden;
-    background: transparent;
-  }
-
-    .android-card-container .mdl-card__media img {
-      width: 100%;
-    }
-
-  .android-card-container .mdl-card__title {
-    background: transparent;
-    height: auto;
-  }
-
-  .android-card-container .mdl-card__title-text {
-    color: black;
-    height: auto;
-  }
-
-  .android-card-container .mdl-card__supporting-text {
-    height: auto;
-    color: black;
-    padding-bottom: 56px;
-  }
-
-  .android-card-container .mdl-card__actions {
-    position: absolute;
-    bottom: 0;
-  }
-
-  .android-card-container .mdl-card__actions a {
-    border-top: none;
-    font-size: 16px;
   }
 
 .android-footer {
@@ -370,86 +305,53 @@ a img{
     height: 350px;
   }
 
- 
+  .android-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .android-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .android-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .android-create-character img {
+    height: 12px;
+  }
 
   .android-fab {
     display: none;
   }
 
-  
+  .android-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
 
   .android-footer .mdl-mega-footer--bottom-section {
     display: none;
   }
 }
 
-.glow {
-  background-color: #004A7F;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Arial;
-  font-size: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-}
-@-webkit-keyframes glowing {
-  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
-}
-
-@-moz-keyframes glowing {
-  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-@keyframes glowing {
-  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-}
-
-.glow {
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
-}
-
     </style>
 
-
- 
-
-
-
-	
-
-    {!! Charts::assets() !!}
-{!! Analytics::render() !!}
-
-	</head>
-	<body>
+</head>
+<body>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
 <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-         <img class="android-logo-image" src="/css/mdl/logo.png"> 
-            
+           <!-- <img class="android-logo-image" src="img/android-logo.png"> -->
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -462,29 +364,18 @@ a img{
             </div>
           </div>
           <!-- Navigation -->
-
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/') }}">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/about') }}">About</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/dataland') }}">Data-land</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/contactus') }}">Contact</a>
            
-           
                
-          @if (Route::has('home'))
+          @if (Route::has('login'))
                 
                     @if (Auth::check())
-                      
-                   <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/home') }}">Dashboard</a>
                     @else
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/login') }}">Login</a>
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/register') }}">Register</a>
@@ -494,14 +385,14 @@ a img{
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
-           
-          <img class="android-logo-image" src="/css/mdl/logo.png"> 
+           <!-- <img class="android-logo-image" src="img/android-logo.png">-->
+           <img class="android-logo-image" src="/css/mdl/logo.png"> 
           </span>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support VoteStats</a></li>
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
@@ -512,20 +403,20 @@ a img{
 
        <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-        <img class="android-logo-image" src="/css/mdl/logo.png">
+         <!-- <img class="android-logo-image" src="img/android-logo-white.png"> -->
+         <img class="android-logo-image" src="/css/mdl/logo.png"> 
         </span>
         <nav class="mdl-navigation">
-           <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">Home</a>
           <a class="mdl-navigation__link" href="{{ url('/about') }}">About</a>
           <a class="mdl-navigation__link" href="{{ url('/dataland') }}">Data-Land</a>
           <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
-          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
-          <a class="mdl-navigation__link" href="">Support this Project</a>
-          <a class="mdl-navigation__link" href="">Resolve an Issue</a>
+          
           
           <div class="android-drawer-separator"></div>
           @if (Route::has('login'))
@@ -542,74 +433,87 @@ a img{
          
           
           <div class="android-drawer-separator"></div>
+          
         </nav>
       </div>
-            
-             <div class="android-content mdl-layout__content">
 
-@inject('piePresidentVote', 'App\Http\Controllers\dataviewController')
+      <div class="android-content mdl-layout__content">
 
+       <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Edit Profile</div>
+                <div class="panel-heading">Changing State of Residence will erase all your votes, you have to revote again.</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
 
-<div>Number of people registered: {{ Auth::user()->getAllVotes() }}</div>
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
 
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
 
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
 
-
- <div>
- <div>Number of President Votes: {{ Auth::user()->getAllPresidentVotes()}}</div>
-
-  <div> {!! Auth::user()->getPresidentChart()->get('tbar')->render() !!}</div>
- 
-  <div>  {!! Auth::user()->getPresidentChart()->get('sabar')->render() !!} </div>
-    
-    <div>  {!!  $piePresidentVote->getPresidentPartyPie()->render() !!} </div>
-    <div>  {!! Auth::user()->getPresidentChart()->get('agePres')->render() !!} </div>
-
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    Forgot Your Password?
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-var disqus_config = function () {
-this.page.url = 'http://www.votestats.com.ng';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = 'presidentDataview'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://votestats.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-       
-       <div>
-         <div><a class="glow" href="{{ url('/user/govdataview') }}">Data for Gubernational Votes</a></div>
-
-       </div>       
-
+    </div>
+</div>
 
 
 <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
-                  <a class="mdl-mega-footer--social-btn" href="https://www.facebook.com/votestatsng"><img src="img/facebook.png" height="36px" width="36px"></a>
-               
-                &nbsp;
-                <a class="mdl-mega-footer--social-btn" href="https://www.twitter.com/votestatsng"><img src="img/twitter.png" height="36px" width="36px"></a>
-           
-              
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
             </div>
             <div class="mdl-mega-footer--right-section">
               <a class="mdl-typography--font-light" href="#top">
@@ -635,13 +539,12 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 
+      </div>
 
 </div>
-           
+
+</body>
+</html>
 
 
-<script id="dsq-count-scr" src="//votestats.disqus.com/count.js" async></script>
 
-
-	</body>
-	</html>
