@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
+
     "content-hash": "213144de5468f2dfc6cf47cc155c818a",
-=======
+
     "content-hash": "9922e1b38eb420beea9c4315e76275da",
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
     "packages": [
         {
             "name": "consoletvs/charts",
@@ -160,7 +160,7 @@
             "time": "2015-11-06T14:35:42+00:00"
         },
         {
-<<<<<<< HEAD
+
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -215,8 +215,8 @@
             "time": "2015-06-14T21:17:01+00:00"
         },
         {
-=======
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
+
             "name": "erusev/parsedown",
             "version": "1.6.2",
             "source": {
@@ -259,7 +259,7 @@
             "time": "2017-03-29T16:04:15+00:00"
         },
         {
-<<<<<<< HEAD
+
             "name": "guzzlehttp/guzzle",
             "version": "6.3.0",
             "source": {
@@ -413,7 +413,7 @@
                     "src/functions_include.php"
                 ]
             },
-=======
+
             "name": "ipunkt/laravel-analytics",
             "version": "1.3.5",
             "source": {
@@ -445,14 +445,14 @@
                     "Ipunkt\\LaravelAnalytics\\": "src/"
                 }
             },
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
@@ -473,7 +473,7 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
-=======
+
                     "name": "Robert Kummer",
                     "email": "r.kummer@ipunkt.biz"
                 }
@@ -488,7 +488,7 @@
                 "statistics"
             ],
             "time": "2017-03-31T11:06:39+00:00"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1165,7 +1165,7 @@
             "time": "2017-01-23T04:29:33+00:00"
         },
         {
-<<<<<<< HEAD
+
             "name": "myclabs/deep-copy",
             "version": "1.6.1",
             "source": {
@@ -1208,8 +1208,8 @@
             "time": "2017-04-12T18:52:22+00:00"
         },
         {
-=======
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
+
             "name": "nesbot/carbon",
             "version": "1.22.1",
             "source": {
@@ -1362,7 +1362,7 @@
             "time": "2017-03-13T16:27:32+00:00"
         },
         {
-<<<<<<< HEAD
+
             "name": "phpdocumentor/reflection-common",
             "version": "1.0",
             "source": {
@@ -1381,7 +1381,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6"
-=======
+
             "name": "psr/log",
             "version": "1.0.2",
             "source": {
@@ -1397,7 +1397,7 @@
             },
             "require": {
                 "php": ">=5.3.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
@@ -1407,13 +1407,12 @@
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "phpDocumentor\\Reflection\\": [
                         "src"
                     ]
-=======
                     "Psr\\Log\\": "Psr/Log/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1422,7 +1421,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Jaap van Otterdijk",
                     "email": "opensource@ijaap.nl"
                 }
@@ -1468,7 +1467,7 @@
                     "phpDocumentor\\Reflection\\": [
                         "src/"
                     ]
-=======
+
                     "name": "PHP-FIG",
                     "homepage": "http://www.php-fig.org/"
                 }
@@ -1532,7 +1531,7 @@
                 ],
                 "psr-4": {
                     "Psy\\": "src/Psy/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1541,7 +1540,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
                 }
@@ -1570,7 +1569,7 @@
             "require-dev": {
                 "mockery/mockery": "^0.9.4",
                 "phpunit/phpunit": "^5.2||^4.8.24"
-=======
+
                     "name": "Justin Hileman",
                     "email": "justin@justinhileman.info",
                     "homepage": "http://justinhileman.com"
@@ -1628,27 +1627,27 @@
                 "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
                 "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0.x-dev"
-=======
+
                     "dev-master": "3.x-dev"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "phpDocumentor\\Reflection\\": [
                         "src/"
                     ]
-=======
+
                     "Ramsey\\Uuid\\": "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1657,7 +1656,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
                 }
@@ -1688,7 +1687,7 @@
             "require-dev": {
                 "phpspec/phpspec": "^2.5|^3.2",
                 "phpunit/phpunit": "^4.8 || ^5.6.5"
-=======
+
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
@@ -1731,12 +1730,12 @@
             "require-dev": {
                 "mockery/mockery": "~0.9.1",
                 "symfony/phpunit-bridge": "~3.2"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.6.x-dev"
                 }
             },
@@ -1744,7 +1743,7 @@
                 "psr-0": {
                     "Prophecy\\": "src/"
                 }
-=======
+
                     "dev-master": "5.4-dev"
                 }
             },
@@ -1752,7 +1751,7 @@
                 "files": [
                     "lib/swift_required.php"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1760,7 +1759,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Konstantin Kudryashov",
                     "email": "ever.zet@gmail.com",
                     "homepage": "http://everzet.com"
@@ -1813,7 +1812,7 @@
             },
             "suggest": {
                 "ext-xdebug": "^2.5.1"
-=======
+
                     "name": "Chris Corbyn"
                 },
                 {
@@ -1866,19 +1865,19 @@
                 "symfony/event-dispatcher": "",
                 "symfony/filesystem": "",
                 "symfony/process": ""
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -1888,12 +1887,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -1928,7 +1927,7 @@
             },
             "require": {
                 "php": ">=5.3.3"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -1961,19 +1960,19 @@
             },
             "require": {
                 "php": ">=5.5.9"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -1983,12 +1982,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2027,7 +2026,7 @@
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2084,12 +2083,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2125,7 +2124,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2172,19 +2171,19 @@
             "suggest": {
                 "symfony/dependency-injection": "",
                 "symfony/http-kernel": ""
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -2194,12 +2193,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2236,7 +2235,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.2"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2269,19 +2268,19 @@
             },
             "require": {
                 "php": ">=5.5.9"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -2291,12 +2290,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2372,7 +2371,7 @@
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2422,12 +2421,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2474,7 +2473,7 @@
             },
             "suggest": {
                 "ext-soap": "*"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2544,19 +2543,19 @@
                 "symfony/dependency-injection": "",
                 "symfony/finder": "",
                 "symfony/var-dumper": ""
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -2566,12 +2565,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -2605,7 +2604,7 @@
             },
             "require": {
                 "php": ">=5.3.0"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -2641,30 +2640,30 @@
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0.x-dev"
-=======
+
                     "dev-master": "1.4-dev"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "Psr\\Http\\Message\\": "src/"
                 }
-=======
+
                     "Symfony\\Polyfill\\Mbstring\\": ""
                 },
                 "files": [
                     "bootstrap.php"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2672,7 +2671,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "PHP-FIG",
                     "homepage": "http://www.php-fig.org/"
                 }
@@ -2705,7 +2704,7 @@
             },
             "require": {
                 "php": ">=5.3.0"
-=======
+
                     "name": "Nicolas Grekas",
                     "email": "p@tchwork.com"
                 },
@@ -2741,30 +2740,30 @@
             },
             "require": {
                 "php": ">=5.5.9"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0.x-dev"
-=======
+
                     "dev-master": "3.3-dev"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "Psr\\Log\\": "Psr/Log/"
                 }
-=======
+
                     "Symfony\\Component\\Process\\": ""
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2772,7 +2771,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "PHP-FIG",
                     "homepage": "http://www.php-fig.org/"
                 }
@@ -2837,7 +2836,7 @@
                 "psr-4": {
                     "Psy\\": "src/Psy/"
                 }
-=======
+
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -2903,7 +2902,7 @@
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -2911,7 +2910,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Justin Hileman",
                     "email": "justin@justinhileman.info",
                     "homepage": "http://justinhileman.com"
@@ -2969,7 +2968,7 @@
                 "moontoast/math": "Provides support for converting UUID to 128-bit integer (in string form).",
                 "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
-=======
+
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3020,30 +3019,30 @@
                 "psr/log": "To use logging capability in translator",
                 "symfony/config": "",
                 "symfony/yaml": ""
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.x-dev"
-=======
+
                     "dev-master": "3.3-dev"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "Ramsey\\Uuid\\": "src/"
                 }
-=======
+
                     "Symfony\\Component\\Translation\\": ""
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3051,7 +3050,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
@@ -3093,7 +3092,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.0"
-=======
+
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -3134,19 +3133,19 @@
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
                 "ext-symfony_debug": ""
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -3159,12 +3158,12 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -3198,7 +3197,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -3239,12 +3238,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.8|5.1.*"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.2.x-dev"
                 }
             },
@@ -3252,7 +3251,7 @@
                 "classmap": [
                     "src/"
                 ]
-=======
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -3260,7 +3259,7 @@
                 "psr-4": {
                     "TijsVerkoyen\\CssToInlineStyles\\": "src"
                 }
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3268,7 +3267,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
                 },
@@ -3313,7 +3312,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
-=======
+
                     "name": "Tijs Verkoyen",
                     "email": "css_to_inline_styles@verkoyen.eu",
                     "role": "Developer"
@@ -3342,12 +3341,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8 || ^5.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.4-dev"
                 }
             },
@@ -3396,7 +3395,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0"
-=======
+
                     "dev-master": "2.4-dev"
                 }
             },
@@ -3446,12 +3445,12 @@
             "require-dev": {
                 "phpunit/phpunit": "4.*",
                 "scrutinizer/ocular": "~1.1"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -3500,7 +3499,7 @@
             "require-dev": {
                 "ext-mbstring": "*",
                 "phpunit/phpunit": "~4.4"
-=======
+
                     "dev-master": "1.0-dev"
                 }
             },
@@ -3555,12 +3554,12 @@
                 "ext-phar": "*",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~2.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -3625,7 +3624,7 @@
             },
             "suggest": {
                 "ext-uopz": "*"
-=======
+
                     "dev-master": "1.0.x-dev"
                 }
             },
@@ -3675,12 +3674,12 @@
                 "illuminate/http": "~5.0",
                 "mockery/mockery": "~0.9.3",
                 "phpunit/phpunit": "^5.7"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0-dev"
                 }
             },
@@ -3781,7 +3780,7 @@
             "autoload": {
                 "classmap": [
                     "src/"
-=======
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -3889,12 +3888,12 @@
                 ],
                 "files": [
                     "hamcrest/Hamcrest.php"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -3931,7 +3930,7 @@
             },
             "require": {
                 "php": ">=5.6.0"
-=======
+
                 "BSD"
             ],
             "description": "This is the PHP port of Hamcrest Matchers",
@@ -3961,12 +3960,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0.x-dev"
                 }
             },
@@ -3974,7 +3973,7 @@
                 "classmap": [
                     "src/"
                 ]
-=======
+
                     "dev-master": "0.9.x-dev"
                 }
             },
@@ -3982,7 +3981,7 @@
                 "psr-0": {
                     "Mockery": "library/"
                 }
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3990,7 +3989,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Sebastian Bergmann",
                     "email": "sebastian@phpunit.de"
                 }
@@ -4064,7 +4063,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0"
-=======
+
                     "name": "Pádraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
@@ -4152,27 +4151,27 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "0.0.x-dev"
-=======
+
                     "dev-master": "1.0.x-dev"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "Spatie\\Crawler\\": "src"
-=======
+
                     "phpDocumentor\\Reflection\\": [
                         "src"
                     ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4181,7 +4180,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Freek Van der Herten",
                     "email": "freek@spatie.be"
                 }
@@ -4221,7 +4220,7 @@
             "require-dev": {
                 "orchestra/testbench": "~3.3.0|~3.4.0",
                 "phpunit/phpunit": "^5.7"
-=======
+
                     "name": "Jaap van Otterdijk",
                     "email": "opensource@ijaap.nl"
                 }
@@ -4260,18 +4259,18 @@
             "require-dev": {
                 "mockery/mockery": "^0.9.4",
                 "phpunit/phpunit": "^4.4"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
+
                     "Spatie\\Sitemap\\": "src"
-=======
+
                     "phpDocumentor\\Reflection\\": [
                         "src/"
                     ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4280,7 +4279,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Freek Van der Herten",
                     "email": "freek@spatie.be",
                     "homepage": "https://spatie.be",
@@ -4317,7 +4316,7 @@
             "autoload": {
                 "psr-4": {
                     "Spatie\\Snapshots\\": "src"
-=======
+
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
                 }
@@ -4358,7 +4357,7 @@
                     "phpDocumentor\\Reflection\\": [
                         "src/"
                     ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4367,7 +4366,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Sebastian De Deyne",
                     "email": "sebastian@spatie.be",
                     "homepage": "https://spatie.be",
@@ -4410,7 +4409,7 @@
             "autoload": {
                 "psr-4": {
                     "Spatie\\TemporaryDirectory\\": "src"
-=======
+
                     "name": "Mike van Riel",
                     "email": "me@mikevanriel.com"
                 }
@@ -4451,7 +4450,7 @@
             "autoload": {
                 "psr-0": {
                     "Prophecy\\": "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4460,7 +4459,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Alex Vanderbist",
                     "email": "alex@spatie.be",
                     "homepage": "https://spatie.be",
@@ -4495,7 +4494,7 @@
             "require-dev": {
                 "mockery/mockery": "~0.9.1",
                 "symfony/phpunit-bridge": "~3.2"
-=======
+
                     "name": "Konstantin Kudryashov",
                     "email": "ever.zet@gmail.com",
                     "homepage": "http://everzet.com"
@@ -4548,31 +4547,31 @@
             },
             "suggest": {
                 "ext-xdebug": "^2.5.1"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "5.4-dev"
                 }
             },
             "autoload": {
                 "files": [
                     "lib/swift_required.php"
-=======
+
                     "dev-master": "4.0.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -4629,7 +4628,7 @@
                 "symfony/event-dispatcher": "",
                 "symfony/filesystem": "",
                 "symfony/process": ""
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -4664,12 +4663,12 @@
             },
             "require": {
                 "php": ">=5.3.3"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -4679,19 +4678,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -4737,7 +4736,7 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -4776,12 +4775,12 @@
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -4825,7 +4824,7 @@
             },
             "require-dev": {
                 "symfony/http-kernel": "~2.8|~3.0"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -4861,12 +4860,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -4876,19 +4875,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -4928,7 +4927,7 @@
             },
             "suggest": {
                 "symfony/css-selector": ""
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -4965,12 +4964,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.2"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -4980,19 +4979,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5101,7 +5100,7 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5177,12 +5176,12 @@
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5357,7 +5356,7 @@
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5404,12 +5403,12 @@
             },
             "suggest": {
                 "ext-soap": "*"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.4-dev"
                 }
             },
@@ -5419,19 +5418,19 @@
                 },
                 "files": [
                     "bootstrap.php"
-=======
+
                     "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5543,7 +5542,7 @@
                 "symfony/expression-language": "For using expression matching",
                 "symfony/http-foundation": "For using a Symfony Request object",
                 "symfony/yaml": "For using the YAML loader"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5580,12 +5579,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -5595,19 +5594,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5662,7 +5661,7 @@
                 "psr/log": "To use logging capability in translator",
                 "symfony/config": "",
                 "symfony/yaml": ""
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5696,12 +5695,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -5711,19 +5710,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5830,7 +5829,7 @@
             },
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5879,12 +5878,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -5894,19 +5893,19 @@
                 },
                 "exclude-from-classmap": [
                     "/Tests/"
-=======
+
                     "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "MIT"
             ],
             "authors": [
@@ -5943,7 +5942,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.8|5.1.*"
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -5982,7 +5981,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
@@ -5991,15 +5990,15 @@
                 }
             },
             "autoload": {
-<<<<<<< HEAD
+
                 "psr-4": {
                     "TijsVerkoyen\\CssToInlineStyles\\": "src"
                 }
-=======
+
                 "classmap": [
                     "src/"
                 ]
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -6007,7 +6006,7 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Tijs Verkoyen",
                     "email": "css_to_inline_styles@verkoyen.eu",
                     "role": "Developer"
@@ -6036,7 +6035,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8 || ^5.0"
-=======
+
                     "name": "Sebastian Bergmann",
                     "email": "sebastian@phpunit.de"
                 }
@@ -6071,12 +6070,12 @@
             "require-dev": {
                 "ext-mbstring": "*",
                 "phpunit/phpunit": "~4.4"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "2.4-dev"
                 }
             },
@@ -6124,7 +6123,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
                 "sebastian/version": "^1.0.1"
-=======
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -6189,12 +6188,12 @@
             },
             "suggest": {
                 "ext-uopz": "*"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.3-dev"
                 }
             },
@@ -6243,7 +6242,7 @@
             "require-dev": {
                 "phpunit/phpunit": "4.*",
                 "scrutinizer/ocular": "~1.1"
-=======
+
                     "dev-master": "1.0-dev"
                 }
             },
@@ -6289,12 +6288,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~5"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "1.0-dev"
                 }
             },
@@ -6348,7 +6347,7 @@
                 "illuminate/http": "~5.0",
                 "mockery/mockery": "~0.9.3",
                 "phpunit/phpunit": "^5.7"
-=======
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -6390,12 +6389,12 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "3.3-dev"
                 }
             },
@@ -6503,7 +6502,7 @@
                 ],
                 "files": [
                     "hamcrest/Hamcrest.php"
-=======
+
                     "dev-master": "2.0.x-dev"
                 }
             },
@@ -6602,12 +6601,12 @@
             "autoload": {
                 "classmap": [
                     "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD"
             ],
             "description": "This is the PHP port of Hamcrest Matchers",
@@ -6648,7 +6647,7 @@
                     "Ipunkt\\LaravelAnalytics\\": "src/"
                 }
             },
-=======
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -6699,14 +6698,14 @@
                     "/Tests/"
                 ]
             },
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-<<<<<<< HEAD
+
                     "name": "Robert Kummer",
                     "email": "r.kummer@ipunkt.biz"
                 }
@@ -6743,7 +6742,7 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
-=======
+
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
                 },
@@ -6776,31 +6775,31 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
                 "sebastian/version": "^1.0.1"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
+
                     "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
                     "Mockery": "library/"
-=======
+
                     "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Webmozart\\Assert\\": "src/"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
+
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -6830,7 +6829,7 @@
                 "testing"
             ],
             "time": "2017-02-28T12:52:32+00:00"
-=======
+
                 "MIT"
             ],
             "authors": [
@@ -6846,7 +6845,7 @@
                 "validate"
             ],
             "time": "2016-11-23T20:04:58+00:00"
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
         }
     ],
     "aliases": [],

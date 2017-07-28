@@ -166,10 +166,7 @@ return [
         ConsoleTVs\Charts\ChartsServiceProvider::class,
         Yajra\Disqus\DisqusServiceProvider::class,
         Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
-<<<<<<< HEAD
-        
-=======
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
 
         /*
          * Package Service Providers...
@@ -184,10 +181,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
+
         Spatie\Sitemap\SitemapServiceProvider::class,
-=======
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
+
 
     ],
 

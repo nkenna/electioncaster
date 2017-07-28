@@ -10,10 +10,7 @@
         "khill/lavacharts": "3.0.*",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-<<<<<<< HEAD
         "spatie/laravel-sitemap": "^2.2",
-=======
->>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
         "yajra/laravel-disqus": "^1.0"
     },
     "require-dev": {
