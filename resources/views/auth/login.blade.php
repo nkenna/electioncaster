@@ -408,7 +408,11 @@ a img{
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+<<<<<<< HEAD
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support VoteStats</a></li>
+=======
+            <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/supportus') }}">Support iVoteiCheck</a></li>
+>>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
             <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ url('/resolveissue') }}">Resolve an Issue</a></li>
             
  
@@ -429,7 +433,11 @@ a img{
           <a class="mdl-navigation__link" href="{{ url('/contactus') }}">Contact Us</a>
          
           <div class="android-drawer-separator"></div>
+<<<<<<< HEAD
           <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support VoteStats</a>
+=======
+          <a class="mdl-navigation__link" href="{{ url('/supportus') }}">Support iVoteiCheck</a>
+>>>>>>> fece3eaa045e3084b378b2fe295e65c8dcedfb19
           <a class="mdl-navigation__link" href="{{ url('/resolveissue') }}">Resolve an Issue</a>
             
           
