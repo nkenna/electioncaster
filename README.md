@@ -1,6 +1,7 @@
 # votestats
 repo for votestats project at www.votestats.com.ng
 
-Votestats is an online platform that models Nigeria election voting system. It creates leads and insights for all Election stakeholders using its online virtual voting system to gather data which is displayed in charts.
+Vote in your school/organization's elections that are powered by VoteStats. Votestats makes it easy for you to build and launch elections for your school/organization. If you'd like to run an election, visit votetstats.com.ng to create an account, build your first election.
 
-Votestats is built with Laravel 5.4 and powered by heroku.
+
+Votestats is built with nodejs app.
